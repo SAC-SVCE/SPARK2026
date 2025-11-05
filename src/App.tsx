@@ -9,6 +9,7 @@ import GalleryPage from "./pages/GalleryPage";
 import SponsorsPage from "./pages/SponsorsPage";
 import SchedulePage from "./pages/SchedulePage";
 import NotFound from "./pages/NotFound";
+import ScrollToTop from "./components/ui/ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -18,6 +19,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/events" element={<EventsPage />} />
