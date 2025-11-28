@@ -83,7 +83,7 @@ const Schedule = () => {
               Event Timeline
             </span>
           </div>
-          <h2 className="text-5xl md:text-7xl font-orbitron font-bold mb-4">
+          <h2 className="text-5xl md:text-7xl font-sans font-bold mb-4">
             BATTLE <span className="text-primary">SCHEDULE</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto font-exo">

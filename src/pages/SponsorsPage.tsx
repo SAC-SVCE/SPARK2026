@@ -133,7 +133,7 @@ const SponsorsPage = () => {
         </div>
         
         <div className="container mx-auto px-4 z-10 text-center">
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-orbitron font-bold mb-6 tracking-tight">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-sans font-bold mb-6 tracking-tight">
             <span className="text-primary text-glow-orange">OUR POWER</span>
             <br />
             <span className="text-foreground">SPONSORS</span>

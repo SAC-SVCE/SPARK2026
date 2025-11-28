@@ -3,6 +3,9 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FireParticles from "@/components/FireParticles";
 import { Card, CardContent } from "@/components/ui/card";
+import Shinky from "@/components/ui/ShinyText";
+
+
 
 const AboutPage = () => {
   const features = [
@@ -66,6 +69,8 @@ const AboutPage = () => {
     <div className="min-h-screen bg-background">
       <FireParticles density={30} />
       <Navbar />
+
+     
       
       {/* Hero Section */}
       <section className="pt-32 pb-16 relative overflow-hidden">
@@ -79,18 +84,20 @@ const AboutPage = () => {
                 About the Event
               </span>
             </div>
-            <h1 className="text-5xl md:text-7xl font-orbitron font-bold mb-6">
+            <h1 className="text-5xl md:text-7xl font-sans font-bold mb-6">
               <span className="text-secondary text-glow-cyan">What is</span>{" "}
-              <span className="text-primary">SPARK 2K26?</span>
+              <span className="text-primary"><Shinky text="SPARK 2026?" /></span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-4xl mx-auto font-exo leading-relaxed">
-              SPARK 2K26 is SV College's flagship annual event that brings together the brightest minds 
+              <Shinky text="SPARK 2K26 is SV College's flagship annual event that brings together the brightest minds 
               and most talented performers for an electrifying celebration of creativity, competition, and teamwork. 
               From intense gaming tournaments to challenging coding contests and captivating cultural performances, 
-              SPARK offers something for everyone.
+              SPARK offers something for everyone." />
             </p>
           </div>
         </div>
+
+ 
       </section>
 
       {/* Stats Section */}
@@ -171,7 +178,7 @@ const AboutPage = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-orbitron font-bold mb-4">
-              Why <span className="text-secondary text-glow-cyan">SPARK 2K26</span>?
+              Why <span className="text-secondary text-glow-cyan">SPARK 2026</span>?
             </h2>
             <p className="text-muted-foreground font-exo max-w-2xl mx-auto">
               Experience the ultimate celebration of talent, technology, and entertainment

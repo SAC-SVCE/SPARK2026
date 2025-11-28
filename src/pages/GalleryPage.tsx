@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FireParticles from "@/components/FireParticles";
 import { Button } from "@/components/ui/button";
+import DemoOne from "@/components/sphere-demo";
 
 interface GalleryItem {
   id: number;
@@ -54,8 +55,8 @@ const GalleryPage = () => {
         <div className="absolute bottom-1/3 right-1/4 w-96 h-96 bg-secondary/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1s" }} />
         
         <div className="relative z-10 text-center animate-scale-in">
-          <h1 className="text-6xl md:text-8xl lg:text-9xl font-orbitron font-bold mb-6 text-glow-orange animate-glow-pulse">
-            SPARK 2K26
+          <h1 className="text-6xl md:text-8xl lg:text-9xl font-sans font-bold mb-6 text-glow-orange animate-glow-pulse">
+            SPARK 2026
           </h1>
           <h2 className="text-3xl md:text-5xl lg:text-6xl font-orbitron font-bold mb-6 text-secondary text-glow-cyan">
             GALLERY
@@ -159,6 +160,21 @@ const GalleryPage = () => {
       </section>
 
       {/* Behind the Scenes - Horizontal Scroll with Tilt Effect */}
+ {/* Event Highlights Sphere - FORCED HEIGHT FIX */}
+      {/* Event Highlights Sphere */}
+      <section className="py-10 relative text-center flex flex-col items-center justify-center">
+        
+        <h2 className="text-4xl md:text-5xl font-orbitron font-bold text-glow-cyan z-20 mb-4">
+          Event Highlights Sphere
+        </h2>
+
+        {/* Change h-[400px] to h-[500px] to see the full sphere */}
+        <div className="h-[700px] w-full flex items-center justify-center overflow-hidden relative z-10 -my-10">
+          <DemoOne />
+        </div>
+
+      </section>
+
       <section className="py-20 relative">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-orbitron font-bold text-center mb-16 animate-slide-up">

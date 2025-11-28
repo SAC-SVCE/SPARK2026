@@ -54,8 +54,8 @@ const ContactPage = () => {
                 Get In Touch
               </span>
             </div>
-            <h1 className="text-5xl md:text-7xl font-orbitron font-bold mb-6">
-              Contact <span className="text-secondary text-glow-cyan">SPARK 2K26</span>
+            <h1 className="text-5xl md:text-7xl font-sans font-bold mb-6">
+              Contact <span className="text-secondary text-glow-cyan">SPARK 2026</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto font-exo">
               Have questions? Want to register? Reach out to us and become part of the revolution
@@ -227,8 +227,10 @@ const ContactPage = () => {
           <div className="animate-slide-up" style={{ animationDelay: "0.3s" }}>
             <div className="rounded-lg overflow-hidden border-2 border-border/50 hover:border-primary/50 transition-all duration-300 shadow-[0_0_30px_hsl(var(--fire-orange)/0.2)]">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.5632793372814!2d79.41963647507655!3d13.647624286953028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4d4b0f88220bbb%3A0x92f3e4c1b3f6f4c5!2sSri%20Venkateswara%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin"
-                width="100%"
+                             
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.9719813829824!2d79.48344232485414!3d13.659467636722896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4d4991206ff455%3A0x37f34fc0f435a909!2sSV%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1764354010221!5m2!1sen!2sin"
+  
+               width="100%"
                 height="450"
                 style={{ border: 0 }}
                 allowFullScreen

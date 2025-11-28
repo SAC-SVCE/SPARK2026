@@ -8,6 +8,9 @@ import SparkEffect from "@/components/SparkEffect";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import Hero from "@/components/demohero";
+
+
 import {
   Select,
   SelectContent,
@@ -105,8 +108,15 @@ const RegistrationPage = () => {
         <div className="absolute inset-0 bg-background/95 backdrop-blur-sm" />
       </div>
 
+
+      <Hero />
       <SparkEffect />
+
+      
       <Navbar />
+
+     
+
 
       {/* Hero Section */}
       <section className="relative min-h-[40vh] flex items-center justify-center pt-24">

@@ -127,6 +127,12 @@ export default {
             opacity: "0",
           },
         },
+
+        /* ⭐ ADDED FOR SHINY TEXT */
+        shine: {
+          "0%": { backgroundPosition: "100%" },
+          "100%": { backgroundPosition: "-100%" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -139,6 +145,9 @@ export default {
         "slide-in": "slide-in 0.6s ease-out",
         "spark-rise": "spark-rise 6s linear infinite",
         "fire-rise": "fire-rise 8s ease-in infinite",
+
+        /* ⭐ ADDED HERE */
+        shine: "shine 5s linear infinite",
       },
     },
   },

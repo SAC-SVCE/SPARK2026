@@ -34,9 +34,9 @@ const About = () => {
         {/* Section Header */}
         <div className="text-center mb-16 animate-slide-up">
           <div className="inline-block px-4 py-2 rounded-full bg-card/50 border border-primary/30 mb-4">
-            {/* <span className="text-sm font-orbitron font-semibold text-primary uppercase tracking-wider">
+            {<span className="text-sm font-orbitron font-semibold text-primary uppercase tracking-wider">
               About the Event
-            </span> */}
+            </span>}
           </div>
           {/* <h2 className="text-4xl md:text-6xl font-orbitron font-bold mb-6">
             <span className="text-secondary">What is</span>{" "}
@@ -50,34 +50,7 @@ const About = () => {
           </p> */}
         </div>
 
-        {/* Feature Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {features.map((feature, index) => {
-            const Icon = feature.icon;
-            return (
-              <div
-                key={index}
-                className="group relative p-6 rounded-lg bg-card/50 backdrop-blur-sm border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_30px_hsl(var(--fire-orange)/0.3)] animate-slide-up"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                {/* Glow Effect */}
-                <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-primary/10 to-secondary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                
-                <div className="relative z-10">
-                  <div className="w-14 h-14 rounded-lg bg-primary/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <Icon className="w-7 h-7 text-primary" />
-                  </div>
-                  <h3 className="text-xl font-orbitron font-bold mb-3 text-foreground">
-                    {feature.title}
-                  </h3>
-                  <p className="text-muted-foreground font-exo">
-                    {feature.description}
-                  </p>
-                </div>
-              </div>
-            );
-          })}
-        </div>
+       
 
         {/* Stats Section */}
         <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6">

@@ -58,11 +58,11 @@ const Hero = () => {
           </div>
 
           {/* Main Title */}
-          <h1 className="text-6xl md:text-8xl lg:text-9xl font-orbitron font-black mb-6 animate-float">
-            <span className="text-glow-cyan">SPARK</span>
-            <br />
-            <span className="text-glow-orange text-primary">2K26</span>
-          </h1>
+         <h1 className="text-6xl md:text-8xl lg:text-9xl font-sans font-black mb-6 animate-float">
+  <span className="text-glow-cyan">SPARK</span>
+  <br />
+  <span className="text-glow-orange text-primary">2026</span>
+</h1>
 
           {/* Tagline */}
           <p className="text-xl md:text-3xl font-exo font-light text-muted-foreground mb-4 tracking-wide">

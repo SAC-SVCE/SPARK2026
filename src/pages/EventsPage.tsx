@@ -349,6 +349,501 @@ const EventsPage = () => {
       ],
       type: "Individual",
     },
+    {
+  id: "19",
+  name: "PPT Presentation (CSE)",
+  code: "TECH019",
+  category: "Technical",
+  date: "",
+  entryFee: "",
+  poster: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800",
+  prizes: "",
+  rules: [
+    "Team size: 2–4 members.",
+    "Choose 1 topic.",
+    "Presentation duration: 8–10 minutes.",
+    "Slides must be original (no plagiarism).",
+    "Q&A session mandatory.",
+    "Stick strictly to your selected topic."
+  ],
+  type: "Team"
+},
+{
+  id: "20",
+  name: "Poster Presentation (CSE)",
+  code: "TECH020",
+  category: "Technical",
+  date: "",
+  entryFee: "",
+  poster: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800",
+  prizes: "",
+  rules: [
+    "Maximum team size: 2 members.",
+    "Poster size must be A2 or A3.",
+    "Poster should be clear, neat, and well-presented.",
+    "Hand-made or digital posters are allowed.",
+    "Poster must be based on a relevant CSE domain.",
+    "Explanation time: 4–5 minutes per team."
+  ],
+  type: "Team"
+},
+{
+  id: "21",
+  name: "Coding Contest (CSE)",
+  code: "TECH021",
+  category: "Technical",
+  date: "",
+  entryFee: "",
+  poster: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800",
+  prizes: "",
+  rules: [
+    "Maximum team size: 2 members.",
+    "Solve programming problems within the given time.",
+    "Ranking is based on the number of problems solved.",
+    "In case of ties, the least time taken will decide the winner.",
+    "Competition consists of multiple rounds."
+  ],
+  type: "Team"
+},
+{
+  id: "22",
+  name: "PPT Presentation (CSC)",
+  code: "TECH022",
+  category: "Technical",
+  date: "",
+  entryFee: "",
+  poster: "https://images.unsplash.com/photo-1522199710521-72d69614c702?w=800",
+  prizes: "",
+  rules: [
+    "Team size: 2–4 members.",
+    "Choose any one topic.",
+    "Presentation time: 8–10 minutes.",
+    "Slides must be original and plagiarism-free.",
+    "Q&A session will follow the presentation."
+  ],
+  type: "Team"
+},
+{
+  id: "23",
+  name: "Poster Presentation (CSC)",
+  code: "TECH023",
+  category: "Technical",
+  date: "",
+  entryFee: "",
+  poster: "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=800",
+  prizes: "",
+  rules: [
+    "Maximum team size: 2 members.",
+    "Poster must be A2 or A3 size.",
+    "Content should be clear and neatly presented.",
+    "Explanation time: 2–3 minutes per team."
+  ],
+  type: "Team"
+},
+{
+  id: "24",
+  name: "CTF Competition (CSC)",
+  code: "TECH024",
+  category: "Technical",
+  date: "",
+  entryFee: "",
+  poster: "https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=800",
+  prizes: "",
+  rules: [
+    "Maximum team size: 2 members.",
+    "Solve cybersecurity challenges to earn points.",
+    "Highest total score wins.",
+    "No attacking event infrastructure or other teams.",
+    "Follow all competition and ethical guidelines."
+  ],
+  type: "Team"
+},
+{
+  id: "25",
+  name: "PPT Presentation (EEE)",
+  code: "TECH025",
+  category: "Technical",
+  date: "",
+  entryFee: "",
+  poster: "https://images.unsplash.com/photo-1522199710521-72d69614c702?w=800",
+  prizes: "",
+  rules: [
+    "Team size: 2–4 members.",
+    "Choose any relevant EEE topic.",
+    "Presentation time: 8–10 minutes.",
+    "Slides must be original and free of plagiarism.",
+    "Q&A session will follow the presentation."
+  ],
+  type: "Team"
+},
+{
+  id: "26",
+  name: "Poster Presentation (EEE)",
+  code: "TECH026",
+  category: "Technical",
+  date: "",
+  entryFee: "",
+  poster: "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=800",
+  prizes: "",
+  rules: [
+    "Maximum team size: 2 members.",
+    "Poster must be A2 or A3 size.",
+    "Poster content should be neat, clear, and well-presented.",
+    "Explanation time: 2–3 minutes per team."
+  ],
+  type: "Team"
+},
+{
+  id: "27",
+  name: "Project Expo (EEE)",
+  code: "TECH027",
+  category: "Technical",
+  date: "",
+  entryFee: "",
+  poster: "https://images.unsplash.com/photo-1581091012184-7c140f7f9b50?w=800",
+  prizes: "",
+  rules: [
+    "Team size: 2–4 members.",
+    "Projects must include a working model or demonstration.",
+    "Explanation time: 5–7 minutes per team.",
+    "Ensure the project setup is safe for display.",
+    "Judging will be based on innovation, clarity, and execution."
+  ],
+  type: "Team"
+},
+{
+  id: "28",
+  name: "PPT Presentation (IT)",
+  code: "TECH028",
+  category: "Technical",
+  date: "",
+  entryFee: "",
+  poster: "https://images.unsplash.com/photo-1522199710521-72d69614c702?w=800",
+  prizes: "",
+  rules: [
+    "Team size: 2–4 members.",
+    "Choose any one topic.",
+    "Presentation duration: 8–10 minutes.",
+    "Slides must be original and free from plagiarism.",
+    "Q&A session may follow the presentation."
+  ],
+  type: "Team"
+},
+{
+  id: "29",
+  name: "Poster Presentation (IT)",
+  code: "TECH029",
+  category: "Technical",
+  date: "",
+  entryFee: "",
+  poster: "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=800",
+  prizes: "",
+  rules: [
+    "Maximum team size: 2 members.",
+    "Poster must be A2 or A3 size.",
+    "Content must be clear, neat, and well-structured.",
+    "Handmade or digital posters are allowed."
+  ],
+  type: "Team"
+},
+{
+  id: "30",
+  name: "Reverse Coding (IT)",
+  code: "TECH030",
+  category: "Technical",
+  date: "",
+  entryFee: "",
+  poster: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800",
+  prizes: "",
+  rules: [
+    "Maximum team size: 2 members.",
+    "Decode the given output or logic.",
+    "Write the correct program based on the behavior.",
+    "Strictly no plagiarism or code copying."
+  ],
+  type: "Team"
+},
+
+{
+  id: "31",
+  name: "PPT Presentation (CSM)",
+  code: "TECH031",
+  category: "Technical",
+  date: "",
+  entryFee: "",
+  poster: "https://images.unsplash.com/photo-1522199710521-72d69614c702?w=800",
+  prizes: "",
+  rules: [
+    "Team size: 2–4 members.",
+    "Choose any one topic related to CSM.",
+    "Presentation duration: 8–10 minutes.",
+    "Slides must be original and well-structured.",
+    "Q&A session will follow the presentation."
+  ],
+  type: "Team"
+},
+{
+  id: "32",
+  name: "Poster Presentation (CSM)",
+  code: "TECH032",
+  category: "Technical",
+  date: "",
+  entryFee: "",
+  poster: "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=800",
+  prizes: "",
+  rules: [
+    "Maximum team size: 2 members.",
+    "Poster must be A2 or A3 size.",
+    "Content should be clear and neatly presented.",
+    "Explanation time: 2–3 minutes per team."
+  ],
+  type: "Team"
+},
+{
+  id: "33",
+  name: "Coding Quiz (AI/ML) – CSM",
+  code: "TECH033",
+  category: "Technical",
+  date: "",
+  entryFee: "",
+  poster: "https://images.unsplash.com/photo-1534751516642-a1af1ef26a56?w=800",
+  prizes: "",
+  rules: [
+    "Maximum team size: 2 members.",
+    "Quiz format will be MCQs based on AI & ML.",
+    "Fastest and most accurate team wins.",
+    "No external help or devices allowed."
+  ],
+  type: "Team"
+},
+{
+  id: "34",
+  name: "PPT Presentation (CSD)",
+  code: "TECH034",
+  category: "Technical",
+  date: "",
+  entryFee: "",
+  poster: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800",
+  prizes: "",
+  rules: [
+    "Team size: 2–4 members.",
+    "Choose any topic related to CSD.",
+    "Presentation duration: 8–10 minutes.",
+    "Slides must be original and clearly presented.",
+    "Q&A session will follow the presentation."
+  ],
+  type: "Team"
+},
+{
+  id: "35",
+  name: "Poster Presentation (CSD)",
+  code: "TECH035",
+  category: "Technical",
+  date: "",
+  entryFee: "",
+  poster: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800",
+  prizes: "",
+  rules: [
+    "Maximum team size: 2 members.",
+    "Poster must be A2 or A3 size.",
+    "Content should be neat and well-structured.",
+    "Explanation time: 2–3 minutes."
+  ],
+  type: "Team"
+},
+{
+  id: "36",
+  name: "Coding Autometa (CSD)",
+  code: "TECH036",
+  category: "Technical",
+  date: "",
+  entryFee: "",
+  poster: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800",
+  prizes: "",
+  rules: [
+    "Maximum team size: 2 members.",
+    "MCQ-based coding logic quiz.",
+    "Highest score in the least time wins.",
+    "No external help or plagiarism allowed."
+  ],
+  type: "Team"
+},
+
+{
+  id: "37",
+  name: "PPT Presentation (ECE)",
+  code: "TECH037",
+  category: "Technical",
+  date: "",
+  entryFee: "",
+  poster: "https://images.unsplash.com/photo-1581091870627-3c097df7b1fb?w=800",
+  prizes: "",
+  rules: [
+    "Maximum team size: 2 members.",
+    "Presentation time: 8 minutes followed by Q&A.",
+    "Participants must submit an abstract before the event.",
+    "Bring the PPT on a pen drive for presentation.",
+    "Slides must be original and well-structured."
+  ],
+  type: "Team"
+},
+{
+  id: "38",
+  name: "Poster Presentation (ECE)",
+  code: "TECH038",
+  category: "Technical",
+  date: "",
+  entryFee: "",
+  poster: "https://images.unsplash.com/photo-1509223197845-458d87318791?w=800",
+  prizes: "",
+  rules: [
+    "Maximum team size: 2 members.",
+    "Poster must follow IEEE format.",
+    "Size allowed: A2 or A3.",
+    "Explanation time: 5 minutes per team.",
+    "Content should be clear, technical, and neatly presented."
+  ],
+  type: "Team"
+},
+{
+  id: "39",
+  name: "Project Expo (ECE)",
+  code: "TECH039",
+  category: "Technical",
+  date: "",
+  entryFee: "",
+  poster: "https://images.unsplash.com/photo-1581092808364-3a86f2a5ba52?w=800",
+  prizes: "",
+  rules: [
+    "Maximum team size: 4 members.",
+    "Project must include a working model or live demonstration.",
+    "A PPT explaining the project is mandatory.",
+    "Components used must be safe and well-insulated.",
+    "Evaluation is based on innovation, clarity, and execution."
+  ],
+  type: "Team"
+},
+{
+  id: "40",
+  name: "PPT Presentation (Civil)",
+  code: "TECH040",
+  category: "Technical",
+  date: "",
+  entryFee: "",
+  poster: "https://images.unsplash.com/photo-1590490359683-826fe7f2d0f3?w=800",
+  prizes: "",
+  rules: [
+    "Maximum team size: 2 members.",
+    "Presentation time: 8 minutes followed by Q&A.",
+    "Submit abstract prior to the event.",
+    "Slides must be original and well-organized."
+  ],
+  type: "Team"
+},
+{
+  id: "41",
+  name: "Poster Presentation (Civil)",
+  code: "TECH041",
+  category: "Technical",
+  date: "",
+  entryFee: "",
+  poster: "https://images.unsplash.com/photo-1453873531674-2151bcd01707?w=800",
+  prizes: "",
+  rules: [
+    "Maximum team size: 2 members.",
+    "Poster must follow IEEE format.",
+    "Size allowed: A2 or A3.",
+    "Explanation time: 5 minutes per team.",
+    "Content must be neat and clear."
+  ],
+  type: "Team"
+},
+{
+  id: "42",
+  name: "Project Expo (Civil)",
+  code: "TECH042",
+  category: "Technical",
+  date: "",
+  entryFee: "",
+  poster: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800",
+  prizes: "",
+  rules: [
+    "Maximum team size: 4 members.",
+    "Project must include a working model.",
+    "PPT describing the project is mandatory.",
+    "Judging based on innovation and clarity."
+  ],
+  type: "Team"
+},
+{
+  id: "43",
+  name: "PPT Presentation (Mech)",
+  code: "TECH043",
+  category: "Technical",
+  date: "",
+  entryFee: "",
+  poster: "https://images.unsplash.com/photo-1508898578281-774ac4893c0c?w=800",
+  prizes: "",
+  rules: [
+    "Maximum team size: 2 members.",
+    "Presentation time: 8 minutes + Q&A.",
+    "Abstract submission is mandatory.",
+    "Slides must be original and technical."
+  ],
+  type: "Team"
+},
+{
+  id: "44",
+  name: "Poster Presentation (Mech)",
+  code: "TECH044",
+  category: "Technical",
+  date: "",
+  entryFee: "",
+  poster: "https://images.unsplash.com/photo-1503676382389-4809596d5290?w=800",
+  prizes: "",
+  rules: [
+    "Maximum team size: 2 members.",
+    "Poster must follow IEEE guidelines.",
+    "Content must be clear and neatly presented.",
+    "Technical accuracy is required."
+  ],
+  type: "Team"
+},
+{
+  id: "45",
+  name: "Project Expo (Mech)",
+  code: "TECH045",
+  category: "Technical",
+  date: "",
+  entryFee: "",
+  poster: "https://images.unsplash.com/photo-1581092333181-2983a46d8a1b?w=800",
+  prizes: "",
+  rules: [
+    "Maximum team size: 4 members.",
+    "Project must include a working physical model.",
+    "PPT describing the project is required.",
+    "Safety measures must be ensured."
+  ],
+  type: "Team"
+},
+{
+  id: "46",
+  name: "Designathon (Mech)",
+  code: "TECH046",
+  category: "Technical",
+  date: "",
+  entryFee: "",
+  poster: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800",
+  prizes: "",
+  rules: [
+    "Team size: 1–3 members.",
+    "On-spot design challenge will be given.",
+    "Work must be original and self-created.",
+    "Judges' decision will be final."
+  ],
+  type: "Team"
+}
+
   ];
 
   const filteredEvents = events.filter((event) => {
@@ -390,9 +885,9 @@ const EventsPage = () => {
         <div className="container mx-auto max-w-6xl relative z-10">
           {/* Title */}
           <div className="text-center mb-12 animate-slide-up">
-            <h1 className="text-5xl md:text-7xl font-orbitron font-bold mb-4">
+            <h1 className="text-5xl md:text-7xl font-sans font-bold mb-4">
               <span className="text-glow-cyan">SPARK</span>{" "}
-              <span className="text-primary">2K26</span>
+              <span className="text-primary">2026</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground font-exo mb-2">
               Where Passion Meets Power
@@ -583,7 +1078,7 @@ const EventsPage = () => {
                   onClick={() => setSelectedEvent(null)}
                   className="w-full mt-6 bg-primary text-primary-foreground hover:bg-primary/90 font-orbitron"
                 >
-                  Close
+                  Register
                 </Button>
               </div>
             </div>

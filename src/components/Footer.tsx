@@ -137,6 +137,8 @@ import sparkLogo from "@/assets/spark-logo.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const year = 2026;
+
 
   return (
     <footer className="relative py-16 overflow-hidden border-t border-border">
@@ -252,7 +254,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="text-center space-y-4">
           <p className="text-sm text-muted-foreground font-exo flex items-center justify-center gap-2 flex-wrap">
-            <span>© {currentYear} SPARK | Designed & Developed by <a href="#" className="text-primary hover:underline">Shashi</a></span>
+            <span>© {year} SPARK | Designed & Developed by <a href="#" className="text-primary hover:underline">Shashi</a></span>
           </p>
           
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-card/50 border border-border text-xs font-exo text-muted-foreground">
