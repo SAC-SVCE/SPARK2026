@@ -55,10 +55,10 @@ const About = () => {
         {/* Stats Section */}
         <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6">
           {[
-            { value: "5000+", label: "Participants" },
-            { value: "50+", label: "Events" },
-            { value: "₹5L+", label: "Prize Pool" },
-            { value: "3", label: "Days of Action" },
+            { value: "10000+", label: "Participants" },
+            { value: "120+", label: "Events" },
+            { value: "₹10L+", label: "Prize Pool" },
+            { value: "2", label: "Days of Action" },
           ].map((stat, index) => (
             <div
               key={index}

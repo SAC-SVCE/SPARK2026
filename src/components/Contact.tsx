@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Mail, Phone, MapPin, Send, Instagram, Twitter, Facebook, Youtube } from "lucide-react";
+import { Mail, Phone, MapPin, Send, Instagram, Youtube } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -29,10 +29,8 @@ const Contact = () => {
   };
 
   const socialLinks = [
-    { icon: Instagram, label: "Instagram", href: "#" },
-    { icon: Twitter, label: "Twitter", href: "#" },
-    { icon: Facebook, label: "Facebook", href: "#" },
-    { icon: Youtube, label: "YouTube", href: "#" },
+    { icon: Instagram, label: "Instagram", href: "https://www.instagram.com/svce_sac" },
+    { icon: Youtube, label: "YouTube", href: "https://youtube.com/@svce_sac" },
   ];
 
   return (
@@ -51,10 +49,10 @@ const Contact = () => {
             </span>
           </div>
           <h2 className="text-4xl md:text-6xl font-orbitron font-bold mb-6">
-            Join the <span className="text-secondary text-glow-cyan">Revolution</span>
+            Join us in <span className="text-primary text-glow-primary">igniting the SPARK!</span>
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto font-exo">
-            Have questions? Want to register? Reach out to us and become part of SPARK 2K25
+            Have questions? Want to register? Reach out to us and become part of SPARK 2026
           </p>
         </div>
 
@@ -144,10 +142,11 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-orbitron font-bold text-foreground mb-2">
-                      Call Us
+                      Contact Us
                     </h3>
-                    <p className="text-muted-foreground font-exo">+91 1234 567 890</p>
-                    <p className="text-muted-foreground font-exo">+91 0987 654 321</p>
+                    <h5>Student Coordinators</h5>
+                    <p className="text-muted-foreground font-exo">Kiran - +91 9390 223 609</p>
+                    <p className="text-muted-foreground font-exo">Abdul - +91 8309 746 940</p>
                   </div>
                 </div>
               </div>
@@ -161,8 +160,7 @@ const Contact = () => {
                     <h3 className="text-lg font-orbitron font-bold text-foreground mb-2">
                       Email Us
                     </h3>
-                    <p className="text-muted-foreground font-exo">spark2k25@svcollege.edu.in</p>
-                    <p className="text-muted-foreground font-exo">info@spark2k25.com</p>
+                    <p className="text-muted-foreground font-exo">sac@svce.edu.in</p>
                   </div>
                 </div>
               </div>
@@ -177,9 +175,9 @@ const Contact = () => {
                       Visit Us
                     </h3>
                     <p className="text-muted-foreground font-exo">
-                      SV College Campus<br />
+                      SVCE Campus<br />
                       Tirupati, Andhra Pradesh<br />
-                      India - 517502
+                      India - 517507
                     </p>
                   </div>
                 </div>

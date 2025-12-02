@@ -210,19 +210,33 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-xl font-orbitron font-bold text-primary">Contact</h3>
             <div className="space-y-3 text-muted-foreground text-sm font-exo">
+             <div className="flex items-center gap-2">
+             <Phone className="w-4 h-4 text-primary" />
               <p className="leading-relaxed">
-                SV College of Engineering, Tirupati
+                Student Coordinators
               </p>
+              </div>
+              
               <div className="flex items-center gap-2">
-                <Phone className="w-4 h-4 text-primary" />
+               
                 <a href="tel:+919876543210" className="hover:text-primary transition-colors">
-                  +91 98765 43210
+                  Kiran - +91 9390 223 609 
+                  
                 </a>
+                
+              </div>
+               <div className="flex items-center gap-2">
+              
+                <a href="tel:+919876543210" className="hover:text-primary transition-colors">
+                  
+                  Abdul - +91 8309 746 940
+                </a>
+                
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-primary" />
                 <a href="mailto:spark@svcollegetirupati.ac.in" className="hover:text-primary transition-colors">
-                  spark@svcollegetirupati.ac.in
+                  sac@svce.edu.in
                 </a>
               </div>
             </div>

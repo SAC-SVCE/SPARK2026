@@ -12,34 +12,34 @@ const AboutPage = () => {
     {
       icon: Target,
       title: "Mission",
-      description: "Empowering students through innovation, technology, and competitive gaming excellence.",
+      description: "Empowering students through innovation, technology, and competitive sports.",
       color: "primary",
     },
     {
       icon: Users,
       title: "Community",
-      description: "Bringing together 1000+ students from across the region for an unforgettable experience.",
+      description: "Bringing together 10000+ students from across the region for an unforgettable experience.",
       color: "secondary",
     },
     {
       icon: Rocket,
-      title: "Innovation",
+      title: "Breakthroughs",
       description: "Showcasing cutting-edge tech projects, gaming tournaments, and cultural performances.",
       color: "primary",
     },
     {
       icon: Zap,
       title: "Energy",
-      description: "High-octane competitions, adrenaline-pumping challenges, and electrifying entertainment.",
+      description: "High-octane competitions, adrenaline pumping sports, and electrifying entertainment.",
       color: "secondary",
     },
   ];
 
   const stats = [
-    { icon: Users, value: "1000+", label: "Participants", color: "primary" },
-    { icon: Trophy, value: "50+", label: "Events", color: "secondary" },
-    { icon: Zap, value: "₹5L+", label: "Prize Pool", color: "primary" },
-    { icon: Calendar, value: "3", label: "Days of Action", color: "secondary" },
+    { icon: Users, value: "10000+", label: "Participants", color: "primary" },
+    { icon: Trophy, value: "120+", label: "Events", color: "secondary" },
+    { icon: Zap, value: "₹10L+", label: "Prize Pool", color: "primary" },
+    { icon: Calendar, value: "2", label: "Days of Action", color: "secondary" },
   ];
 
   const highlights = [
@@ -51,7 +51,7 @@ const AboutPage = () => {
     {
       icon: MapPin,
       title: "Campus-Wide Experience",
-      description: "Every corner of SV College transforms into a battleground of talent, creativity, and innovation.",
+      description: "Every corner of SVCE transforms into a battleground of talent, creativity, and innovation.",
     },
     {
       icon: Heart,
@@ -89,10 +89,7 @@ const AboutPage = () => {
               <span className="text-primary"><Shinky text="SPARK 2026?" /></span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-4xl mx-auto font-exo leading-relaxed">
-              <Shinky text="SPARK 2K26 is SV College's flagship annual event that brings together the brightest minds 
-              and most talented performers for an electrifying celebration of creativity, competition, and teamwork. 
-              From intense gaming tournaments to challenging coding contests and captivating cultural performances, 
-              SPARK offers something for everyone." />
+              <Shinky text="SPARK 2026 is all set to ignite SVCE Tirupati with a vibrant blend of technology, culture, and sports. Students from across the nation will gather to showcase their talents, compete in exciting challenges, and experience an atmosphere buzzing with innovation. This year’s spotlight events include the inspiring Youth Summit and impactful Leadership Talks, bringing together brilliant minds to share ideas and vision. From high-energy hackathons and creative tech/non-tech events to thrilling sports competitions, SPARK 2026 promises a nonstop wave of excitement. As the day winds down, vibe with your friends and enjoy electrifying performances and entertainment nights that turn the campus into a festival of lights and music. Brace yourself SPARK 2026 is going to be epic." />
             </p>
           </div>
         </div>
@@ -231,7 +228,7 @@ const AboutPage = () => {
                 <p className="text-lg text-muted-foreground font-exo leading-relaxed mb-6">
                   To create an ecosystem where creativity meets competition, where innovation thrives, 
                   and where every participant walks away with memories that last a lifetime. SPARK 2K26 
-                  is more than just an event—it's a movement that celebrates the spirit of youth, 
+                  is more than just an event it's a movement that celebrates the spirit of youth, 
                   the power of technology, and the beauty of collaboration.
                 </p>
                 <p className="text-xl font-orbitron font-bold text-primary">

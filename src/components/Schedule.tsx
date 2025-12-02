@@ -38,7 +38,7 @@ const Schedule = () => {
   const scheduleData = [
     {
       day: "Day 1",
-      date: "March 15, 2026",
+      date: "March 6, 2026",
       events: [
         { time: "09:00 AM", title: "Opening Ceremony", location: "Main Auditorium" },
         { time: "11:00 AM", title: "BGMI Tournament - Round 1", location: "Gaming Arena" },
@@ -49,7 +49,7 @@ const Schedule = () => {
     },
     {
       day: "Day 2",
-      date: "March 16, 2026",
+      date: "March 7, 2026",
       events: [
         { time: "09:00 AM", title: "Hackathon Kickoff", location: "Innovation Hub" },
         { time: "11:00 AM", title: "Valorant Championship", location: "Gaming Arena" },
@@ -58,16 +58,7 @@ const Schedule = () => {
         { time: "08:00 PM", title: "Battle of Bands", location: "Open Stage" },
       ],
     },
-    {
-      day: "Day 3",
-      date: "March 17, 2026",
-      events: [
-        { time: "09:00 AM", title: "Finals - All Events", location: "Various Venues" },
-        { time: "02:00 PM", title: "Cultural Grand Finale", location: "Main Stage" },
-        { time: "05:00 PM", title: "Prize Distribution", location: "Main Auditorium" },
-        { time: "07:00 PM", title: "Closing Ceremony", location: "Main Ground" },
-      ],
-    },
+   
   ];
 
   return (

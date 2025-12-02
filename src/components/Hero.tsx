@@ -2,6 +2,8 @@ import { Button } from "@/components/ui/button";
 import { Sword, Zap, Trophy } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import heroBattlefield from "@/assets/hero-battlefield.jpg";
+import { FaTheaterMasks } from "react-icons/fa";
+import { GrTechnology } from "react-icons/gr";
 
 const Hero = () => {
   const navigate = useNavigate();
@@ -53,7 +55,7 @@ const Hero = () => {
           <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-card/50 backdrop-blur-sm border border-primary/30 mb-8 animate-glow-pulse">
             <Zap className="w-5 h-5 text-primary" />
             <span className="text-sm font-orbitron font-semibold text-foreground uppercase tracking-wider">
-              SV College, Tirupati
+              SVCE, Tirupati
             </span>
           </div>
 
@@ -72,20 +74,21 @@ const Hero = () => {
           {/* Feature Icons */}
           <div className="flex items-center justify-center gap-8 mb-12 text-foreground/80">
             <div className="flex items-center gap-2">
-              <Sword className="w-6 h-6 text-primary" />
-              <span className="text-sm font-orbitron">Gaming</span>
+              <Trophy className="w-6 h-6 text-primary" />
+              <span className="text-sm font-orbitron">Sports</span>
             </div>
             <div className="w-px h-6 bg-border" />
             <div className="flex items-center gap-2">
-              <Zap className="w-6 h-6 text-secondary" />
+              <GrTechnology className="w-6 h-6 text-secondary" />
               <span className="text-sm font-orbitron">Technical</span>
             </div>
             <div className="w-px h-6 bg-border" />
             <div className="flex items-center gap-2">
-              <Trophy className="w-6 h-6 text-primary" />
+              <FaTheaterMasks className="w-6 h-6 text-primary" />
               <span className="text-sm font-orbitron">Cultural</span>
             </div>
           </div>
+          
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { FaIndianRupeeSign } from "react-icons/fa6";
 import {
   Dialog,
   DialogContent,
@@ -29,7 +30,7 @@ const EventsPage = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedEvent, setSelectedEvent] = useState<Event | null>(null);
 
-  const categories = ["All", "Technical", "Cultural", "Sports", "Fun Events",];
+  const categories = ["All", "Technical", "Cultural", "Sports", "Signature Events",];
 
   const events: Event[] = [
     {
@@ -971,7 +972,7 @@ const EventsPage = () => {
                         <span>{event.date}</span>
                       </div>
                       <div className="flex items-center gap-1">
-                        <DollarSign className="w-4 h-4" />
+                        <FaIndianRupeeSign className="w-4 h-4" />
                         <span>{event.entryFee}</span>
                       </div>
                     </div>
