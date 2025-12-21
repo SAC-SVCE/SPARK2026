@@ -79,26 +79,64 @@ export default function EventsPage() {
   };
 
   return (
-    <div className="min-h-screen bg-background text-foreground relative overflow-clip">
-      {/* Floating Golden Particles */}
+    <div className="min-h-screen bg-[#050505] text-foreground relative overflow-clip selection:bg-primary/30">
+      {/* Cyber Snowfall Effect */}
       <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
-        {[...Array(25)].map((_, i) => (
+        {[...Array(50)].map((_, i) => (
           <div
             key={i}
-            className="absolute rounded-full opacity-40"
+            className="absolute rounded-full bg-white opacity-0"
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `-${Math.random() * 20}%`,
+              width: `${Math.random() * 3 + 1}px`,
+              height: `${Math.random() * 3 + 1}px`,
+              filter: `blur(${Math.random()}px) drop-shadow(0 0 5px rgba(255,255,255,0.8))`,
+              animation: `snowfall ${Math.random() * 10 + 10}s linear infinite`,
+              animationDelay: `${Math.random() * 15}s`,
+              opacity: Math.random() * 0.5 + 0.1,
+            }}
+          />
+        ))}
+        {/* Neon Ash/Glow Particles */}
+        {[...Array(15)].map((_, i) => (
+          <div
+            key={`glow-${i}`}
+            className="absolute rounded-full opacity-60 mix-blend-screen"
             style={{
               left: `${Math.random() * 100}%`,
               bottom: `${-10 - Math.random() * 20}%`,
               width: `${2 + Math.random() * 4}px`,
               height: `${2 + Math.random() * 4}px`,
-              background: "hsl(var(--fire-orange))",
-              boxShadow: "0 0 15px hsl(var(--fire-orange) / 0.8)",
-              animation: `spark-rise ${4 + Math.random() * 4}s linear infinite`,
+              background: i % 2 === 0 ? "hsl(var(--neon-cyan))" : "hsl(var(--fire-orange))",
+              boxShadow: `0 0 10px ${i % 2 === 0 ? "hsl(var(--neon-cyan))" : "hsl(var(--fire-orange))"}`,
+              animation: `spark-rise ${5 + Math.random() * 5}s linear infinite`,
               animationDelay: `${Math.random() * 5}s`,
             }}
           />
         ))}
+        {/* Ambient Glows */}
+        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-primary/5 via-transparent to-transparent pointer-events-none" />
       </div>
+
+      <style>{`
+        @keyframes snowfall {
+          0% {
+            transform: translateY(0) translateX(0);
+            opacity: 0;
+          }
+          10% {
+            opacity: 0.7;
+          }
+          90% {
+             opacity: 0.7;
+          }
+          100% {
+            transform: translateY(110vh) translateX(20px);
+            opacity: 0;
+          }
+        }
+      `}</style>
 
       {/* Header */}
       <Navbar />
@@ -109,30 +147,45 @@ export default function EventsPage() {
         <div className="container mx-auto max-w-6xl relative z-10">
           {/* Title */}
           <div className="text-center mb-12 animate-slide-up">
-            <h1 className="text-5xl md:text-7xl font-sans font-bold mb-4">
-              <span className="text-glow-cyan">SPARK</span>{" "}
-              <span className="text-primary">2026</span>
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 font-orbitron tracking-wider">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 drop-shadow-[0_0_15px_rgba(34,211,238,0.5)]">SPARK</span>{" "}
+              <span className="text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.5)]">2026</span>
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground font-exo mb-2">
-              Where Passion Meets Power
-            </p>
-            <p className="text-sm text-muted-foreground font-exo">
-              SV College, Tirupati
-            </p>
+            <div className="inline-block relative">
+              <p className="text-xl md:text-2xl text-zinc-300 font-exo mb-2 tracking-wide">
+                Where Passion Meets Power
+              </p>
+              <div className="h-0.5 w-full bg-gradient-to-r from-transparent via-primary to-transparent opacity-50" />
+            </div>
+            {/* Animated Marquee */}
+            <div className="mt-8 relative overflow-hidden h-10 w-full max-w-2xl mx-auto">
+              <div className="absolute whitespace-nowrap animate-marquee flex gap-8 text-primary font-bold font-orbitron tracking-widest text-lg drop-shadow-[0_0_10px_rgba(var(--primary),0.8)]">
+                <span>REGISTRATIONS ARE OPEN</span>
+                <span>•</span>
+                <span>REGISTRATIONS ARE OPEN</span>
+                <span>•</span>
+                <span>REGISTRATIONS ARE OPEN</span>
+                <span>•</span>
+                <span>REGISTRATIONS ARE OPEN</span>
+                <span>•</span>
+              </div>
+            </div>
           </div>
-
-
-
-          {/* Category Navbar */}
-
         </div>
       </section>
 
+      <style>{`
+        @keyframes marquee {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+        .animate-marquee {
+          animation: marquee 10s linear infinite;
+        }
+      `}</style>
 
-      <div className="min-h-screen bg-background">
 
-
-
+      <div className="min-h-screen bg-transparent relative z-10">
         <main className="container mx-auto px-4 py-8">
           {/* Search and Controls */}
           <div className="flex flex-col sm:flex-row gap-4 mb-8">
@@ -153,8 +206,11 @@ export default function EventsPage() {
           <div className="flex gap-8">
             {/* Desktop Filter Sidebar */}
             <aside className="hidden lg:block w-72 flex-shrink-0">
-              <div className="sticky top-24 bg-card/50 rounded-xl border border-border/50 p-5">
-                <h2 className="text-lg font-bold text-foreground mb-4">Filters</h2>
+              <div className="sticky top-24 bg-black/40 backdrop-blur-xl rounded-xl border border-white/10 p-5 shadow-[0_0_30px_rgba(0,0,0,0.5)]">
+                <h2 className="text-lg font-bold text-white mb-4 font-orbitron flex items-center gap-2">
+                  <span className="w-1 h-5 bg-primary shadow-[0_0_8px_rgba(var(--primary))]"></span>
+                  Filters
+                </h2>
                 <FilterSection
                   activeFilter={activeFilter}
                   onFilterChange={handleFilterChange}
@@ -166,14 +222,14 @@ export default function EventsPage() {
             <div className="flex-1">
               {/* Active filter indicator */}
               {activeFilter !== "All Events" && (
-                <div className="mb-4 text-sm text-muted-foreground">
-                  Showing: <span className="text-primary font-medium">{activeFilter}</span>
+                <div className="mb-4 text-sm text-zinc-400 flex items-center gap-2">
+                  Showing: <span className="text-primary font-bold px-3 py-1 bg-primary/10 rounded-full border border-primary/20">{activeFilter}</span>
                 </div>
               )}
 
               {/* Results count */}
-              <div className="mb-6 text-sm text-muted-foreground">
-                {filteredEvents.length} event{filteredEvents.length !== 1 ? "s" : ""} found
+              <div className="mb-6 text-sm text-zinc-500 font-mono">
+                // FOUND {filteredEvents.length} EVENT{filteredEvents.length !== 1 ? "S" : ""}
               </div>
 
               {filteredEvents.length > 0 ? (
@@ -183,10 +239,10 @@ export default function EventsPage() {
                   ))}
                 </div>
               ) : (
-                <div className="text-center py-16">
-                  <p className="text-muted-foreground text-lg">No events found</p>
-                  <p className="text-muted-foreground/70 text-sm mt-2">
-                    Try adjusting your search or filters
+                <div className="text-center py-20 border border-dashed border-white/10 rounded-xl bg-white/5">
+                  <p className="text-zinc-400 text-lg font-orbitron">No events found in this sector</p>
+                  <p className="text-zinc-600 text-sm mt-2">
+                    Adjust search parameters to locate targets
                   </p>
                 </div>
               )}

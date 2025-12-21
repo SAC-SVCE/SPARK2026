@@ -14,87 +14,51 @@ export function FilterSection({
 }: FilterSectionProps) {
   const isActive = (filter: string) => activeFilter === filter;
 
+  const FilterGroup = ({ title, color, items }: { title: string; color: string; items: string[] }) => (
+    <div className="mb-8 last:mb-0">
+      <h3 className={`text-sm font-bold text-zinc-400 mb-4 uppercase tracking-widest flex items-center gap-2`}>
+        <span className={`h-1.5 w-1.5 rounded-sm ${color} shadow-[0_0_8px_${color}]`} />
+        {title}
+      </h3>
+      <div className="flex flex-wrap gap-2">
+        {items.map((item) => (
+          <div
+            key={item}
+            onClick={() => onFilterChange(item)}
+            className={`
+              relative cursor-pointer px-3 py-1.5 text-xs font-medium transition-all duration-300 clip-path-slant border-l-2
+              ${isActive(item)
+                ? "bg-white/10 text-white border-primary shadow-[0_0_15px_rgba(var(--primary),0.3)]"
+                : "bg-black/40 text-zinc-500 border-transparent hover:text-white hover:bg-white/5 hover:border-white/20"
+              }
+            `}
+          >
+            {item}
+            {isActive(item) && (
+              <span className="absolute inset-0 bg-primary/10 animate-pulse pointer-events-none" />
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+
   return (
-    <div className="space-y-6">
-      {/* Categories */}
-      <div>
-        <h3 className="text-base font-semibold text-foreground mb-4 flex items-center gap-2">
-          <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-          Categories
-        </h3>
-        <div className="flex flex-wrap gap-3">
-          {categories.map((category) => (
-            <Badge
-              key={category}
-              variant="outline"
-              className={`cursor-pointer px-3 py-1.5 transition-all ${isActive(category)
-                ? "bg-primary/20 text-primary border-primary/50"
-                : "bg-card text-muted-foreground border-border/50 hover:border-primary/30"
-                }`}
-              onClick={() => onFilterChange(category)}
-            >
-              {category}
-            </Badge>
-          ))}
-        </div>
-      </div>
-
-      {/* Date Tags */}
-      <div>
-        <h3 className="text-base font-semibold text-foreground mb-4 flex items-center gap-2">
-          <span className="h-1.5 w-1.5 rounded-full bg-secondary" />
-          Date
-        </h3>
-        <div className="flex flex-wrap gap-3">
-          {dateTags.map((tag) => (
-            <Badge
-              key={tag}
-              variant="outline"
-              className={`cursor-pointer px-3 py-1.5 transition-all ${isActive(tag)
-                ? "bg-secondary/20 text-secondary border-secondary/50"
-                : "bg-card text-muted-foreground border-border/50 hover:border-secondary/30"
-                }`}
-              onClick={() => onFilterChange(tag)}
-            >
-              {tag}
-            </Badge>
-          ))}
-        </div>
-      </div>
-
-      {/* Departments */}
-      <div>
-        <h3 className="text-base font-semibold text-foreground mb-4 flex items-center gap-2">
-          <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-          Departments
-        </h3>
-        <div className="flex flex-wrap gap-3">
-          {departments.map((dept) => (
-            <Badge
-              key={dept}
-              variant="outline"
-              className={`cursor-pointer px-3 py-1.5 transition-all ${isActive(dept)
-                ? "bg-accent/20 text-accent border-accent/50"
-                : "bg-card text-muted-foreground border-border/50 hover:border-accent/30"
-                }`}
-              onClick={() => onFilterChange(dept)}
-            >
-              {dept}
-            </Badge>
-          ))}
-        </div>
-      </div>
+    <div className="space-y-2">
+      <FilterGroup title="Categories" color="bg-primary" items={categories} />
+      <FilterGroup title="Date" color="bg-secondary" items={dateTags} />
+      <FilterGroup title="Departments" color="bg-accent" items={departments} />
 
       {/* Reset Filter */}
       {activeFilter !== "All Events" && (
         <Button
-          variant="ghost"
+          variant="outline"
           size="sm"
           onClick={() => onFilterChange("All Events")}
-          className="text-muted-foreground hover:text-foreground"
+          className="w-full mt-6 border-red-500/30 text-red-400 hover:text-red-300 hover:bg-red-500/10 hover:border-red-500/50 transition-all uppercase tracking-wider text-xs font-bold h-10"
         >
           <X className="h-4 w-4 mr-2" />
-          Reset to All Events
+          Reset Filters
         </Button>
       )}
     </div>

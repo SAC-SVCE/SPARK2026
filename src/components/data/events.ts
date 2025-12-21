@@ -89,7 +89,7 @@ export const events: Event[] = [
     venue: "",
     categories: ["Technical Events", "PPT Presentation"],
     department: "CSE",
-    image: "",
+    image: "/event-images/sample.png",
     registrationOpen: true,
     teamSize: "2–4 members",
     rules: [
@@ -109,9 +109,9 @@ export const events: Event[] = [
     dateTag: "6 Mar",
     time: "",
     venue: "",
-    categories: ["Technical Events","Poster Presentation"],
+    categories: ["Technical Events", "Poster Presentation"],
     department: "CSE",
-    image: "",
+    image: "/event-images/sample.png",
     registrationOpen: true,
     teamSize: "2 members",
     rules: [
@@ -133,7 +133,7 @@ export const events: Event[] = [
     venue: "",
     categories: ["Technical Events"],
     department: "CSE",
-    image: "",
+    image: "/event-images/sample.png",
     registrationOpen: true,
     teamSize: "2 members",
     rules: [
@@ -154,7 +154,7 @@ export const events: Event[] = [
     venue: "",
     categories: ["Technical Events", "PPT Presentation"],
     department: "CSD",
-    image: "",
+    image: "/event-images/sample.png",
     registrationOpen: true,
     teamSize: "2–4 members",
     rules: [
@@ -173,9 +173,9 @@ export const events: Event[] = [
     dateTag: "6 Mar",
     time: "",
     venue: "",
-    categories: ["Technical Events","Poster Presentation"],
+    categories: ["Technical Events", "Poster Presentation"],
     department: "CSD",
-    image: "",
+    image: "/event-images/sample.png",
     registrationOpen: true,
     teamSize: "2 members",
     rules: [
@@ -193,9 +193,9 @@ export const events: Event[] = [
     dateTag: "6 Mar",
     time: "",
     venue: "",
-    categories: ["Technical Events","Poster Presentation"],
+    categories: ["Technical Events", "Poster Presentation"],
     department: "CSD",
-    image: "",
+    image: "/event-images/sample.png",
     registrationOpen: true,
     teamSize: "2 members",
     rules: [
@@ -215,7 +215,7 @@ export const events: Event[] = [
     venue: "",
     categories: ["Technical Events", "PPT Presentation"],
     department: "EEE",
-    image: "",
+    image: "/event-images/sample.png",
     registrationOpen: true,
     teamSize: "2–4 members",
     rules: [
@@ -234,9 +234,9 @@ export const events: Event[] = [
     dateTag: "6 Mar",
     time: "",
     venue: "",
-    categories: ["Technical Events","Poster Presentation"],
+    categories: ["Technical Events", "Poster Presentation"],
     department: "EEE",
-    image: "",
+    image: "/event-images/sample.png",
     registrationOpen: true,
     teamSize: "2 members",
     rules: [
@@ -256,7 +256,7 @@ export const events: Event[] = [
     venue: "",
     categories: ["Technical Events", "Project Expo"],
     department: "EEE",
-    image: "",
+    image: "/event-images/sample.png",
     registrationOpen: true,
     teamSize: "2–4 members",
     rules: [
@@ -277,7 +277,7 @@ export const events: Event[] = [
     venue: "",
     categories: ["Technical Events", "PPT Presentation"],
     department: "CS-IT",
-    image: "",
+    image: "/event-images/sample.png",
     registrationOpen: true,
     teamSize: "2–4 members",
     rules: [
@@ -295,9 +295,9 @@ export const events: Event[] = [
     dateTag: "6 Mar",
     time: "",
     venue: "",
-    categories: ["Technical Events","Poster Presentation"],
+    categories: ["Technical Events", "Poster Presentation"],
     department: "CS-IT",
-    image: "",
+    image: "/event-images/sample.png",
     registrationOpen: true,
     teamSize: "2 members",
     rules: [
@@ -317,7 +317,7 @@ export const events: Event[] = [
     venue: "",
     categories: ["Technical Events"],
     department: "CS-IT",
-    image: "",
+    image: "/event-images/sample.png",
     registrationOpen: true,
     teamSize: "2 members",
     rules: [
@@ -339,7 +339,7 @@ export const events: Event[] = [
     venue: "",
     categories: ["Technical Events", "PPT Presentation"],
     department: "CSM",
-    image: "",
+    image: "/event-images/sample.png",
     registrationOpen: true,
     teamSize: "2–4 members",
     rules: [
@@ -358,9 +358,9 @@ export const events: Event[] = [
     dateTag: "6 Mar",
     time: "",
     venue: "",
-    categories: ["Technical Events","Poster Presentation"],
+    categories: ["Technical Events", "Poster Presentation"],
     department: "CSM",
-    image: "",
+    image: "/event-images/sample.png",
     registrationOpen: true,
     teamSize: "2 members",
     rules: [
@@ -380,7 +380,7 @@ export const events: Event[] = [
     venue: "",
     categories: ["Technical Events", "Hackathons"],
     department: "CSM",
-    image: "",
+    image: "/event-images/sample.png",
     registrationOpen: true,
     teamSize: "2 members",
     rules: [
@@ -400,7 +400,7 @@ export const events: Event[] = [
     venue: "",
     categories: ["Technical Events", "PPT Presentation"],
     department: "CSD",
-    image: "",
+    image: "/event-images/sample.png",
     registrationOpen: true,
     teamSize: "2–4 members",
     rules: [
@@ -410,7 +410,7 @@ export const events: Event[] = [
     ],
     coordinators: []
   },
- 
+
   {
     id: "17",
     title: "Poster Presentation (CSD)",
@@ -419,9 +419,9 @@ export const events: Event[] = [
     dateTag: "6 Mar",
     time: "",
     venue: "",
-    categories: ["Technical Events","Poster Presentation"],
+    categories: ["Technical Events", "Poster Presentation"],
     department: "CSD",
-    image: "",
+    image: "/event-images/sample.png",
     registrationOpen: true,
     teamSize: "2 members",
     rules: [
@@ -441,7 +441,7 @@ export const events: Event[] = [
     venue: "",
     categories: ["Technical Events"],
     department: "CSD",
-    image: "",
+    image: "/event-images/sample.png",
     registrationOpen: true,
     teamSize: "2 members",
     rules: [
@@ -461,7 +461,7 @@ export const events: Event[] = [
     venue: "",
     categories: ["Technical Events", "PPT Presentation"],
     department: "ECE",
-    image: "",
+    image: "/event-images/sample.png",
     registrationOpen: true,
     teamSize: "2 members",
     rules: [
@@ -480,9 +480,9 @@ export const events: Event[] = [
     dateTag: "6 Mar",
     time: "",
     venue: "",
-    categories: ["Technical Events","Poster Presentation"],
+    categories: ["Technical Events", "Poster Presentation"],
     department: "ECE",
-    image: "",
+    image: "/event-images/sample.png",
     registrationOpen: true,
     teamSize: "2 members",
     rules: [
@@ -503,7 +503,7 @@ export const events: Event[] = [
     venue: "",
     categories: ["Technical Events", "Project Expo"],
     department: "ECE",
-    image: "",
+    image: "/event-images/sample.png",
     registrationOpen: true,
     teamSize: "4 members",
     rules: [
@@ -524,7 +524,7 @@ export const events: Event[] = [
     venue: "",
     categories: ["Technical Events", "PPT Presentation"],
     department: "CIVIL",
-    image: "",
+    image: "/event-images/sample.png",
     registrationOpen: true,
     teamSize: "2 members",
     rules: [
@@ -542,9 +542,9 @@ export const events: Event[] = [
     dateTag: "6 Mar",
     time: "",
     venue: "",
-    categories: ["Technical Events","Poster Presentation"],
+    categories: ["Technical Events", "Poster Presentation"],
     department: "CIVIL",
-    image: "",
+    image: "/event-images/sample.png",
     registrationOpen: true,
     teamSize: "2 members",
     rules: [
@@ -565,7 +565,7 @@ export const events: Event[] = [
     venue: "",
     categories: ["Technical Events", "Project Expo"],
     department: "CIVIL",
-    image: "",
+    image: "/event-images/sample.png",
     registrationOpen: true,
     teamSize: "4 members",
     rules: [
@@ -585,7 +585,7 @@ export const events: Event[] = [
     venue: "",
     categories: ["Technical Events", "PPT Presentation"],
     department: "MECH",
-    image: "",
+    image: "/event-images/sample.png",
     registrationOpen: true,
     teamSize: "2 members",
     rules: [
@@ -603,9 +603,9 @@ export const events: Event[] = [
     dateTag: "6 Mar",
     time: "",
     venue: "",
-    categories: ["Technical Events","Poster Presentation"],
+    categories: ["Technical Events", "Poster Presentation"],
     department: "MECH",
-    image: "",
+    image: "/event-images/sample.png",
     registrationOpen: true,
     teamSize: "2 members",
     rules: [
@@ -625,7 +625,7 @@ export const events: Event[] = [
     venue: "",
     categories: ["Technical Events", "Project Expo"],
     department: "MECH",
-    image: "",
+    image: "/event-images/sample.png",
     registrationOpen: true,
     teamSize: "4 members",
     rules: [
@@ -645,7 +645,7 @@ export const events: Event[] = [
     venue: "",
     categories: ["Technical Events"],
     department: "MECH",
-    image: "",
+    image: "/event-images/sample.png",
     registrationOpen: true,
     teamSize: "1–3 members",
     rules: [
@@ -665,7 +665,7 @@ export const events: Event[] = [
     venue: "",
     categories: ["Cultural Contests", "Dance"],
     department: "",
-    image: "",
+    image: "/event-images/sample.png",
     registrationOpen: true,
     teamSize: "5–12 members",
     rules: [
@@ -685,7 +685,7 @@ export const events: Event[] = [
     venue: "",
     categories: ["Cultural Contests", "Dance"],
     department: "",
-    image: "",
+    image: "/event-images/sample.png",
     registrationOpen: true,
     teamSize: "",
     rules: [
@@ -707,7 +707,7 @@ export const events: Event[] = [
     venue: "",
     categories: ["Cultural Contests", "Arts"],
     department: "",
-    image: "",
+    image: "/event-images/sample.png",
     registrationOpen: true,
     teamSize: "",
     rules: [
@@ -728,7 +728,7 @@ export const events: Event[] = [
     venue: "",
     categories: ["Cultural Contests", "Music"],
     department: "",
-    image: "",
+    image: "/event-images/sample.png",
     registrationOpen: true,
     teamSize: "",
     rules: [
@@ -750,7 +750,7 @@ export const events: Event[] = [
     venue: "",
     categories: ["Cultural Contests", "Music"],
     department: "",
-    image: "",
+    image: "/event-images/sample.png",
     registrationOpen: true,
     teamSize: "",
     rules: [
@@ -771,7 +771,7 @@ export const events: Event[] = [
     venue: "",
     categories: ["Cultural Contests"],
     department: "",
-    image: "",
+    image: "/event-images/sample.png",
     registrationOpen: true,
     teamSize: "",
     rules: [
@@ -792,7 +792,7 @@ export const events: Event[] = [
     venue: "",
     categories: ["Sports"],
     department: "",
-    image: "",
+    image: "/event-images/sample.png",
     registrationOpen: true,
     teamSize: "11 members",
     rules: [
@@ -815,7 +815,7 @@ export const events: Event[] = [
     venue: "",
     categories: ["Sports"],
     department: "",
-    image: "",
+    image: "/event-images/sample.png",
     registrationOpen: true,
     teamSize: "7 members",
     rules: [
@@ -838,7 +838,7 @@ export const events: Event[] = [
     venue: "",
     categories: ["Sports"],
     department: "",
-    image: "",
+    image: "/event-images/sample.png",
     registrationOpen: true,
     teamSize: "6 members",
     rules: [
@@ -860,7 +860,7 @@ export const events: Event[] = [
     venue: "",
     categories: ["Sports"],
     department: "",
-    image: "",
+    image: "/event-images/sample.png",
     registrationOpen: true,
     teamSize: "",
     rules: [
@@ -882,7 +882,7 @@ export const events: Event[] = [
     venue: "",
     categories: ["Sports"],
     department: "",
-    image: "",
+    image: "/event-images/sample.png",
     registrationOpen: true,
     teamSize: "",
     rules: [
@@ -903,7 +903,7 @@ export const events: Event[] = [
     venue: "",
     categories: ["Sports"],
     department: "",
-    image: "",
+    image: "/event-images/sample.png",
     registrationOpen: true,
     teamSize: "",
     rules: [
@@ -925,7 +925,7 @@ export const events: Event[] = [
     venue: "",
     categories: ["Sports"],
     department: "",
-    image: "",
+    image: "/event-images/sample.png",
     registrationOpen: true,
     teamSize: "",
     rules: [
@@ -947,7 +947,7 @@ export const events: Event[] = [
     venue: "",
     categories: ["Sports"],
     department: "",
-    image: "",
+    image: "/event-images/sample.png",
     registrationOpen: true,
     teamSize: "",
     rules: [
@@ -968,7 +968,7 @@ export const events: Event[] = [
     venue: "",
     categories: ["Sports"],
     department: "",
-    image: "",
+    image: "/event-images/sample.png",
     registrationOpen: true,
     teamSize: "7 members",
     rules: [
@@ -990,7 +990,7 @@ export const events: Event[] = [
     venue: "",
     categories: ["Sports"],
     department: "",
-    image: "",
+    image: "/event-images/sample.png",
     registrationOpen: true,
     teamSize: "6 members",
     rules: [
@@ -1010,7 +1010,7 @@ export const events: Event[] = [
     venue: "",
     categories: ["Sports"],
     department: "",
-    image: "",
+    image: "/event-images/sample.png",
     registrationOpen: true,
     teamSize: "",
     rules: [
@@ -1030,7 +1030,7 @@ export const events: Event[] = [
     venue: "",
     categories: ["Sports"],
     department: "",
-    image: "",
+    image: "/event-images/sample.png",
     registrationOpen: true,
     teamSize: "",
     rules: [
@@ -1050,7 +1050,7 @@ export const events: Event[] = [
     venue: "",
     categories: ["Sports"],
     department: "",
-    image: "",
+    image: "/event-images/sample.png",
     registrationOpen: true,
     teamSize: "",
     rules: [
