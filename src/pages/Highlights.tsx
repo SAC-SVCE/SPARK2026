@@ -87,11 +87,11 @@ const HighlightsPage: React.FC = () => {
               ]}
               activeHref="/highlights"
               className="custom-nav"
-              ease="power2.easeOut"
-              baseColor="#040204ff"
-              pillColor="linear-gradient(130deg, #b510ebff, #f81184ff)"
-              hoveredPillTextColor="#fbfbfbff"
-              pillTextColor="#faf3f3ff" />
+          ease="power2.easeOut"
+          baseColor='#01102bff'
+          pillColor="linear-gradient(130deg, #b510ebff, #f81184ff)"
+          hoveredPillTextColor="#fbfbfbff"
+          pillTextColor="#faf3f3ff" />
           </div>
 
           <motion.div

@@ -1,147 +1,173 @@
-import { Gamepad2, Code, Music, Lightbulb, Trophy, Users } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { useRef } from "react";
+import { motion } from "framer-motion";
+import { Gamepad2, Code, Music, Lightbulb, ChevronRight, Trophy, Zap, Cpu } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Events = () => {
-  const eventCategories = [
+  const categories = [
     {
-      icon: Gamepad2,
-      title: "Sport Tournaments",
-      description: "BGMI, Valorant, FIFA, and more competitive gaming battles",
-      events: ["BGMI Championship", "Valorant Strike", "FIFA League", "Chess Arena"],
-      color: "primary",
-    },
-    {
+      id: "technical",
+      title: "TECHNICAL",
+      subtitle: "ZONE",
+      description: "Code, Compile, Conquer. The arena for digital gladiators.",
       icon: Code,
-      title: "Technical Events",
-      description: "Coding challenges, hackathons, and tech competitions",
-      events: ["", "Web Warriors", "AI Showdown", "Hardware Hack"],
-      color: "secondary",
+      image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2670&auto=format&fit=crop",
+      color: "from-cyan-500 to-blue-600",
+      events: ["RoboWars", "CodeSprint", "Circuitrix"],
+      link: "/events?category=Technical%20Events"
     },
     {
+      id: "cultural",
+      title: "CULTURAL",
+      subtitle: "STAGE",
+      description: "Unleash your creativity. Dance, Music, and Drama.",
       icon: Music,
-      title: "Cultural Programs",
-      description: "Dance, music, drama, and fashion shows",
-      events: ["Battle of Beats", "Rhythm of One", "Art Gallery", "Echoes of Soul"],
-      color: "primary",
+      image: "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?q=80&w=2670&auto=format&fit=crop",
+      color: "from-purple-500 to-indigo-600",
+      events: ["Battle of Bands", "Step Up", "Fashion"],
+      link: "/events?category=Cultural%20Events"
     },
     {
-      icon: Lightbulb,
-      title: "Spotlight Events",
-      description: "Interactive games, treasure hunts, and surprise challenges",
-      events: ["Leadership talks", "Youth summit", "Startup Stories", "Pitch Fest"],
-      color: "secondary",
+      id: "sports",
+      title: "SPORTS",
+      subtitle: "ARENA",
+      description: "Sweat, Grit, and Glory. Dominate the field.",
+      icon: Trophy,
+      image: "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=2670&auto=format&fit=crop",
+      color: "from-red-500 to-rose-700",
+      events: ["Cricket", "Football", "Volleyball"],
+      link: "/events?category=Sports"
     },
+    {
+      id: "hackathons",
+      title: "HACKATHONS",
+      subtitle: "BUILD",
+      description: "24 Hours. Infinite Possibilities. Build the future.",
+      icon: Cpu, // Using Cpu for hackathon to distinguish from general 'technical'
+      image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=2670&auto=format&fit=crop",
+      color: "from-emerald-500 to-green-700",
+      events: ["Spark Hack", "Hardware Hack", "Ideathon"],
+      link: "/events?category=Hackathons"
+    },
+    {
+      id: "spotlight",
+      title: "SPOTLIGHT",
+      subtitle: "EVENTS",
+      description: "The main attractions. Star nights and special appearances.",
+      icon: Lightbulb,
+      image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2670&auto=format&fit=crop",
+      color: "from-amber-400 to-orange-600",
+      events: ["Proshows", "Guest Talks", "Auto Expo"],
+      link: "/events?category=Spotlight%20Events"
+    }
   ];
 
+  // Duplicate categories to create infinite loop
+  const infiniteCategories = [...categories, ...categories];
+
   return (
-    <section id="events" className="py-24 relative overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,hsl(var(--border))_1px,transparent_1px),linear-gradient(to_bottom,hsl(var(--border))_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-20" />
+    <section className="py-20 relative bg-[#050505] overflow-hidden">
+      {/* Thiran-style Background Glows */}
+      <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+        <div className="absolute top-1/2 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-[100px] -translate-y-1/2" />
+        <div className="absolute top-1/2 right-1/4 w-96 h-96 bg-secondary/20 rounded-full blur-[100px] -translate-y-1/2" />
       </div>
 
-      <div className="container mx-auto px-4 relative z-10">
-        {/* Section Header */}
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-card/50 border border-secondary/30 mb-4">
-            <Trophy className="w-4 h-4 text-secondary" />
-            <span className="text-sm font-orbitron font-semibold text-secondary uppercase tracking-wider">
-              What's Happening
-            </span>
+      <div className="container mx-auto px-4 relative z-10 mb-12">
+        <div className="flex justify-between items-end">
+          <div>
+            <h2 className="text-4xl md:text-6xl font-black font-orbitron text-white mb-2">
+              OUR <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">EVENTS</span>
+            </h2>
+            <p className="text-zinc-400 font-exo tracking-wide">
+              Explore the battlegrounds of Spark 2K25
+            </p>
           </div>
-          <h2 className="text-4xl md:text-6xl font-orbitron font-bold mb-6">
-            <span className="text-secondary">Event</span>{" "}
-            <span className="text-primary">Lineup</span>
-          </h2>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto font-exo">
-            Choose your arena. Multiple competitions across gaming, tech, arts, and academics.
-          </p>
         </div>
+      </div>
 
-        {/* Events Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-          {eventCategories.map((category, index) => {
-            const Icon = category.icon;
-            const isOrange = category.color === "primary";
+      {/* Infinite/Circle Scroll Marquee */}
+      <div className="w-full overflow-hidden mask-linear-fade">
+        {/* Container that moves */}
+        <motion.div
+          className="flex gap-6 w-max px-4"
+          animate={{ x: "-50%" }}
+          initial={{ x: "0%" }}
+          transition={{
+            ease: "linear",
+            duration: 30, // Adjust speed: higher = slower
+            repeat: Infinity
+          }}
+          whileHover={{ animationPlayState: "paused" }} // Note: framer-motion doesn't support playState directly like CSS, but we can stop interacting via variants or stick to CSS for pause. Actually for a simple marquee, hover pause is best done via CSS or a parent wrapper. 
+        // Let's implement Hover Pause via styling or state? 
+        // Simple Framer Motion marquee can't easily "pause" without complex state.
+        // Alternative: Use a fast duration standard loop.
+        // Or better: Let's use CSS animation for the infinite scroll part to allows `hover:pause`.
+        >
+          {/* We will use a CSS animation tailored wrapper below instead of simple Framer Motion prop if interaction pause is critical. 
+              But for "Warzone" smooth feel, a constant slow drift is usually fine. 
+              Let's stick to Framer Motion but use a technique to allow stopping.
+           */}
+        </motion.div>
 
-            return (
-              <div
-                key={index}
-                className="group relative"
-                style={{ animationDelay: `${index * 0.15}s` }}
-              >
-                {/* Card */}
-                <div className="relative p-8 rounded-xl bg-card/50 backdrop-blur-sm border border-border hover:border-primary/50 transition-all duration-300 overflow-hidden">
-                  {/* Animated Background Glow */}
-                  <div
-                    className={`absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ${isOrange
-                        ? "bg-gradient-to-br from-primary/10 via-transparent to-primary/5"
-                        : "bg-gradient-to-br from-secondary/10 via-transparent to-secondary/5"
-                      }`}
-                  />
-
-                  {/* Content */}
-                  <div className="relative z-10">
-                    {/* Icon and Title */}
-                    <div className="flex items-start gap-4 mb-4">
-                      <div
-                        className={`w-16 h-16 rounded-xl flex items-center justify-center transition-all duration-300 ${isOrange
-                            ? "bg-primary/20"
-                            : "bg-secondary/20"
-                          }`}
-                      >
-                        <Icon
-                          className={`w-8 h-8 ${isOrange ? "text-primary" : "text-secondary"
-                            }`}
-                        />
-                      </div>
-                      <div className="flex-1">
-                        <h3 className="text-2xl font-orbitron font-bold mb-2 text-foreground">
-                          {category.title}
-                        </h3>
-                        <p className="text-muted-foreground font-exo">
-                          {category.description}
-                        </p>
-                      </div>
-                    </div>
-
-                    {/* Event List */}
-                    <div className="grid grid-cols-2 gap-2 mt-6">
-                      {category.events.map((event, eventIndex) => (
-                        <div
-                          key={eventIndex}
-                          className={`px-3 py-2 rounded-md border text-sm font-exo transition-all duration-300 ${isOrange
-                              ? "border-primary/30 bg-primary/5 hover:bg-primary/10 hover:border-primary/50"
-                              : "border-secondary/30 bg-secondary/5 hover:bg-secondary/10 hover:border-secondary/50"
-                            }`}
-                        >
-                          {event}
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-
-                  {/* Corner Accent */}
-                  <div
-                    className={`absolute top-0 right-0 w-32 h-32 opacity-20 blur-3xl transition-opacity duration-500 group-hover:opacity-40 ${isOrange ? "bg-primary" : "bg-secondary"
-                      }`}
-                  />
-                </div>
+        {/* Retrying with a pure CSS-friendly structure for reliable "Hover Pause" */}
+        <div
+          className="flex gap-6 w-max animate-marquee hover:[animation-play-state:paused]"
+        >
+          {/* We render 3 sets to ensure totally smooth alignment on wide screens */}
+          {[...categories, ...categories, ...categories].map((cat, index) => (
+            <div
+              key={`${cat.id}-${index}`}
+              className="min-w-[300px] md:min-w-[350px] group relative h-[450px] rounded-[30px] overflow-hidden bg-zinc-900 border border-white/10 transition-transform duration-300 hover:scale-[1.02]"
+            >
+              {/* Image Background */}
+              <div className="absolute inset-0">
+                <img
+                  src={cat.image}
+                  alt={cat.title}
+                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-90" />
+                <div className={`absolute inset-0 bg-gradient-to-t ${cat.color} opacity-20 group-hover:opacity-60 transition-opacity duration-500 mix-blend-overlay`} />
               </div>
-            );
-          })}
-        </div>
 
-        {/* CTA */}
-        <div className="text-center">
-          <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-card/50 backdrop-blur-sm border border-border">
-            <Users className="w-5 h-5 text-primary" />
-            <span className="text-sm font-exo text-muted-foreground">
-              Registration opens soon
-            </span>
-          </div>
+              {/* Content */}
+              <div className="absolute inset-0 p-8 flex flex-col justify-end">
+                <div className="mb-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                  <cat.icon className="w-10 h-10 text-white mb-4 opacity-80" />
+
+                  <h3 className="text-3xl font-black font-orbitron text-white mb-2">{cat.title}</h3>
+
+
+                  {/* Event Pills */}
+
+                </div>
+
+                {/* Explore Button */}
+                <Link to={cat.link} className="w-full">
+                  <button className={`w-full py-4 rounded-xl font-bold uppercase tracking-widest text-sm bg-gradient-to-r ${cat.color} text-white opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500`}>
+                    Explore
+                  </button>
+                </Link>
+              </div>
+
+              {/* Glowing Border Pattern */}
+              <div className={`absolute inset-0 border-2 border-transparent rounded-[30px] group-hover:border-white/20 transition-colors pointer-events-none`} />
+            </div>
+          ))}
         </div>
       </div>
+
+      {/* Tailwind Custom Animation (Inline style for now or add to tailwind config? Inline is safer for this specific file context without config access) */}
+      <style>{`
+        @keyframes marquee {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-33.33%); } /* Move by 1/3 since we tripled the conceptual list (original + dup + dup) */
+        }
+        .animate-marquee {
+          animation: marquee 30s linear infinite;
+        }
+      `}</style>
     </section>
   );
 };

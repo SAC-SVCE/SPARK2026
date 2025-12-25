@@ -6,15 +6,34 @@ import Gallery from "@/components/Gallery";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import SparkEffect from "@/components/SparkEffect";
+import { motion } from "framer-motion";
+
 const Index = () => {
+  const fadeInUp = {
+    initial: { opacity: 0, y: 60 },
+    whileInView: { opacity: 1, y: 0 },
+    viewport: { once: true, margin: "-100px" },
+    transition: { duration: 0.6 }
+  };
+
   return (
     <div className="min-h-screen bg-background text-foreground relative">
       <SparkEffect />
       <Navbar />
       <main>
         <Hero />
-        <About />
-        <Gallery />
+
+        <motion.div {...fadeInUp}>
+          <About />
+        </motion.div>
+
+        <motion.div {...fadeInUp}>
+          <Events />
+        </motion.div>
+
+        <motion.div {...fadeInUp}>
+          <Gallery />
+        </motion.div>
       </main>
       <Footer />
     </div >

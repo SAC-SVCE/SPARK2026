@@ -102,7 +102,6 @@ const TeamGallery: React.FC = () => {
   const [flippedCard, setFlippedCard] = useState<number | null>(null);
   const [isDesktop, setIsDesktop] = useState<boolean>(false);
 
-  // Detect desktop width
   useEffect(() => {
     const handleResize = () => setIsDesktop(window.innerWidth >= 768);
     handleResize();
@@ -111,77 +110,92 @@ const TeamGallery: React.FC = () => {
   }, []);
 
   return (
-    <section className="w-full py-20 px-4 bg-gradient-to-b from-[#01102b] via-[#062d6f] to-[#01102b]">
-      <div className="max-w-7xl mx-auto space-y-28">
+    <section className="w-full py-24 px-4 bg-transparent relative overflow-hidden">
 
+      <div className="max-w-7xl mx-auto space-y-32 relative z-10">
         {Object.entries(teamImages).map(([category, members]) => (
           <div key={category}>
-            {/* HEADING + Decorative Line */}
+            {/* MINIMAL HEADING */}
             <FadeUpOnScroll>
-              <div className="flex flex-col items-center mb-14">
-                <h2 className="text-3xl md:text-4xl font-bold text-cyan-400 text-center">
-                  {category === "sacteam"
-                    ? "SAC Team"
-                    : category.charAt(0).toUpperCase() + category.slice(1)}
-                </h2>
-                {/* Decorative Line */}
-                <span className="block w-full h-1 bg-cyan-400 rounded-full mt-3"></span>
+              <div className="flex flex-col items-center mb-20">
+                <div className="inline-block">
+                  <h2 className="text-3xl md:text-4xl font-light tracking-wider text-white/90 text-center uppercase mb-3 letterspacing-widest">
+                    {category === "sacteam"
+                      ? "SAC Team"
+                      : category.charAt(0).toUpperCase() + category.slice(1)}
+                  </h2>
+                  <div className="h-px w-full bg-gradient-to-r from-transparent via-white/40 to-transparent"></div>
+                </div>
               </div>
             </FadeUpOnScroll>
 
-            {/* GRID */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+            {/* PROFESSIONAL GRID */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
               {members.map((member, index) => (
-                <FadeUpOnScroll key={index} delay={index * 350}>
+                <FadeUpOnScroll key={index} delay={index * 100}>
                   <div
-                    className="h-80 group cursor-pointer md:cursor-default"
+                    className="w-80 h-80 mx-auto group cursor-pointer"
                     onClick={() =>
                       !isDesktop
                         ? setFlippedCard(flippedCard === index ? null : index)
                         : undefined
                     }
                   >
-                    {/* GRADIENT BORDER */}
-                    <div className="relative h-full rounded-xl p-[2px] bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 animate-gradient-x">
+                    {/* CLEAN CARD CONTAINER */}
+                    <div className="relative w-full h-full rounded-full overflow-hidden bg-[#0f1420] border border-white/5 transition-all duration-500 group-hover:border-white/20 group-hover:shadow-2xl group-hover:shadow-white/5">
 
-                      {/* FLIP CARD */}
+                      {/* FLIP MECHANISM */}
                       <div
                         className={`
-                          relative w-full h-full rounded-xl bg-[#050B1E]
+                          relative w-full h-full
                           transition-transform duration-700 [transform-style:preserve-3d]
                           ${isDesktop ? "md:group-hover:[transform:rotateY(180deg)]" : ""}
                           ${!isDesktop && flippedCard === index ? "[transform:rotateY(180deg)]" : ""}
                         `}
                       >
-                        {/* FRONT */}
-                        <div className="absolute inset-0 rounded-xl overflow-hidden [backface-visibility:hidden]">
-                          <img
-                            src={member.image}
-                            alt={member.name}
-                            className="w-full h-full object-cover"
-                          />
+                        {/* FRONT - Image */}
+                        <div className="absolute inset-0 [backface-visibility:hidden]">
+                          <div className="relative w-full h-full">
+                            <img
+                              src={member.image}
+                              alt={member.name}
+                              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                            />
+                            {/* Subtle gradient overlay */}
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                            
+                            {/* Name overlay - always visible on front */}
+                            
+                          </div>
                         </div>
 
-                        {/* BACK */}
+                        {/* BACK - Info */}
                         <div
-                          className="absolute inset-0 rounded-xl
-                                     bg-gradient-to-br from-[#020617] to-[#050B1E]
+                          className="absolute inset-0
+                                     bg-[#0f1420]
                                      flex flex-col items-center justify-center
-                                     text-center px-6
+                                     text-center px-8
                                      [transform:rotateY(180deg)]
                                      [backface-visibility:hidden]"
                         >
-                          <h3 className="text-2xl font-semibold text-cyan-400 mb-1">
+                          {/* Minimalist accent line */}
+                          <div className="w-12 h-px bg-white/30 mb-6"></div>
+                          
+                          <h3 className="text-xl font-medium text-white mb-2 tracking-wide">
                             {member.name}
                           </h3>
-                          <p className="text-lg text-purple-200 mb-3">
+                          
+                          <p className="text-sm text-white/50 font-light mb-5 tracking-wider uppercase">
                             {member.role}
                           </p>
-                          <p className="text-sm text-gray-200">
+                          
+                          <p className="text-sm text-white/70 leading-relaxed font-light max-w-[240px]">
                             {member.description}
                           </p>
-                        </div>
 
+                          {/* Bottom accent */}
+                          <div className="w-12 h-px bg-white/30 mt-6"></div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -190,7 +204,6 @@ const TeamGallery: React.FC = () => {
             </div>
           </div>
         ))}
-
       </div>
     </section>
   );

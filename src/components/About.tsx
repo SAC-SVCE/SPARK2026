@@ -1,75 +1,67 @@
-import { Target, Users, Rocket, Zap } from "lucide-react";
-
 const About = () => {
-  const features = [
-    // {
-    //   icon: Target,
-    //   title: "Mission",
-    //   description: "Empowering students through innovation, technology, and competitive gaming excellence.",
-    // },
-    // {
-    //   icon: Users,
-    //   title: "Community",
-    //   description: "Bringing together 1000+ students from across the region for an unforgettable experience.",
-    // },
-    // {
-    //   icon: Rocket,
-    //   title: "Innovation",
-    //   description: "Showcasing cutting-edge tech projects, gaming tournaments, and cultural performances.",
-    // },
-    // {
-    //   icon: Zap,
-    //   title: "Energy",
-    //   description: "High-octane competitions, adrenaline-pumping challenges, and electrifying entertainment.",
-    // },
-  ];
-
   return (
-    <section id="about" className="py-24 relative overflow-hidden">
+    <section id="about" className="py-24 relative overflow-hidden bg-background">
       {/* Background Effects */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-card/30 to-background" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl" />
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-indigo-900/40 rounded-full blur-[150px]" />
+      </div>
 
       <div className="container mx-auto px-4 relative z-10">
+
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <div className="inline-block px-4 py-2 rounded-full bg-card/50 border border-primary/30 mb-4">
-            {<span className="text-sm font-orbitron font-semibold text-primary uppercase tracking-wider">
-              About the Event
-            </span>}
+        <div className="flex flex-col items-center justify-center mb-16 text-center">
+          <div className="relative">
+            {/* Glow line behind text - Cyan for contrast */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-1 bg-gradient-to-r from-transparent via-secondary to-transparent blur-sm opacity-50" />
+            <span className="relative z-10 text-secondary font-bold tracking-[0.5em] uppercase text-sm md:text-base">
+              Statistics
+            </span>
           </div>
-          {/* <h2 className="text-4xl md:text-6xl font-orbitron font-bold mb-6">
-            <span className="text-secondary">What is</span>{" "}
-            <span className="text-primary">SPARK 2K25?</span>
-          </h2> */}
-          {/* <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto font-exo">
-            SPARK 2K25 is SV College's flagship annual event that brings together the brightest minds 
-            and most talented performers for an electrifying celebration of creativity, competition, and teamwork. 
-            From intense gaming tournaments to challenging coding contests and captivating cultural performances, 
-            SPARK offers something for everyone.
-          </p> */}
+          <h2 className="mt-4 text-4xl md:text-6xl font-bold text-white font-orbitron">
+            Event <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Highlights</span>
+          </h2>
         </div>
 
-
-
-        {/* Stats Section */}
-        <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6">
+        {/* Stats Section - Leaf Shaped Cards */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
           {[
-            { value: "10000+", label: "Participants" },
-            { value: "120+", label: "Events" },
-            { value: "₹10L+", label: "Prize Pool" },
-            { value: "2", label: "Days of Action" },
+            { value: "10000+", label: "Participants", color: "from-primary to-rose-600" },
+            { value: "120+", label: "Events", color: "from-secondary to-cyan-400" },
+            { value: "₹10L+", label: "Prize Pool", color: "from-amber-500 to-orange-500" },
+            { value: "2", label: "Days of Action", color: "from-purple-500 to-indigo-500" },
           ].map((stat, index) => (
             <div
               key={index}
-              className="text-center p-6 rounded-lg bg-card/30 border border-border"
-              style={{ animationDelay: `${0.4 + index * 0.1}s` }}
+              className="relative group p-[1px]"
+              style={{ animationDelay: `${0.2 * index}s` }}
             >
-              <div className="text-4xl md:text-5xl font-orbitron font-bold text-primary mb-2">
-                {stat.value}
-              </div>
-              <div className="text-sm text-muted-foreground uppercase tracking-wider font-exo">
-                {stat.label}
+              {/* Card Background - Dark Glass instead of full Red */}
+              <div className="
+                 relative
+                 bg-card/40 backdrop-blur-md
+                 rounded-tl-[40px] rounded-br-[40px] rounded-tr-xl rounded-bl-xl
+                 h-40 md:h-48
+                 flex flex-col items-center justify-center
+                 shadow-lg shadow-black/40
+                 transform transition-transform duration-300 hover:-translate-y-2
+                 border border-white/5 hover:border-white/10
+                 overflow-hidden
+              ">
+                {/* Top Gradient Accent */}
+                <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${stat.color} opacity-70`} />
+
+                {/* Inner Content */}
+                <div className="text-center p-4 relative z-10">
+                  <div className={`text-3xl md:text-5xl font-bold bg-gradient-to-br ${stat.color} bg-clip-text text-transparent mb-2 drop-shadow-sm font-orbitron`}>
+                    {stat.value}
+                  </div>
+                  <div className="text-xs md:text-sm text-gray-400 font-semibold uppercase tracking-wider font-exo group-hover:text-white transition-colors">
+                    {stat.label}
+                  </div>
+                </div>
+
+                {/* Internal Glow on Hover */}
+                <div className={`absolute inset-0 bg-gradient-to-br ${stat.color} opacity-0 group-hover:opacity-10 transition-opacity duration-500 pointer-events-none rounded-tl-[40px] rounded-br-[40px]`} />
               </div>
             </div>
           ))}
