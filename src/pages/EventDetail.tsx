@@ -86,7 +86,7 @@ export default function EventDetail() {
               <img
                 src={event.image}
                 alt={event.title}
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                className="w-full h-full object-cover transition-transform duration-700"
               />
             </div>
 

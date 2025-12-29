@@ -143,7 +143,7 @@ const Navbar = () => {
             <img
               src={sparkLogo}
               alt="SPARK 2K26"
-              className="h-16 w-auto transition-transform duration-300 group-hover:scale-110 group-hover:rotate-12 drop-shadow-[0_0_8px_rgba(195,13,22,0.8)]"
+              className="h-16 w-auto transition-transform duration-300 drop-shadow-[0_0_8px_rgba(195,13,22,0.8)]"
             />
           </div>
 

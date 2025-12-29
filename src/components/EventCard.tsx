@@ -40,7 +40,7 @@ export function EventCard({ event }: EventCardProps) {
             <img
               src={event.image || "/placeholder.svg"}
               alt={event.title}
-              className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:rotate-1"
+              className="h-full w-full object-cover transition-transform duration-700"
             />
           </div>
 

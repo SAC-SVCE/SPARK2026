@@ -3,7 +3,6 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FireParticles from "@/components/FireParticles";
 import { Check, ChevronsRight, Crown, Calendar, Zap } from "lucide-react";
-import { motion } from "framer-motion";
 
 export default function RegistrationPage() {
   const passes = [
@@ -60,21 +59,6 @@ export default function RegistrationPage() {
     }
   ];
 
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2
-      }
-    }
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
-  };
-
   return (
     <div className="min-h-screen bg-[#050505] text-white selection:bg-primary/30 overflow-x-hidden font-sans">
       <FireParticles density={30} />
@@ -83,49 +67,27 @@ export default function RegistrationPage() {
       <main className="relative pt-32 pb-20 container mx-auto px-4">
 
         {/* --- HEADER --- */}
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="relative mb-20 text-center"
-        >
+        <div className="relative mb-20 text-center">
           {/* Watermark */}
           <h1 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[15vw] font-black text-[#1a1a1a] opacity-80 pointer-events-none select-none italic leading-none whitespace-nowrap">
             SPARK
           </h1>
 
-          <motion.h2
-            initial={{ scale: 0.8, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative z-10 text-6xl md:text-8xl font-black font-orbitron italic tracking-tighter text-red-600 drop-shadow-[0_0_25px_rgba(220,38,38,0.5)]"
-          >
+          <h2 className="relative z-10 text-6xl md:text-8xl font-black font-orbitron italic tracking-tighter text-red-600 drop-shadow-[0_0_25px_rgba(220,38,38,0.5)]">
             PASSES
-          </motion.h2>
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="relative z-10 flex items-center justify-center gap-2 mt-4 text-zinc-400 font-mono tracking-[0.2em] uppercase text-sm"
-          >
+          </h2>
+          <div className="relative z-10 flex items-center justify-center gap-2 mt-4 text-zinc-400 font-mono tracking-[0.2em] uppercase text-sm">
             <span className="w-2 h-2 bg-red-600 rounded-full animate-pulse" />
             Select Your Loadout
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
 
 
         {/* --- PASSES GRID --- */}
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto"
-        >
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {passes.map((pass) => (
-            <motion.div
+            <div
               key={pass.id}
-              variants={itemVariants}
               className={`relative group bg-zinc-900/40 border border-white/5 backdrop-blur-sm overflow-hidden flex flex-col transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(220,38,38,0.1)] ${pass.highlight ? 'ring-1 ring-red-500/50' : ''}`}
             >
               {/* Background Texture */}
@@ -191,18 +153,12 @@ export default function RegistrationPage() {
                   <ChevronsRight className="w-5 h-5 group-hover/btn:translate-x-1 transition-transform" />
                 </button>
               </div>
-            </motion.div>
+            </div>
           ))}
-        </motion.div>
+        </div>
 
         {/* --- BOTTOM SECTION --- */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1, delay: 0.5 }}
-          className="mt-20 text-center max-w-2xl mx-auto"
-        >
+        <div className="mt-20 text-center max-w-2xl mx-auto">
           <p className="text-zinc-500 text-sm font-mono uppercase tracking-widest mb-4">
             Need Custom Packs for your College?
           </p>
@@ -210,7 +166,7 @@ export default function RegistrationPage() {
             <Zap className="w-4 h-4" />
             CONTACT STUDENT COORDINATORS
           </a>
-        </motion.div>
+        </div>
 
       </main>
 

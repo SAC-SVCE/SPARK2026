@@ -3,7 +3,6 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Events from "@/components/Events";
 import Gallery from "@/components/Gallery";
-import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import SparkEffect from "@/components/SparkEffect";
 import { motion } from "framer-motion";

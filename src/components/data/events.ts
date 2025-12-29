@@ -697,7 +697,7 @@ export const events: Event[] = [
     venue: "Department Venues",
     categories: ["Technical Events"],
     department: "",
-    image: "/event-images/sample.png",
+    image: "/event-images/LOGICLOCK.jpg",
     registrationOpen: true,
     teamSize: "Individual",
     rules: [
@@ -743,7 +743,7 @@ export const events: Event[] = [
     venue: "Department Venues",
     categories: ["Technical Events"],
     department: "",
-    image: "/event-images/sample.png",
+    image: "/event-images/SQLQUERYCHALLENGE.jpg",
     registrationOpen: true,
     teamSize: "Individual",
     rules: [
@@ -859,7 +859,7 @@ export const events: Event[] = [
     venue: "Department Venues",
     categories: ["Technical Events"],
     department: "",
-    image: "/event-images/sample.png",
+    image: "/event-images/CUBESOLVING.jpg",
     registrationOpen: true,
     teamSize: "Individual",
     rules: [
