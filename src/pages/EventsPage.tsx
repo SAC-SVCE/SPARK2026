@@ -18,7 +18,7 @@ import { motion } from "framer-motion";
 import { SearchBar } from "@/components/SearchBar";
 import { FilterSection } from "@/components/FilterSection";
 import { EventCard } from "@/components/EventCard";
-import { SortSelect } from "@/components/SortSelect";
+import { DateSelect } from "@/components/DateSelect";
 import { MobileFilterDrawer } from "@/components/MobileFilterDrawer";
 import { events, categories, dateTags, departments } from "@/components/data/events";
 
@@ -206,7 +206,7 @@ export default function EventsPage() {
                 open={mobileFilterOpen}
                 onOpenChange={setMobileFilterOpen}
               />
-              <SortSelect value={sortBy} onChange={setSortBy} />
+              <DateSelect value={activeFilter} onChange={handleFilterChange} />
             </div>
           </div>
 
@@ -235,13 +235,13 @@ export default function EventsPage() {
               )}
 
               {/* Results count */}
-              <div className="mb-6 text-sm text-zinc-500 font-mono">
+              <div className="mb-6 text-sm text-white font-mono">
                 // FOUND {filteredEvents.length} EVENT{filteredEvents.length !== 1 ? "S" : ""}
               </div>
 
               {filteredEvents.length > 0 ? (
                 <motion.div
-                  className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4"
+                  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6"
                   variants={{
                     hidden: { opacity: 0 },
                     show: {
@@ -259,9 +259,9 @@ export default function EventsPage() {
                   ))}
                 </motion.div>
               ) : (
-                <div className="text-center py-20 border border-dashed border-white/10 rounded-xl bg-white/5">
-                  <p className="text-zinc-400 text-lg font-orbitron">No events found in this sector</p>
-                  <p className="text-zinc-600 text-sm mt-2">
+                <div className="text-center py-20 border border-dashed border-white rounded-xl bg-white/5">
+                  <p className="text-white text-lg font-orbitron">No events found in this sector</p>
+                  <p className="text-white text-sm mt-2">
                     Adjust search parameters to locate targets
                   </p>
                 </div>

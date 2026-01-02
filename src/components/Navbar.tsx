@@ -143,7 +143,7 @@ const Navbar = () => {
             <img
               src={sparkLogo}
               alt="SPARK 2K26"
-              className="h-16 w-auto transition-transform duration-300 drop-shadow-[0_0_8px_rgba(195,13,22,0.8)]"
+              className="h-12 w-auto transition-transform duration-300 drop-shadow-[0_0_8px_rgba(195,13,22,0.8)]"
             />
           </div>
 
@@ -154,7 +154,7 @@ const Navbar = () => {
                 key={link.id}
                 variant="ghost"
                 onClick={() => scrollToSection(link.id)}
-                className="font-orbitron text-zinc-400 hover:text-primary hover:bg-white/5 relative group transition-all duration-300 tracking-wider"
+                className="font-orbitron text-white hover:text-primary hover:bg-white relative group transition-all duration-300 tracking-wider"
               >
                 <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 mr-1 text-primary">[</span>
                 {link.name}
@@ -172,7 +172,7 @@ const Navbar = () => {
                 <DropdownMenuTrigger asChild>
                   <Button
                     variant="ghost"
-                    className="font-orbitron gap-1 text-zinc-400 hover:text-primary hover:bg-white/5 group tracking-wider"
+                    className="font-orbitron gap-1 text-white hover:text-primary hover:bg-white group tracking-wider"
                     onClick={() => navigate("/events")}
                   >
                     <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 mr-1 text-primary">[</span>
@@ -185,7 +185,7 @@ const Navbar = () => {
                     <DropdownMenuItem
                       key={cat.id}
                       onClick={() => scrollToSection(`event-cat-${cat.id}`)}
-                      className="font-orbitron text-zinc-400 focus:text-primary focus:bg-primary/10 cursor-pointer rounded-none hover:pl-4 transition-all duration-300 uppercase tracking-widest text-xs"
+                      className="font-orbitron text-white focus:text-primary focus:bg-white cursor-pointer rounded-none hover:pl-4 transition-all duration-300 uppercase tracking-widest text-xs"
                     >
                       {cat.name}
                     </DropdownMenuItem>
@@ -199,7 +199,7 @@ const Navbar = () => {
                 key={link.id}
                 variant="ghost"
                 onClick={() => scrollToSection(link.id)}
-                className="font-orbitron text-zinc-400 hover:text-primary hover:bg-white/5 relative group transition-all duration-300 tracking-wider"
+                className="font-orbitron text-white hover:text-primary hover:bg-white relative group transition-all duration-300 tracking-wider"
               >
                 <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 mr-1 text-primary">[</span>
                 {link.name}
@@ -214,7 +214,7 @@ const Navbar = () => {
               onClick={handleRegisterClick}
               className="font-orbitron bg-primary hover:bg-red-600 text-white font-bold tracking-widest px-8 rounded-none skew-x-[-12deg] hover:skew-x-0 transition-all duration-300 border border-primary hover:shadow-[0_0_20px_rgba(var(--primary),0.5)]"
             >
-              <span className="skew-x-[12deg] group-hover:skew-x-0">INITIATE</span>
+              <span className="skew-x-[12deg] group-hover:skew-x-0">REGISTER</span>
             </Button>
           </div>
 

@@ -16,7 +16,7 @@ export function FilterSection({
 
   const FilterGroup = ({ title, color, items }: { title: string; color: string; items: string[] }) => (
     <div className="mb-8 last:mb-0">
-      <h3 className={`text-sm font-bold text-zinc-400 mb-4 uppercase tracking-widest flex items-center gap-2`}>
+      <h3 className={`text-sm font-bold text-white mb-4 uppercase tracking-widest flex items-center gap-2`}>
         <span className={`h-1.5 w-1.5 rounded-sm ${color} shadow-[0_0_8px_${color}]`} />
         {title}
       </h3>
@@ -29,7 +29,7 @@ export function FilterSection({
               relative cursor-pointer px-3 py-1.5 text-xs font-medium transition-all duration-300 clip-path-slant border-l-2
               ${isActive(item)
                 ? "bg-white/10 text-white border-primary shadow-[0_0_15px_rgba(var(--primary),0.3)]"
-                : "bg-black/40 text-zinc-500 border-transparent hover:text-white hover:bg-white/5 hover:border-white/20"
+                : "bg-black/40 text-white border-transparent hover:text-white hover:bg-white/5 hover:border-white/20"
               }
             `}
           >
