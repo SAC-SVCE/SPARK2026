@@ -79,188 +79,8 @@ export interface Event {
 }
 
 export const events: Event[] = [
-  {
-    id: "1",
-    title: "Pick and Talk",
-    description:
-      "A technical speaking challenge that tests spontaneity, clarity of thought, and technical awareness.",
-    date: "6th March 2026",
-    dateTag: "6 Mar",
-    time: "10:30 - 04:30",
-    venue: "Seminar Hall / Dept. Venues",
-    categories: ["Technical Events", "Pitch and Talk"],
-    department: "",
-    image: "/ALL POSTERS/PIC AND TALK.jpg",
-    registrationOpen: true,
-    teamSize: "Individual",
-    rules: [
-      "Topics will be picked randomly",
-      "Individual participation only",
-      "Slides must be original",
-      "No preparation time",
-      "Use of mobile phones or notes is prohibited",
-      "Exceeding time limit leads to disqualification"
-    ],
-    coordinators: []
-  },
-  {
-    id: "2",
-    title: "3D CAD Model Design",
-    description:
-      "A hands-on technical event focused on 3D design creativity and CAD tool expertise.",
-    date: "6th March 2027",
-    dateTag: "6 Mar",
-    time: "10:30 - 04:30",
-    venue: "Seminar Hall / Dept. Venues",
-    categories: ["Technical Events"],
-    department: "MECH",
-    image: "/ALL POSTERS/3D CAD MODELLING.jpg",
-    registrationOpen: true,
-    teamSize: "2 members",
-    rules: [
-      "Only permitted CAD tools may be used",
-      "Internet access may be restricted",
-      "Designs must be original",
-      "Time limit must be followed",
-      "Judges’ decision is final"
-    ],
-    coordinators: []
-  },
-  {
-    id: "3",
-    title: "Algorithm Treasure Hunt",
-    description:
-      "A fun technical event combining algorithms, coding, and logical reasoning.",
-    date: "6th March 2028",
-    dateTag: "6 Mar",
-    time: "10:30 - 04:30",
-    venue: "Seminar Hall / Dept. Venues",
-    categories: ["Technical Events"],
-    department: "",
-    image: "/ALL POSTERS/ALGORITHM TRESSURE HUNT.jpg",
-    registrationOpen: true,
-    teamSize: "2–3 members",
-    rules: [
-      "Teams must solve clues in sequence",
-      "Time limit applies for each round",
-      "No external help allowed",
-      "Cheating leads to disqualification",
-      "Organizers’ decision is final"
-    ],
-    coordinators: []
-  },
-  {
-    id: "4",
-    title: "Agent Building",
-    description:
-      "Design intelligent agents using AI or rule-based approaches.",
-    date: "6th March 2026",
-    dateTag: "6 Mar",
-    time: "10:30 - 04:30",
-    venue: "Seminar Hall / Dept. Venues",
-    categories: ["Technical Events"],
-    department: "CSM",
-    image: "/ALL POSTERS/AI AGENT BUILDING.jpg",
-    registrationOpen: true,
-    teamSize: "Individual or up to 3 members",
-    rules: [
-      "Participants must explain agent logic clearly",
-      "Internet usage depends on organizers",
-      "Pre-built solutions may be restricted",
-      "Original ideas are encouraged",
-      "Judges’ decision is final"
-    ],
-    coordinators: []
-  },
-  {
-    id: "5",
-    title: "AdZap",
-    description:
-      "A creative event blending marketing strategy and technical presentation.",
-    date: "6th March 2026",
-    dateTag: "6 Mar",
-    time: "10:30 - 04:30",
-    venue: "Seminar Hall / Dept. Venues",
-    categories: ["Technical Events"],
-    department: "CSD",
-    image: "/ALL POSTERS/ADZAP.jpg",
-    registrationOpen: true,
-    teamSize: "2–4 members",
-    rules: [
-      "Content must be original",
-      "Time limit must be followed",
-      "Offensive content is prohibited",
-      "Use of multimedia is allowed"
-    ],
-    coordinators: []
-  },
-  {
-    id: "6",
-    title: "Mobile App + IoT Integration",
-    description:
-      "Build smart systems by integrating mobile apps with IoT devices.",
-    date: "6th March 2026",
-    dateTag: "6 Mar",
-    time: "10:30 - 04:30",
-    venue: "Seminar Hall / Dept. Venues",
-    categories: ["Technical Events"],
-    department: "",
-    image: "/ALL POSTERS/MOBILE APP & IPT INTEGRATION.jpg",
-    registrationOpen: true,
-    teamSize: "2–3 members",
-    rules: [
-      "Prototype or simulation is acceptable",
-      "Architecture explanation is mandatory",
-      "Internet usage depends on organizers",
-      "Plagiarism leads to disqualification"
-    ],
-    coordinators: []
-  },
-  {
-    id: "7",
-    title: "Bridge Building",
-    description:
-      "Design and construct a model bridge tested for strength and stability.",
-    date: "6th March 2026",
-    dateTag: "6 Mar",
-    time: "10:30 - 04:30",
-    venue: "Seminar Hall / Dept. Venues",
-    categories: ["Technical Events"],
-    department: "CIVIL",
-    image: "/ALL POSTERS/BRIDGE BUILDING.jpg",
-    registrationOpen: true,
-    teamSize: "2–4 members",
-    rules: [
-      "Only provided materials may be used",
-      "Design must meet size constraints",
-      "Structural testing will be conducted",
-      "Judges’ decision is final"
-    ],
-    coordinators: []
-  },
-  {
-    id: "8",
-    title: "Logic Gate Master",
-    description:
-      "Test your understanding of logic gates and digital electronics.",
-    date: "6th March 2026",
-    dateTag: "6 Mar",
-    time: "10:30 - 04:30",
-    venue: "Electronics Lab",
-    categories: ["Technical Events"],
-    department: "",
-    image: "/ALL POSTERS/LOGIC GATE MASTER.jpg",
-    registrationOpen: true,
-    teamSize: "Individual",
-    rules: [
-      "Mobile phones are not allowed",
-      "Calculators may be restricted",
-      "Multiple rounds may be conducted",
-      "Time limit must be followed"
-    ],
-    coordinators: []
-  },
-  {
+
+{
     id: "9",
     title: " smart and sustainable cities ",
     description:
@@ -516,6 +336,190 @@ export const events: Event[] = [
     ],
     coordinators: []
   },
+
+
+  {
+    id: "1",
+    title: "Pick and Talk",
+    description:
+      "A technical speaking challenge that tests spontaneity, clarity of thought, and technical awareness.",
+    date: "6th March 2026",
+    dateTag: "6 Mar",
+    time: "10:30 - 04:30",
+    venue: "Seminar Hall / Dept. Venues",
+    categories: ["Technical Events", "Pitch and Talk"],
+    department: "",
+    image: "/ALL POSTERS/PIC AND TALK.jpg",
+    registrationOpen: true,
+    teamSize: "Individual",
+    rules: [
+      "Topics will be picked randomly",
+      "Individual participation only",
+      "Slides must be original",
+      "No preparation time",
+      "Use of mobile phones or notes is prohibited",
+      "Exceeding time limit leads to disqualification"
+    ],
+    coordinators: []
+  },
+  {
+    id: "2",
+    title: "3D CAD Model Design",
+    description:
+      "A hands-on technical event focused on 3D design creativity and CAD tool expertise.",
+    date: "6th March 2027",
+    dateTag: "6 Mar",
+    time: "10:30 - 04:30",
+    venue: "Seminar Hall / Dept. Venues",
+    categories: ["Technical Events"],
+    department: "MECH",
+    image: "/ALL POSTERS/3D CAD MODELLING.jpg",
+    registrationOpen: true,
+    teamSize: "2 members",
+    rules: [
+      "Only permitted CAD tools may be used",
+      "Internet access may be restricted",
+      "Designs must be original",
+      "Time limit must be followed",
+      "Judges’ decision is final"
+    ],
+    coordinators: []
+  },
+  {
+    id: "3",
+    title: "Algorithm Treasure Hunt",
+    description:
+      "A fun technical event combining algorithms, coding, and logical reasoning.",
+    date: "6th March 2028",
+    dateTag: "6 Mar",
+    time: "10:30 - 04:30",
+    venue: "Seminar Hall / Dept. Venues",
+    categories: ["Technical Events"],
+    department: "",
+    image: "/ALL POSTERS/ALGORITHM TRESSURE HUNT.jpg",
+    registrationOpen: true,
+    teamSize: "2–3 members",
+    rules: [
+      "Teams must solve clues in sequence",
+      "Time limit applies for each round",
+      "No external help allowed",
+      "Cheating leads to disqualification",
+      "Organizers’ decision is final"
+    ],
+    coordinators: []
+  },
+  {
+    id: "4",
+    title: "Agent Building",
+    description:
+      "Design intelligent agents using AI or rule-based approaches.",
+    date: "6th March 2026",
+    dateTag: "6 Mar",
+    time: "10:30 - 04:30",
+    venue: "Seminar Hall / Dept. Venues",
+    categories: ["Technical Events"],
+    department: "CSM",
+    image: "/ALL POSTERS/AI AGENT BUILDING.jpg",
+    registrationOpen: true,
+    teamSize: "Individual or up to 3 members",
+    rules: [
+      "Participants must explain agent logic clearly",
+      "Internet usage depends on organizers",
+      "Pre-built solutions may be restricted",
+      "Original ideas are encouraged",
+      "Judges’ decision is final"
+    ],
+    coordinators: []
+  },
+  {
+    id: "5",
+    title: "AdZap",
+    description:
+      "A creative event blending marketing strategy and technical presentation.",
+    date: "6th March 2026",
+    dateTag: "6 Mar",
+    time: "10:30 - 04:30",
+    venue: "Seminar Hall / Dept. Venues",
+    categories: ["Technical Events"],
+    department: "CSD",
+    image: "/ALL POSTERS/ADZAP.jpg",
+    registrationOpen: true,
+    teamSize: "2–4 members",
+    rules: [
+      "Content must be original",
+      "Time limit must be followed",
+      "Offensive content is prohibited",
+      "Use of multimedia is allowed"
+    ],
+    coordinators: []
+  },
+  {
+    id: "6",
+    title: "Mobile App + IoT Integration",
+    description:
+      "Build smart systems by integrating mobile apps with IoT devices.",
+    date: "6th March 2026",
+    dateTag: "6 Mar",
+    time: "10:30 - 04:30",
+    venue: "Seminar Hall / Dept. Venues",
+    categories: ["Technical Events"],
+    department: "",
+    image: "/ALL POSTERS/MOBILE APP & IPT INTEGRATION.jpg",
+    registrationOpen: true,
+    teamSize: "2–3 members",
+    rules: [
+      "Prototype or simulation is acceptable",
+      "Architecture explanation is mandatory",
+      "Internet usage depends on organizers",
+      "Plagiarism leads to disqualification"
+    ],
+    coordinators: []
+  },
+  {
+    id: "7",
+    title: "Bridge Building",
+    description:
+      "Design and construct a model bridge tested for strength and stability.",
+    date: "6th March 2026",
+    dateTag: "6 Mar",
+    time: "10:30 - 04:30",
+    venue: "Seminar Hall / Dept. Venues",
+    categories: ["Technical Events"],
+    department: "CIVIL",
+    image: "/ALL POSTERS/BRIDGE BUILDING.jpg",
+    registrationOpen: true,
+    teamSize: "2–4 members",
+    rules: [
+      "Only provided materials may be used",
+      "Design must meet size constraints",
+      "Structural testing will be conducted",
+      "Judges’ decision is final"
+    ],
+    coordinators: []
+  },
+  {
+    id: "8",
+    title: "Logic Gate Master",
+    description:
+      "Test your understanding of logic gates and digital electronics.",
+    date: "6th March 2026",
+    dateTag: "6 Mar",
+    time: "10:30 - 04:30",
+    venue: "Electronics Lab",
+    categories: ["Technical Events"],
+    department: "",
+    image: "/ALL POSTERS/LOGIC GATE MASTER.jpg",
+    registrationOpen: true,
+    teamSize: "Individual",
+    rules: [
+      "Mobile phones are not allowed",
+      "Calculators may be restricted",
+      "Multiple rounds may be conducted",
+      "Time limit must be followed"
+    ],
+    coordinators: []
+  },
+  
 
 
 

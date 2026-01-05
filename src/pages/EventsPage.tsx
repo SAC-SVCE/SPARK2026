@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 
 import { SearchBar } from "@/components/SearchBar";
-import { FilterSection } from "@/components/FilterSection";
+
 import { EventCard } from "@/components/EventCard";
 import { DateSelect } from "@/components/DateSelect";
 import { MobileFilterDrawer } from "@/components/MobileFilterDrawer";
@@ -203,18 +203,7 @@ export default function EventsPage() {
 
           <div className="flex gap-8">
             {/* Desktop Filter Sidebar */}
-            <aside className="hidden lg:block w-72 flex-shrink-0">
-              <div className="sticky top-24 bg-black/40 backdrop-blur-xl rounded-xl border border-white/10 p-5 shadow-[0_0_30px_rgba(0,0,0,0.5)]">
-                <h2 className="text-lg font-bold text-white mb-4 font-orbitron flex items-center gap-2">
-                  <span className="w-1 h-5 bg-primary shadow-[0_0_8px_rgba(var(--primary))]"></span>
-                  Filters
-                </h2>
-                <FilterSection
-                  activeFilter={activeFilter}
-                  onFilterChange={handleFilterChange}
-                />
-              </div>
-            </aside>
+            
 
             {/* Events Grid */}
             <div className="flex-1">
@@ -232,7 +221,7 @@ export default function EventsPage() {
 
               {filteredEvents.length > 0 ? (
                 <motion.div
-                  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6"
+                  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
                   variants={{
                     hidden: { opacity: 0 },
                     show: {
