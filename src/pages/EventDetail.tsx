@@ -63,10 +63,10 @@ export default function EventDetail() {
     navigator.clipboard.writeText(window.location.href);
     toast.success("Link copied to clipboard!");
   };
-
- const handleRegister = () => {
-    window.open("https://www.theticket9.com/event/spark-2026", "_blank");
+const handleRegister = () => {
+    window.location.href = "https://www.theticket9.com/event/spark-2026";
 };
+
 
 
   return (
@@ -255,6 +255,53 @@ export default function EventDetail() {
                     </div>
                   )}
                 </div>
+                {/* Event Coordinators */}
+{event.coordinators?.event?.length > 0 && (
+  <div className="flex items-start gap-5">
+    <div className="p-4 rounded-xl bg-cyan-500/10 border border-cyan-500/20">
+      <Users className="h-7 w-7 text-cyan-400" />
+    </div>
+    <div>
+      <p className="text-base text-zinc-500">Student Coordinators</p>
+      <div className="space-y-1 mt-1">
+        {event.coordinators.event.map((coord, index) => (
+          <p key={index} className="text-white font-medium text-sm">
+            {coord.name}
+            {coord.phone && (
+              <span className="text-cyan-400 ml-2 text-xs">
+                ({coord.phone})
+              </span>
+            )}
+          </p>
+        ))}
+      </div>
+    </div>
+  </div>
+)}
+{/* Faculty Coordinators */}
+{event.coordinators?.faculty?.length > 0 && (
+  <div className="flex items-start gap-5">
+    <div className="p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/20">
+      <Users className="h-7 w-7 text-emerald-400" />
+    </div>
+    <div>
+      <p className="text-base text-zinc-500">Faculty Coordinators</p>
+      <div className="space-y-1 mt-1">
+        {event.coordinators.faculty.map((coord, index) => (
+          <p key={index} className="text-white font-medium text-sm">
+            {coord.name}
+            {coord.phone && (
+              <span className="text-emerald-400 ml-2 text-xs">
+                ({coord.phone})
+              </span>
+            )}
+          </p>
+        ))}
+      </div>
+    </div>
+  </div>
+)}
+
 
                 <div className="space-y-4 pt-6 border-t border-zinc-800">
                   <Button

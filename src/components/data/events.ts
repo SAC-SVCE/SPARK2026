@@ -59,6 +59,16 @@ export const departments: Department[] = [
   "MBA",
   "MCA",
 ];
+export interface Coordinator {
+  name: string;
+  phone: string;
+}
+
+export interface EventCoordinators {
+  event?: Coordinator[];
+  faculty?: Coordinator[];
+}
+
 
 export interface Event {
   id: string;
@@ -75,7 +85,8 @@ export interface Event {
   teamSize?: string;
   prizes?: string[];
   rules?: string[];
-  coordinators?: { name: string; phone: string }[];
+  coordinators?: EventCoordinators;
+
 }
 
 export const events: Event[] = [
@@ -101,8 +112,16 @@ export const events: Event[] = [
       "PPT/PPTX format only",
       "Report 15 minutes early"
     ],
-    coordinators: []
-  },
+    coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
+},
   {
     id: "10",
     title: "Intelligent Manufacturing & Sustainable Mechanical Systems",
@@ -123,7 +142,16 @@ export const events: Event[] = [
       "Time limit strictly followed",
       "PPT/PPTX format only"
     ],
-    coordinators: []
+     coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
+
   },
   {
     id: "11",
@@ -145,7 +173,16 @@ export const events: Event[] = [
       "PPT/PPTX format only",
       "Report 15 minutes early"
     ],
-    coordinators: []
+     coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
+
   },
   {
     id: "12",
@@ -167,7 +204,16 @@ export const events: Event[] = [
       "PPT/PPTX format only",
       "Judges’ decision is final"
     ],
-    coordinators: []
+    coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
+
   },
 
   {
@@ -192,7 +238,16 @@ export const events: Event[] = [
       "Report 15 minutes early",
       "Judges’ decision is final"
     ],
-    coordinators: []
+     coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
+
   },
   {
     id: "14",
@@ -215,7 +270,16 @@ export const events: Event[] = [
       "PPT/PPTX format only",
       "Report 15 minutes early"
     ],
-    coordinators: []
+     coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
+
   },
   {
     id: "15",
@@ -238,7 +302,16 @@ export const events: Event[] = [
       "PPT/PPTX format only",
       "Report 15 minutes early"
     ],
-    coordinators: []
+     coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
+
   },
   {
     id: "16",
@@ -262,7 +335,16 @@ export const events: Event[] = [
       "Report 15 minutes early",
       "Judges’ decision is final"
     ],
-    coordinators: []
+    coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
+
   },
 {
     id: "17",
@@ -286,7 +368,16 @@ export const events: Event[] = [
       "Report 15 minutes early",
       "Judges’ decision is final"
     ],
-    coordinators: []
+    coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
+
   },
 {
     id: "18",
@@ -310,8 +401,15 @@ export const events: Event[] = [
       "Report 15 minutes early",
       "Judges’ decision is final"
     ],
-    coordinators: [
-    ]
+     coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
   },
 {
     id: "19",
@@ -335,7 +433,15 @@ export const events: Event[] = [
       "Report 15 minutes early",
       "Judges’ decision is final"
     ],
-    coordinators: []
+    coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
   },
 
 
@@ -361,7 +467,15 @@ export const events: Event[] = [
       "Use of mobile phones or notes is prohibited",
       "Exceeding time limit leads to disqualification"
     ],
-    coordinators: []
+    coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
   },
   {
     id: "2",
@@ -384,7 +498,15 @@ export const events: Event[] = [
       "Time limit must be followed",
       "Judges’ decision is final"
     ],
-    coordinators: []
+     coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
   },
   {
     id: "3",
@@ -407,7 +529,15 @@ export const events: Event[] = [
       "Cheating leads to disqualification",
       "Organizers’ decision is final"
     ],
-    coordinators: []
+    coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
   },
   {
     id: "4",
@@ -430,7 +560,15 @@ export const events: Event[] = [
       "Original ideas are encouraged",
       "Judges’ decision is final"
     ],
-    coordinators: []
+     coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
   },
   {
     id: "5",
@@ -452,7 +590,15 @@ export const events: Event[] = [
       "Offensive content is prohibited",
       "Use of multimedia is allowed"
     ],
-    coordinators: []
+     coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
   },
   {
     id: "6",
@@ -474,7 +620,15 @@ export const events: Event[] = [
       "Internet usage depends on organizers",
       "Plagiarism leads to disqualification"
     ],
-    coordinators: []
+    coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
   },
   {
     id: "7",
@@ -496,7 +650,15 @@ export const events: Event[] = [
       "Structural testing will be conducted",
       "Judges’ decision is final"
     ],
-    coordinators: []
+     coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
   },
   {
     id: "8",
@@ -518,7 +680,15 @@ export const events: Event[] = [
       "Multiple rounds may be conducted",
       "Time limit must be followed"
     ],
-    coordinators: []
+    coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
   },
   
 
@@ -544,7 +714,15 @@ export const events: Event[] = [
       "Solutions must align with given problem statements",
       "Plagiarism or pre-built solutions are not allowed"
     ],
-    coordinators: []
+     coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
   },
   {
     id: "21",
@@ -561,7 +739,15 @@ export const events: Event[] = [
     registrationOpen: true,
     teamSize: "4 members",
     rules: [],
-    coordinators: []
+     coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
   },
   {
     id: "22",
@@ -578,7 +764,15 @@ export const events: Event[] = [
     registrationOpen: true,
     teamSize: "2–4 members",
     rules: [],
-    coordinators: []
+    coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
   },
   {
     id: "23",
@@ -600,7 +794,15 @@ export const events: Event[] = [
       "Participants must bring their own materials",
       "Artwork must be original and appropriate"
     ],
-    coordinators: []
+    coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
   },
   {
     id: "24",
@@ -622,7 +824,15 @@ export const events: Event[] = [
       "Time limit: 3–6 minutes",
       "Valid college ID required"
     ],
-    coordinators: []
+     coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
   },
   {
     id: "25",
@@ -645,7 +855,15 @@ export const events: Event[] = [
       "Song must be appropriate",
       "Valid college ID required"
     ],
-    coordinators: []
+    coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
   },
 
   {
@@ -669,7 +887,15 @@ export const events: Event[] = [
       "Use of props must be pre-approved",
       "Judges’ decision will be final"
     ],
-    coordinators: []
+     coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
   },
   {
     id: "27",
@@ -686,7 +912,15 @@ export const events: Event[] = [
     registrationOpen: true,
     teamSize: "",
     rules: [],
-    coordinators: []
+     coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
   },
   {
     id: "28",
@@ -709,7 +943,15 @@ export const events: Event[] = [
       "Inappropriate language or behavior is not allowed",
       "Moderators’ and judges’ decisions are final"
     ],
-    coordinators: []
+    coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
   },
   {
     id: "29",
@@ -726,7 +968,15 @@ export const events: Event[] = [
     registrationOpen: true,
     teamSize: "",
     rules: [],
-    coordinators: []
+     coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
   },
   {
     id: "30",
@@ -743,7 +993,15 @@ export const events: Event[] = [
     registrationOpen: true,
     teamSize: "",
     rules: [],
-    coordinators: []
+    coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
   },
   {
     id: "31",
@@ -766,7 +1024,15 @@ export const events: Event[] = [
       "Use of notes or mobiles is not allowed",
       "Judges’ decision will be final"
     ],
-    coordinators: []
+    coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
   },
   {
     id: "32",
@@ -789,7 +1055,15 @@ export const events: Event[] = [
       "Time limit applies for each round",
       "Judges’ decision will be final"
     ],
-    coordinators: []
+     coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
   },
   {
     id: "33",
@@ -812,7 +1086,15 @@ export const events: Event[] = [
       "Only allowed languages may be used",
       "Judges’ decision will be final"
     ],
-    coordinators: []
+     coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
   },
   {
     id: "34",
@@ -835,7 +1117,15 @@ export const events: Event[] = [
       "Time limit must be followed",
       "Judges’ decision will be final"
     ],
-    coordinators: []
+     coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
   },
   {
     id: "35",
@@ -858,7 +1148,15 @@ export const events: Event[] = [
       "Explanation must be technical",
       "Judges’ decision will be final"
     ],
-    coordinators: []
+     coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
   },
   {
     id: "36",
@@ -881,7 +1179,15 @@ export const events: Event[] = [
       "No external help allowed",
       "Judges’ decision is final"
     ],
-    coordinators: []
+     coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
   },
 
   {
@@ -905,7 +1211,15 @@ export const events: Event[] = [
       "Time limit per round applies",
       "Judges’ decision is final"
     ],
-    coordinators: []
+     coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
   },
   {
     id: "38",
@@ -928,7 +1242,15 @@ export const events: Event[] = [
       "Design explanation is mandatory",
       "Judges’ decision is final"
     ],
-    coordinators: []
+     coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
   },
   {
     id: "39",
@@ -951,7 +1273,15 @@ export const events: Event[] = [
       "Tampering with cube is not allowed",
       "Judges’ decision is final"
     ],
-    coordinators: []
+     coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
   },
   {
     id: "40",
@@ -974,7 +1304,15 @@ export const events: Event[] = [
       "Each team must present the solution",
       "Judges’ decision will be final"
     ],
-    coordinators: []
+     coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
   },
   {
     id: "41",
@@ -997,7 +1335,15 @@ export const events: Event[] = [
       "Each team must present the solution",
       "Judges’ decision will be final"
     ],
-    coordinators: []
+    coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
   },
   {
     id: "42",
@@ -1019,7 +1365,15 @@ export const events: Event[] = [
       "Idea should solve a real-world problem",
       "Teams must explain the working clearly"
     ],
-    coordinators: []
+     coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
   },
   {
     id: "43",
@@ -1041,7 +1395,15 @@ export const events: Event[] = [
       "Teams must submit and explain the design clearly",
       "Time limits must be strictly followed"
     ],
-    coordinators: []
+     coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
   },
   {
     id: "44",
@@ -1063,7 +1425,15 @@ export const events: Event[] = [
       "Working models or demos are preferred",
       "Judges’ decision will be final"
     ],
-    coordinators: []
+     coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
   },
   {
     id: "45",
@@ -1085,7 +1455,15 @@ export const events: Event[] = [
       "Working models or demos are preferred",
       "Judges’ decision will be final"
     ],
-    coordinators: []
+     coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
   },
   {
     id: "46",
@@ -1107,7 +1485,15 @@ export const events: Event[] = [
       "Working models or demos are preferred",
       "Judges’ decision will be final"
     ],
-    coordinators: []
+     coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
   },
   {
     id: "47",
@@ -1129,7 +1515,15 @@ export const events: Event[] = [
       "Working models or demos are preferred",
       "Judges’ decision will be final"
     ],
-    coordinators: []
+     coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
   },
 
 
@@ -1157,7 +1551,15 @@ export const events: Event[] = [
       " ICC rules and regulations will be followed.",
       " All players must wear colour jersey."
     ],
-    coordinators: []
+     coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
   },
   {
     id: "49",
@@ -1178,7 +1580,15 @@ export const events: Event[] = [
       "A match consists of two halves of 20 minutes each with a 5-minute break .",
       "Pro Kabaddi League rules will be followed.",
     ],
-    coordinators: []
+     coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
   },
   {
     id: "50",
@@ -1200,7 +1610,15 @@ export const events: Event[] = [
       "All matches will follow Rally Point System with Rotation basis.",
       "VFI rules will be followed.."
     ],
-    coordinators: []
+     coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
   },
   {
     id: "51",
@@ -1222,7 +1640,15 @@ export const events: Event[] = [
       " Use of electronic devices during the game is strictly prohibited.",
       " FIDE (World Chess Federation) rules will be followed."
     ],
-    coordinators: []
+     coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
   },
   {
     id: "52",
@@ -1244,7 +1670,15 @@ export const events: Event[] = [
       " The rally point system will be applied with rotation after each game.",
       " Official Carrom Federation of India (CFI) rules will be followed."
     ],
-    coordinators: []
+     coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
   },
   {
     id: "53",
@@ -1266,7 +1700,15 @@ export const events: Event[] = [
      "The Rally Point Scoring System will be followed.",
      "ITTF rules and standard table tennis equipment (40mm ball) apply."
     ],
-    coordinators: []
+     coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
   },
   {
     id: "54",
@@ -1288,7 +1730,15 @@ export const events: Event[] = [
          "4. All matches will follow Rally Point System with Rotation basis.",
          "5. VFI rules will be followed."
     ],
-    coordinators: []
+     coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
   },
   {
     id: "55",
@@ -1310,7 +1760,15 @@ export const events: Event[] = [
       "Matches are Best of 3 sets, each set up to 21 points (win by 2).",
       "The umpire’s decision is final; misbehavior may lead to disqualification."
     ],
-    coordinators: []
+    coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
   },
   {
     id: "56",
@@ -1331,7 +1789,15 @@ export const events: Event[] = [
          " A match consists of two halves of 15 minutes each with a 5-minute break.",
          "Pro Kabaddi League rules will be followed."
     ],
-    coordinators: []
+     coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
   },
   {
     id: "57",
@@ -1353,7 +1819,15 @@ export const events: Event[] = [
      "4. All matches will follow Rally Point System with Rotation basis.",
      "5. VFI rules will be followed.."
     ],
-    coordinators: []
+     coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
   },
   {
     id: "58",
@@ -1373,7 +1847,15 @@ export const events: Event[] = [
       "FIDE rules apply.",
       "No mobile use allowed."
     ],
-    coordinators: []
+     coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
   },
   {
     id: "59",
@@ -1395,7 +1877,15 @@ export const events: Event[] = [
      "4. Use of electronic devices during the game is strictly prohibited.",
      "5. FIDE (World Chess Federation) rules will be followed."
     ],
-    coordinators: []
+     coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
   },
   {
     id: "60",
@@ -1417,7 +1907,15 @@ export const events: Event[] = [
      "The Rally Point Scoring System will be followed.",
      "ITTF rules and standard table tennis equipment (40mm ball) apply."
     ],
-    coordinators: []
+     coordinators: {
+  event: [
+    { name: "Rahul Sharma", phone: "9012345678" },
+    { name: "Priya Verma", phone: "9345678123" }
+  ],
+  faculty: [
+    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+  ]
+}
   }
 ];
 
