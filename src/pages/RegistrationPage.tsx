@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FireParticles from "@/components/FireParticles";
 import { Check, ChevronsRight, Crown, Calendar, Zap } from "lucide-react";
+import { Link } from 'react-router-dom';
 
 export default function RegistrationPage() {
   const passes = [
@@ -148,11 +149,16 @@ export default function RegistrationPage() {
                 </ul>
 
                 {/* CTA Button */}
-                <button className="w-full bg-red-600 hover:bg-red-700 text-white font-black font-orbitron text-lg uppercase py-4 tracking-widest transition-all duration-300 shadow-[0_0_20px_rgba(220,38,38,0.3)] hover:shadow-[0_0_40px_rgba(220,38,38,0.6)] flex items-center justify-center gap-2 group/btn">
-                  REGISTER NOW
-                  <ChevronsRight className="w-5 h-5 group-hover/btn:translate-x-1 transition-transform" />
-                </button>
-              </div>
+                <a 
+  href="https://www.theticket9.com/event/spark-2026"
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="w-full bg-red-600 hover:bg-red-700 text-white font-black font-orbitron text-lg uppercase py-4 tracking-widest transition-all duration-300 shadow-[0_0_20px_rgba(220,38,38,0.3)] hover:shadow-[0_0_40px_rgba(220,38,38,0.6)] flex items-center justify-center gap-2 group/btn block"
+>
+  REGISTER NOW
+  <ChevronsRight className="w-5 h-5 group-hover/btn:translate-x-1 transition-transform" />
+</a>
+  </div>
             </div>
           ))}
         </div>

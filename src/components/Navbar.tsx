@@ -123,7 +123,7 @@ const Navbar = () => {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-white/5 ${scrolled
         ? "bg-[#050505]/95 backdrop-blur-md shadow-[0_4px_30px_rgba(0,0,0,0.5)]"
-        : "bg-black/60 backdrop-blur-sm"
+        : "bg-transparent "
         }`}
     >
       {/* Scanning Laser Border */}

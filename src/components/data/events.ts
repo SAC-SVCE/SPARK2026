@@ -310,7 +310,8 @@ export const events: Event[] = [
       "Report 15 minutes early",
       "Judges’ decision is final"
     ],
-    coordinators: []
+    coordinators: [
+    ]
   },
 {
     id: "19",

@@ -64,9 +64,10 @@ export default function EventDetail() {
     toast.success("Link copied to clipboard!");
   };
 
-  const handleRegister = () => {
-    toast.success("Registration form will open soon!");
-  };
+ const handleRegister = () => {
+    window.open("https://www.theticket9.com/event/spark-2026", "_blank");
+};
+
 
   return (
     <div className="min-h-screen bg-[#050505] relative">

@@ -2,7 +2,7 @@ import { useRef, useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Sword, Trophy, ChevronDown } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import heroBattlefield from "@/assets/hero-battlefield.jpg";
+import homebackground from "@/assets/Home_background2.jpg";
 import sparkLogo from "@/assets/spark-logo.png";
 import { motion } from "framer-motion";
 
@@ -40,57 +40,64 @@ const Hero = () => {
     return () => clearInterval(interval);
   }, []);
 
-
   return (
     <section
       id="home"
       ref={ref}
-      className="relative h-screen w-full flex items-center justify-center overflow-hidden bg-[#050505]"
+      className="relative min-h-[120vh] md:min-h-[140vh] w-full flex flex-col items-center justify-center overflow-hidden bg-[#050505] py-20"
     >
       {/* Static Professional Background */}
-      <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${heroBattlefield})` }}>
-        
-        <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-black/40" />
+      <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${homebackground})` }}>
+       <div className="absolute inset-0 bg-gradient-to-t from-[#050505]/80 via-transparent to-transparent" />
       </div>
 
       {/* Grid Overlay - Very Subtle */}
       <div className="absolute inset-0 opacity-10 pointer-events-none bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:4rem_4rem]" />
 
-      {/* Center Content */}
-      <div className="relative z-30 container mx-auto px-4 flex flex-col items-center justify-center h-full text-center">
-
+      {/* Center Content - Scroll Triggered */}
+      <motion.div 
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: false, margin: "-100px" }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className="relative z-30 container mx-auto px-4 flex flex-col items-center justify-center text-center w-full h-full"
+      >
         {/* Logo - Static & Centered */}
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
           transition={{ duration: 1, ease: "easeOut" }}
-          className="mb-8"
+          className="mb-8 w-full max-w-[500px] mx-auto"
         >
-          <img
+          {/* Uncomment your logo */}
+          {/* <img
             src={sparkLogo}
             alt="SPARK 2026"
-            className="w-full max-w-[500px] h-auto object-contain drop-shadow-2xl"
-          />
+            className="w-full h-auto object-contain drop-shadow-2xl"
+          /> */}
         </motion.div>
 
         {/* Tagline */}
-        <motion.p
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5 }}
+        {/* <motion.p
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false, margin: "-50px" }}
+          transition={{ duration: 0.6 }}
           className="text-lg md:text-2xl text-zinc-300 font-light tracking-wide max-w-2xl mx-auto mb-10"
         >
           An Inter-College <span className="text-white font-semibold">Techno-Cultural</span> Sports Event.
-        </motion.p>
+        </motion.p> */}
 
         {/* Buttons - Clean & Professional */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.7 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-6"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false, margin: "-50px" }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="flex flex-col sm:flex-row items-center justify-center gap-6 w-full max-w-md mx-auto mb-16"
         >
-          <Button
+          {/* <Button
             className="bg-primary hover:bg-primary/90 text-white min-w-[180px] h-12 text-base font-medium tracking-wide rounded-sm shadow-lg shadow-primary/20 transition-all duration-300"
             onClick={() => { document.getElementById("events")?.scrollIntoView({ behavior: "smooth" }); }}
           >
@@ -103,49 +110,51 @@ const Hero = () => {
             onClick={() => navigate("/events")}
           >
             <Trophy className="w-4 h-4 mr-2" /> VIEW EVENTS
-          </Button>
+          </Button> */}
         </motion.div>
 
         {/* Sleek Countdown Timer */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1 }}
-          className="mt-16"
-        >
-          <div className="flex items-center justify-center gap-4 md:gap-8 text-white">
-            <div className="text-center">
-              <div className="text-2xl md:text-4xl font-light font-orbitron">{String(timeLeft.days).padStart(2, '0')}</div>
-              <div className="text-[10px] text-zinc-500 tracking-widest uppercase mt-1">Days</div>
-            </div>
-            <div className="text-zinc-600 text-2xl font-light">:</div>
-            <div className="text-center">
-              <div className="text-2xl md:text-4xl font-light font-orbitron">{String(timeLeft.hours).padStart(2, '0')}</div>
-              <div className="text-[10px] text-zinc-500 tracking-widest uppercase mt-1">Hours</div>
-            </div>
-            <div className="text-zinc-600 text-2xl font-light">:</div>
-            <div className="text-center">
-              <div className="text-2xl md:text-4xl font-light font-orbitron">{String(timeLeft.minutes).padStart(2, '0')}</div>
-              <div className="text-[10px] text-zinc-500 tracking-widest uppercase mt-1">Mins</div>
-            </div>
-            <div className="text-zinc-600 text-2xl font-light">:</div>
-            <div className="text-center">
-              <div className="text-2xl md:text-4xl font-light font-orbitron">{String(timeLeft.seconds).padStart(2, '0')}</div>
-              <div className="text-[10px] text-zinc-500 tracking-widest uppercase mt-1">Secs</div>
-            </div>
-          </div>
-          <div className="text-center mt-6">
-            <span className="text-[10px] text-zinc-600 tracking-[0.3em] uppercase">Event Starts Soon</span>
-          </div>
-        </motion.div>
+       {/* Countdown Timer - Top Right Corner (REPLACE THE OLD TIMER) */}
+<motion.div 
+  initial={{ opacity: 0, scale: 0.8 }}
+  animate={{ opacity: 1, scale: 1 }}
+  className=" fixed top-6 right-6 z-50 md:top-20 md:right-8 lg:top-12 lg:right-12"
+>
+  <div className="bg-transparent border border-white/20 rounded-lg p-4 md:p-6 shadow-2xl shadow-black/50">
+    <div className="flex items-center justify-center gap-2 md:gap-4 text-white">
+      <div className="text-center">
+        <div className="text-xl md:text-3xl lg:text-4xl font-light font-orbitron">{String(timeLeft.days).padStart(2, '0')}</div>
+        <div className="text-xs md:text-sm text-zinc-400 tracking-widest uppercase mt-1">Days</div>
       </div>
+      <div className="text-zinc-500 text-lg md:text-2xl font-light">:</div>
+      <div className="text-center">
+        <div className="text-xl md:text-3xl lg:text-4xl font-light font-orbitron">{String(timeLeft.hours).padStart(2, '0')}</div>
+        <div className="text-xs md:text-sm text-zinc-400 tracking-widest uppercase mt-1">Hrs</div>
+      </div>
+      <div className="text-zinc-500 text-lg md:text-2xl font-light">:</div>
+      <div className="text-center">
+        <div className="text-xl md:text-3xl lg:text-4xl font-light font-orbitron">{String(timeLeft.minutes).padStart(2, '0')}</div>
+        <div className="text-xs md:text-sm text-zinc-400 tracking-widest uppercase mt-1">Mins</div>
+      </div>
+      <div className="text-zinc-500 text-lg md:text-2xl font-light">:</div>
+      <div className="text-center">
+        <div className="text-xl md:text-3xl lg:text-4xl font-light font-orbitron">{String(timeLeft.seconds).padStart(2, '0')}</div>
+        <div className="text-xs md:text-sm text-zinc-400 tracking-widest uppercase mt-1">Secs</div>
+      </div>
+    </div>
+    <div className="text-center mt-3">
+      <span className="text-xs md:text-sm text-zinc-500 tracking-widest uppercase">SPARK 2026</span>
+    </div>
+  </div>
+</motion.div>
+
+      </motion.div>
 
       {/* Subtle Scroll Indicator */}
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 2 }}
-        className="absolute bottom-6 left-1/2 -translate-x-1/2 animate-bounce"
+        animate={{ y: [0, 10, 0] }}
+        transition={{ duration: 2, repeat: Infinity }}
+        className="absolute bottom-6 left-1/2 -translate-x-1/2"
       >
         <ChevronDown className="w-5 h-5 text-zinc-500" />
       </motion.div>
