@@ -8,6 +8,7 @@ import SparkEffect from "@/components/SparkEffect";
 import { motion } from "framer-motion";
 
 const Index = () => {
+  
   const fadeInUp = {
     initial: { opacity: 0, y: 60 },
     whileInView: { opacity: 1, y: 0 },

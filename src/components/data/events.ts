@@ -955,6 +955,35 @@ export const events: Event[] = [
 }
   },
   {
+  id: "28",
+  title: "Youth Parliament",
+  description:
+    "A dynamic platform where young minds engage in debating national, social, and policy-level issues following parliamentary procedures.",
+  date: "7th March 2026",
+  dateTag: "7 Mar",
+  time: "10:00 - 04:30",
+  venue: "Department Venues",
+  categories: ["Spotlight Events"],
+  department: "",
+  image: "/ALL POSTERS/YOUTH PARLIMENT.jpg",
+  registrationOpen: true,
+  teamSize: "",
+  rules: [
+    "Participants must follow parliamentary decorum",
+    "Speeches must align with assigned topics or bills",
+    "Strict adherence to time limits is mandatory",
+    "No inappropriate or offensive language",
+    "Decisions of the Speaker/Moderators are final"
+  ],
+  coordinators: {
+    event: [
+      { name: "Rahul Sharma", phone: "9012345678" },
+      { name: "Priya Verma", phone: "9345678123" }
+    ],
+    faculty: [{ name: "Dr. Ramesh Kumar", phone: "9988776655" }]
+  }
+},
+  {
     id: "29",
     title: "Echoes of Sound",
     description:
