@@ -16,6 +16,7 @@ import ProshowPage from "./pages/ProshowPage";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ui/ScrollToTop";
 import TeamPage from "./pages/TeamPage";
+import ComingSoon from "./pages/ComingSoon";
 
 const queryClient = new QueryClient();
 
@@ -40,6 +41,7 @@ const App = () => {
           <Route path="/event/:id" element={<EventDetail />} />
           <Route path="/proshow" element={<ProshowPage />} />
           <Route path="/team" element={<TeamPage />} />
+          <Route path="/comingsoon" element={<ComingSoon />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

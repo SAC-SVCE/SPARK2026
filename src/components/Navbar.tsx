@@ -77,6 +77,12 @@ const Navbar = () => {
       return;
     }
 
+    if (id === "comingsoon") {
+      navigate("/comingsoon");
+      setIsOpen(false);
+      return;
+    }
+
     if (id.startsWith("event-cat-")) {
       const category = id.replace("event-cat-", "");
       navigate(`/events?category=${encodeURIComponent(category)}`);
@@ -109,8 +115,8 @@ const Navbar = () => {
     { name: "About", id: "about-page" },
     // Events is handled separately
     { name: "Spotlight Events", id: "spotlight-events" },
-    { name: "Highlights", id: "highlights-page" },
-    { name: "Sponsors", id: "sponsors-page" },
+    { name: "Highlights", id: "comingsoon" },
+    { name: "Sponsors", id: "comingsoon" },
 
   ];
 
