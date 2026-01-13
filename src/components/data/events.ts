@@ -114,11 +114,11 @@ export const events: Event[] = [
     ],
     coordinators: {
   event: [
-    { name: "Rahul Sharma", phone: "9012345678" },
-    { name: "Priya Verma", phone: "9345678123" }
+    { name: "Jagan Mohan Reddy", phone: "6302589041" },
+    
   ],
   faculty: [
-    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+    { name: "Dr. P. Sudheekar Reddy", phone: "8297960423" }
   ]
 }
 },
@@ -144,11 +144,12 @@ export const events: Event[] = [
     ],
      coordinators: {
   event: [
-    { name: "Rahul Sharma", phone: "9012345678" },
-    { name: "Priya Verma", phone: "9345678123" }
+    { name: "Kasa Srihari", phone: "8985388335" },
+    
   ],
   faculty: [
-    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+    { name: "Dr. K. Jagath Narayana", phone: "9891598684" },
+    {name:"Dr. M. Vamsi Krishna", phone:"8978407734"}
   ]
 }
 
@@ -175,11 +176,11 @@ export const events: Event[] = [
     ],
      coordinators: {
   event: [
-    { name: "Rahul Sharma", phone: "9012345678" },
-    { name: "Priya Verma", phone: "9345678123" }
+    { name: "D. Harsha Vardhan Kumar", phone: "8019320140" },
+   
   ],
   faculty: [
-    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+    { name: "D. Praveen Kumar", phone: "9908753983" }
   ]
 }
 
@@ -206,11 +207,11 @@ export const events: Event[] = [
     ],
     coordinators: {
   event: [
-    { name: "Rahul Sharma", phone: "9012345678" },
-    { name: "Priya Verma", phone: "9345678123" }
+    { name: "M. Naveen Reddy", phone: "9000935090" },
+    
   ],
   faculty: [
-    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+    { name: "A. Krishna Mohan", phone: "9949983365" }
   ]
 }
 
@@ -240,11 +241,11 @@ export const events: Event[] = [
     ],
      coordinators: {
   event: [
-    { name: "Rahul Sharma", phone: "9012345678" },
-    { name: "Priya Verma", phone: "9345678123" }
+    { name: "Shaik Mohammad Shahid", phone: "7981491740" },
+   
   ],
   faculty: [
-    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+    { name: "M. Chandrakala", phone: "6301667880" }
   ]
 }
 
@@ -272,11 +273,11 @@ export const events: Event[] = [
     ],
      coordinators: {
   event: [
-    { name: "Rahul Sharma", phone: "9012345678" },
-    { name: "Priya Verma", phone: "9345678123" }
+    { name: "G. Guru Vaishnavi", phone: "8985052577" },
+    
   ],
   faculty: [
-    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+    { name: "J. Ramachandraiah", phone: "9000638814" }
   ]
 }
 
@@ -304,11 +305,11 @@ export const events: Event[] = [
     ],
      coordinators: {
   event: [
-    { name: "Rahul Sharma", phone: "9012345678" },
-    { name: "Priya Verma", phone: "9345678123" }
+    { name: "K. Manogna", phone: "7993130621" },
+    
   ],
   faculty: [
-    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+    { name: "Dr. Jasmine Sabeena", phone: "9490922900" }
   ]
 }
 
@@ -337,11 +338,11 @@ export const events: Event[] = [
     ],
     coordinators: {
   event: [
-    { name: "Rahul Sharma", phone: "9012345678" },
-    { name: "Priya Verma", phone: "9345678123" }
+    { name: "N. G. Durga Bhavani", phone: "6281131365" },
+    
   ],
   faculty: [
-    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+    { name: "D. Lavanya", phone: "7780415483" }
   ]
 }
 
@@ -370,11 +371,11 @@ export const events: Event[] = [
     ],
     coordinators: {
   event: [
-    { name: "Rahul Sharma", phone: "9012345678" },
-    { name: "Priya Verma", phone: "9345678123" }
+    { name: "M. N. Divean", phone: "6305031658" },
+    
   ],
   faculty: [
-    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+    { name: "N. Sireesha", phone: "9573533688" }
   ]
 }
 
@@ -403,11 +404,11 @@ export const events: Event[] = [
     ],
      coordinators: {
   event: [
-    { name: "Rahul Sharma", phone: "9012345678" },
-    { name: "Priya Verma", phone: "9345678123" }
+    { name: "P. Jaswanth", phone: "7337024653" },
+    
   ],
   faculty: [
-    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+    { name: "Dr. S. Gautami", phone: "9985506543" }
   ]
 }
   },
@@ -435,11 +436,11 @@ export const events: Event[] = [
     ],
     coordinators: {
   event: [
-    { name: "Rahul Sharma", phone: "9012345678" },
-    { name: "Priya Verma", phone: "9345678123" }
+    { name: "S. Venkatadri", phone: "7780426116" },
+    
   ],
   faculty: [
-    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+    { name: "Dr. Y. Vishnu Tej", phone: "9491278564" }
   ]
 }
   },
@@ -469,11 +470,11 @@ export const events: Event[] = [
     ],
     coordinators: {
   event: [
-    { name: "Rahul Sharma", phone: "9012345678" },
-    { name: "Priya Verma", phone: "9345678123" }
+    { name: "A. Sumanth", phone: "9182611319" },
+    
   ],
   faculty: [
-    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+    { name: "Dr. T. Vijay Kumar", phone: "9985171776" }
   ]
 }
   },
@@ -500,11 +501,11 @@ export const events: Event[] = [
     ],
      coordinators: {
   event: [
-    { name: "Rahul Sharma", phone: "9012345678" },
-    { name: "Priya Verma", phone: "9345678123" }
+    { name: "A. Venkata Surya", phone: "7671822801" },
+   
   ],
   faculty: [
-    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+    { name: "Dr. S. Jaya Kishore", phone: "9581820468" }
   ]
 }
   },
@@ -531,11 +532,11 @@ export const events: Event[] = [
     ],
     coordinators: {
   event: [
-    { name: "Rahul Sharma", phone: "9012345678" },
-    { name: "Priya Verma", phone: "9345678123" }
+    { name: "C. Chandu", phone: "7981915198" },
+    
   ],
   faculty: [
-    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+    { name: "C. Raja Sekhar", phone: "8897778957" }
   ]
 }
   },
@@ -562,11 +563,11 @@ export const events: Event[] = [
     ],
      coordinators: {
   event: [
-    { name: "Rahul Sharma", phone: "9012345678" },
-    { name: "Priya Verma", phone: "9345678123" }
+    { name: "P. Sameera Bhanu", phone: "8688510901" },
+    
   ],
   faculty: [
-    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+    { name: "Dr. D. Ester Rani", phone: "9542890853" }
   ]
 }
   },
@@ -592,11 +593,11 @@ export const events: Event[] = [
     ],
      coordinators: {
   event: [
-    { name: "Rahul Sharma", phone: "9012345678" },
-    { name: "Priya Verma", phone: "9345678123" }
+    { name: "C. Dileep", phone: "9398154400" },
+   
   ],
   faculty: [
-    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+    { name: "B. Dhanunjay", phone: "9000046368" }
   ]
 }
   },
@@ -622,11 +623,11 @@ export const events: Event[] = [
     ],
     coordinators: {
   event: [
-    { name: "Rahul Sharma", phone: "9012345678" },
-    { name: "Priya Verma", phone: "9345678123" }
+    { name: "K. Tharun", phone: "6305750924" },
+    
   ],
   faculty: [
-    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+    { name: "K. Naresh", phone: "9959249971" }
   ]
 }
   },
@@ -652,11 +653,11 @@ export const events: Event[] = [
     ],
      coordinators: {
   event: [
-    { name: "Rahul Sharma", phone: "9012345678" },
-    { name: "Priya Verma", phone: "9345678123" }
+    { name: "Suresh", phone: "9177476292" },
+    
   ],
   faculty: [
-    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+    { name: "CM. Prakash", phone: "9885648658" }
   ]
 }
   },
@@ -682,11 +683,11 @@ export const events: Event[] = [
     ],
     coordinators: {
   event: [
-    { name: "Rahul Sharma", phone: "9012345678" },
-    { name: "Priya Verma", phone: "9345678123" }
+    { name: "Y. Harshitha Reddy", phone: "" },
+    
   ],
   faculty: [
-    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+    { name: "K. Roopa Raj", phone: "9177119295" }
   ]
 }
   },
@@ -716,11 +717,11 @@ export const events: Event[] = [
     ],
      coordinators: {
   event: [
-    { name: "Rahul Sharma", phone: "9012345678" },
-    { name: "Priya Verma", phone: "9345678123" }
+    { name: "", phone: "" },
+    
   ],
   faculty: [
-    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+    { name: "Dr. Keerthipati/Dr. R. Swathi", phone: "9985303614" }
   ]
 }
   },
@@ -741,11 +742,11 @@ export const events: Event[] = [
     rules: [],
      coordinators: {
   event: [
-    { name: "Rahul Sharma", phone: "9012345678" },
-    { name: "Priya Verma", phone: "9345678123" }
+    { name: "", phone: "" },
+   
   ],
   faculty: [
-    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+    { name: "AV Rajesh", phone: "9963860807" }
   ]
 }
   },
@@ -766,11 +767,11 @@ export const events: Event[] = [
     rules: [],
     coordinators: {
   event: [
-    { name: "Rahul Sharma", phone: "9012345678" },
-    { name: "Priya Verma", phone: "9345678123" }
+    { name: "", phone: "" },
+    
   ],
   faculty: [
-    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+    { name: "A. Ganesh", phone: "9160250264" }
   ]
 }
   },
@@ -796,11 +797,11 @@ export const events: Event[] = [
     ],
     coordinators: {
   event: [
-    { name: "Rahul Sharma", phone: "9012345678" },
-    { name: "Priya Verma", phone: "9345678123" }
+    { name: "D. Kumar", phone: "8688502790" },
+    
   ],
   faculty: [
-    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+    { name: "K. Sreedevi", phone: "8074682544" }
   ]
 }
   },
@@ -826,11 +827,11 @@ export const events: Event[] = [
     ],
      coordinators: {
   event: [
-    { name: "Rahul Sharma", phone: "9012345678" },
-    { name: "Priya Verma", phone: "9345678123" }
+    { name: "K. Nandhini", phone: "7793944809" },
+   
   ],
   faculty: [
-    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+    { name: "M. Poornima", phone: "7013558497" }
   ]
 }
   },
@@ -857,11 +858,11 @@ export const events: Event[] = [
     ],
     coordinators: {
   event: [
-    { name: "Rahul Sharma", phone: "9012345678" },
-    { name: "Priya Verma", phone: "9345678123" }
+    { name: "G. L. Vaishnavi", phone: "6304384369" },
+    
   ],
   faculty: [
-    { name: "Dr. Ramesh Kumar", phone: "9988776655" }
+    { name: "E. Mamatha", phone: "8886207679" }
   ]
 }
   },
