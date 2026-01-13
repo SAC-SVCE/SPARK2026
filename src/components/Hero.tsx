@@ -2,7 +2,7 @@ import { useRef, useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Sword, Trophy, ChevronDown } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import homebackground from "@/assets/Home_background2.jpg";
+import homebackground from "@/assets/Home_background2.jpeg";
 import sparkLogo from "@/assets/spark-logo.png";
 import { motion } from "framer-motion";
 
@@ -44,10 +44,10 @@ const Hero = () => {
         <section
             id="home"
             ref={ref}
-            className="relative min-h-[120vh] md:min-h-[150vh] w-full flex flex-col items-center justify-center overflow-hidden bg-[#050505] py-20"
+            className="relative min-h-[100dvh] md:min-h-[100vh] w-full flex flex-col items-center justify-center overflow-hidden bg-[#050505] py-20"
         >
             {/* Static Professional Background */}
-            <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${homebackground})` }}>
+            <div className="absolute inset-0 bg-contain bg-center bg-no-repeat" style={{ backgroundImage: `url(${homebackground})` }}>
                 <div className="absolute inset-0 bg-gradient-to-t from-[#050505]/20 via-transparent to-transparent" />
             </div>
 
@@ -95,7 +95,7 @@ const Hero = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: false, margin: "-50px" }}
                     transition={{ duration: 0.6, delay: 0.2 }}
-                    className="flex flex-col sm:flex-row items-center justify-center gap-6 w-full max-w-md mx-auto mb-16"
+                    className="flex flex-col sm:flex-row items-center justify-center gap-6 w-full max-w-md mx-auto mb-8 md:mb-16"
                 >
                     {/* <Button
             className="bg-primary hover:bg-primary/90 text-white min-w-[180px] h-12 text-base font-medium tracking-wide rounded-sm shadow-lg shadow-primary/20 transition-all duration-300"
@@ -115,7 +115,7 @@ const Hero = () => {
 
                 {/* Sleek Countdown Timer */}
                 {/* Countdown Timer - Top Right Corner (REPLACE THE OLD TIMER) */}
-                <motion.div
+                {/* <motion.div
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     className=" fixed top-6 right-6 z-50 md:top-20 md:right-8 lg:top-12 lg:right-12"
@@ -146,7 +146,7 @@ const Hero = () => {
                             <span className="text-xs md:text-sm text-zinc-500 tracking-widest uppercase">SPARK 2026</span>
                         </div>
                     </div>
-                </motion.div>
+                </motion.div> */}
 
             </motion.div>
 

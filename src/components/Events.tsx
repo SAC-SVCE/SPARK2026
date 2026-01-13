@@ -66,7 +66,7 @@ const Events = () => {
   const infiniteCategories = [...categories, ...categories];
 
   return (
-    <section className="py-20 relative bg-[#050505] overflow-hidden">
+    <section className="py-12 md:py-20 relative bg-[#050505] overflow-hidden">
       {/* Thiran-style Background Glows */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
         <div className="absolute top-1/2 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-[100px] -translate-y-1/2" />
@@ -118,7 +118,7 @@ const Events = () => {
           {[...categories, ...categories, ...categories].map((cat, index) => (
             <div
               key={`${cat.id}-${index}`}
-              className="min-w-[300px] md:min-w-[350px] group relative h-[450px] rounded-[30px] overflow-hidden bg-zinc-900 border border-white/10 transition-transform duration-300 hover:scale-[1.02]"
+              className="min-w-[85vw] md:min-w-[350px] group relative h-[450px] rounded-[30px] overflow-hidden bg-zinc-900 border border-white/10 transition-transform duration-300 hover:scale-[1.02]"
             >
               {/* Image Background */}
               <div className="absolute inset-0">
