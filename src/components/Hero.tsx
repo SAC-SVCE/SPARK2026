@@ -2,7 +2,7 @@ import { useRef, useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Sword, Trophy, ChevronDown } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import homebackground from "@/assets/Home_background2.jpeg";
+import homebackground from "@/assets/Home_bannerfinal.jpeg";
 import sparkLogo from "@/assets/spark-logo.png";
 import { motion } from "framer-motion";
 
