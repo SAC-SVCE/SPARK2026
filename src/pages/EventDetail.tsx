@@ -13,7 +13,7 @@ import { events } from "@/components/data/events";
 import { Button } from "@/components/event-ui/button";
 import { Badge } from "@/components/event-ui/badge";
 import { Card, CardContent } from "@/components/event-ui/card";
-
+import { FaGraduationCap, FaUserTie } from 'react-icons/fa';
 import { EventCard } from "@/components/EventCard";
 import { toast } from "sonner";
 
@@ -204,7 +204,7 @@ const handleRegister = () => {
           {/* Sidebar */}
           <div className="lg:col-span-2 space-y-6">
             {/* Event Info Card */}
-            <Card className="border-primary/30 bg-zinc-900/60 backdrop-blur-xl sticky top-24 shadow-[0_0_30px_rgba(0,0,0,0.4)]">
+            <Card className="border-primary/30 bg-zinc-900/60 backdrop-blur-xl sticky top-2 shadow-[0_0_30px_rgba(0,0,0,0.4)]">
               <CardContent className="p-8 space-y-8">
                 <div className="space-y-6">
                   <div className="flex items-start gap-5">
@@ -255,20 +255,21 @@ const handleRegister = () => {
                     </div>
                   )}
                 </div>
-                {/* Event Coordinators */}
+                {/* Student Coordinators */}
 {event.coordinators?.event?.length > 0 && (
   <div className="flex items-start gap-5">
-    <div className="p-4 rounded-xl bg-cyan-500/10 border border-cyan-500/20">
-      <Users className="h-7 w-7 text-cyan-400" />
-    </div>
+   <div className="p-4 rounded-xl bg-cyan-500/10 border border-cyan-500/20">
+  <FaGraduationCap className="h-7 w-7 text-cyan-400" />
+</div>
+
     <div>
       <p className="text-base text-zinc-500">Student Coordinators</p>
       <div className="space-y-1 mt-1">
         {event.coordinators.event.map((coord, index) => (
-          <p key={index} className="text-white font-medium text-sm">
+          <p key={index} className="text-white font-medium text-xl">
             {coord.name}
             {coord.phone && (
-              <span className="text-cyan-400 ml-2 text-xs">
+              <span className="text-cyan-400 ml-2 text-xl">
                 ({coord.phone})
               </span>
             )}
@@ -282,16 +283,17 @@ const handleRegister = () => {
 {event.coordinators?.faculty?.length > 0 && (
   <div className="flex items-start gap-5">
     <div className="p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/20">
-      <Users className="h-7 w-7 text-emerald-400" />
-    </div>
+  <FaUserTie className="h-7 w-7 text-emerald-400" />
+</div>
+
     <div>
       <p className="text-base text-zinc-500">Faculty Coordinators</p>
       <div className="space-y-1 mt-1">
         {event.coordinators.faculty.map((coord, index) => (
-          <p key={index} className="text-white font-medium text-sm">
+          <p key={index} className="text-white font-medium text-xl">
             {coord.name}
             {coord.phone && (
-              <span className="text-emerald-400 ml-2 text-xs">
+              <span className="text-emerald-400 ml-2 text-xl">
                 ({coord.phone})
               </span>
             )}
