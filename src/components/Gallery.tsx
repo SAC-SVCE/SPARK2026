@@ -43,7 +43,7 @@ const Gallery = () => {
   };
 
   return (
-    <section id="gallery" className="py-24 relative overflow-hidden bg-card/30">
+    <section id="gallery" className="py-12 md:py-24 relative overflow-hidden bg-card/30">
       {/* Background Effects */}
       <div className="absolute inset-0">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
@@ -115,22 +115,22 @@ const Gallery = () => {
                 key={index}
                 onClick={() => setCurrentIndex(index)}
                 className={`h-2 rounded-full transition-all duration-300 ${index === currentIndex
-                    ? "w-8 bg-primary"
-                    : "w-2 bg-border hover:bg-border/60"
+                  ? "w-8 bg-primary"
+                  : "w-2 bg-border hover:bg-border/60"
                   }`}
               />
             ))}
           </div>
 
           {/* Thumbnail Preview */}
-          <div className="mt-12 grid grid-cols-3 md:grid-cols-5 gap-4">
+          <div className="mt-12 grid grid-cols-3 md:grid-cols-5 gap-2 md:gap-4">
             {galleryItems.map((item, index) => (
               <button
                 key={index}
                 onClick={() => setCurrentIndex(index)}
                 className={`aspect-video rounded-lg overflow-hidden transition-all duration-300 border-2 ${index === currentIndex
-                    ? "border-primary scale-105 shadow-[0_0_20px_hsl(var(--fire-orange)/0.5)]"
-                    : "border-border hover:border-primary/50 opacity-60 hover:opacity-100"
+                  ? "border-primary scale-105 shadow-[0_0_20px_hsl(var(--fire-orange)/0.5)]"
+                  : "border-border hover:border-primary/50 opacity-60 hover:opacity-100"
                   }`}
               >
                 <div

@@ -3,7 +3,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FireParticles from "@/components/FireParticles";
 import { Check, ChevronsRight, Crown, Calendar, Zap } from "lucide-react";
-import { Link } from 'react-router-dom';
+
+import sparkLogo from "@/assets/spark-logo.png";
 
 export default function RegistrationPage() {
   const passes = [
@@ -11,16 +12,15 @@ export default function RegistrationPage() {
       id: 1,
       title: "DAY 1",
       subtitle: "PRELIMINARIES",
-      price: "₹499",
+      price: "₹300",
       type: "STANDARD",
       image: "/event-images/sample.png", // Replace with specific texture if available
       description: "Access to all Day 1 technical events and hackathon entry.",
       includes: [
-        "Hackathon Entry",
-        "Technical Workshops",
-        "Lunch Included",
-        "Participant Kit",
-        "Networking Session"
+        "Paper presentation",
+        "Spotlight events",
+        "Tech & Non - Tech Events",
+        "Cultural events",
       ],
       highlight: false
     },
@@ -28,16 +28,14 @@ export default function RegistrationPage() {
       id: 2,
       title: "DAY 2",
       subtitle: "FINALS & CULTURALS",
-      price: "₹499",
+      price: "₹300",
       type: "STANDARD",
       image: "/event-images/sample.png",
       description: "Witness the grand finals and the electrifying cultural night.",
       includes: [
-        "RoboWars Finals",
-        "Cultural Night Entry",
-        "Star Night Access",
-        "Lunch Included",
-        "Closing Ceremony"
+        "Tech and non - tech events",
+        "Spotlight events",
+        "Mega Celebrity shows",
       ],
       highlight: false
     },
@@ -45,16 +43,14 @@ export default function RegistrationPage() {
       id: 3,
       title: "ELITE",
       subtitle: "ALL ACCESS",
-      price: "₹899",
+      price: "₹500",
       type: "COMBO PASS",
       image: "/event-images/sample.png",
-      description: "The ultimate Warzone experience. Unrestricted access to everything.",
+      description: "The ultimate Spark experience. Unrestricted access to everything.",
       includes: [
         "All Day 1 & Day 2 Perks",
-        "VIP Front Row Seats",
-        "Exclusive Merchandise",
-        "Meet & Greet with Guests",
-        "Priority Queue Access"
+        "Hackathons",
+        "Entry to all events of March 6th and 7th",
       ],
       highlight: true
     }
@@ -92,11 +88,9 @@ export default function RegistrationPage() {
               className={`relative group bg-zinc-900/40 border border-white/5 backdrop-blur-sm overflow-hidden flex flex-col transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(220,38,38,0.1)] ${pass.highlight ? 'ring-1 ring-red-500/50' : ''}`}
             >
               {/* Background Texture */}
-              <div className="absolute inset-0 z-0 opacity-20 group-hover:opacity-40 transition-opacity duration-500">
-                <img src={pass.image} alt="" className="w-full h-full object-cover grayscale mix-blend-overlay" />
-                <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/50 to-black" />
+              <div className="absolute inset-0 z-0 opacity-10 group-hover:opacity-20 transition-opacity duration-500 pointer-events-none flex items-center justify-center">
+                <img src={sparkLogo} alt="Watermark" className="w-[80%] h-auto object-contain grayscale-10deg opacity-50" />
               </div>
-
               {/* Vertical Accent Line */}
               <div className="absolute top-0 bottom-0 left-0 w-1.5 bg-red-600 shadow-[0_0_15px_rgba(220,38,38,0.8)] z-20" />
 
@@ -149,16 +143,16 @@ export default function RegistrationPage() {
                 </ul>
 
                 {/* CTA Button */}
-                <a 
-  href="https://www.theticket9.com/event/spark-2026"
-  target="_blank" 
-  rel="noopener noreferrer"
-  className="w-full bg-red-600 hover:bg-red-700 text-white font-black font-orbitron text-lg uppercase py-4 tracking-widest transition-all duration-300 shadow-[0_0_20px_rgba(220,38,38,0.3)] hover:shadow-[0_0_40px_rgba(220,38,38,0.6)] flex items-center justify-center gap-2 group/btn block"
->
-  REGISTER NOW
-  <ChevronsRight className="w-5 h-5 group-hover/btn:translate-x-1 transition-transform" />
-</a>
-  </div>
+                <a
+                  href="https://www.theticket9.com/event/spark-2026"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full bg-red-600 hover:bg-red-700 text-white font-black font-orbitron text-lg uppercase py-4 tracking-widest transition-all duration-300 shadow-[0_0_20px_rgba(220,38,38,0.3)] hover:shadow-[0_0_40px_rgba(220,38,38,0.6)] flex items-center justify-center gap-2 group/btn block"
+                >
+                  REGISTER NOW
+                  <ChevronsRight className="w-5 h-5 group-hover/btn:translate-x-1 transition-transform" />
+                </a>
+              </div>
             </div>
           ))}
         </div>

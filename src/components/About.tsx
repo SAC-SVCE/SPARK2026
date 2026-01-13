@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <section id="about" className="py-24 relative overflow-hidden bg-background">
+    <section id="about" className="py-12 md:py-24 relative overflow-hidden bg-background">
       {/* Background Effects */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-indigo-900/40 rounded-full blur-[150px]" />
@@ -40,7 +40,7 @@ const About = () => {
                  relative
                  bg-card/40 backdrop-blur-md
                  rounded-tl-[40px] rounded-br-[40px] rounded-tr-xl rounded-bl-xl
-                 h-40 md:h-48
+                 min-h-[10rem] md:min-h-[12rem] h-auto
                  flex flex-col items-center justify-center
                  shadow-lg shadow-black/40
                  transform transition-transform duration-300 hover:-translate-y-2

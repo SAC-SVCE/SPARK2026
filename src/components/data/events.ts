@@ -92,7 +92,7 @@ export interface Event {
 export const events: Event[] = [
 
 {
-    id: "9",
+    id: "1",
     title: " smart and sustainable cities ",
     description:
       "Innovation Driven by AI is a paper presentation event focused on exploring how Artificial Intelligence is transforming industries and society. Participants present research papers or innovative ideas that highlight AI-driven solutions across domains such as healthcare, education, automation, smart systems, and intelligent decision-making.",
@@ -123,7 +123,7 @@ export const events: Event[] = [
 }
 },
   {
-    id: "10",
+    id: "2",
     title: "Intelligent Manufacturing & Sustainable Mechanical Systems",
     description:
       "Intelligent Manufacturing & Sustainable Mechanical Systems is a paper presentation event that focuses on the integration of advanced manufacturing technologies with sustainable mechanical engineering practices. Participants present research papers or innovative concepts related to smart manufacturing, automation, Industry 4.0, AI-driven production systems, robotics, digital twins, additive manufacturing, and energy-efficient mechanical designs.",
@@ -155,7 +155,7 @@ export const events: Event[] = [
 
   },
   {
-    id: "11",
+    id: "3",
     title: "Smart Power Systems & Electric Mobility",
     description:
       " Smart Power Systems & Electric Mobility is a paper presentation event that focuses on advanced electrical power systems and next-generation transportation technologies. Participants present research papers or innovative ideas related to smart grids, renewable energy integration, energy storage systems, power electronics, electric vehicles (EVs), charging infrastructure, and intelligent energy management.   ",
@@ -186,7 +186,7 @@ export const events: Event[] = [
 
   },
   {
-    id: "12",
+    id: "4",
     title: "Embedded and Intelligent Electronic Systems ",
     description:
       "Embedded and Intelligent Electronic Systems is a paper presentation event that focuses on the design and application of smart embedded technologies and intelligent electronic systems. Participants present research papers or innovative ideas related to embedded systems, microcontrollers, IoT devices, real-time systems, AI-enabled electronics, sensor networks, and hardware–software co-design.",
@@ -218,7 +218,7 @@ export const events: Event[] = [
   },
 
   {
-    id: "13",
+    id: "5",
     title: "Next-Generation Computing Technologies ",
     description:
       "Next-Generation Computing Technologies is a paper presentation event that focuses on emerging and advanced computing paradigms shaping the future of technology. Participants present research papers or innovative concepts related to artificial intelligence, quantum computing, edge and cloud computing, high-performance computing, blockchain, cybersecurity, and advanced software architectures.",
@@ -251,7 +251,7 @@ export const events: Event[] = [
 
   },
   {
-    id: "14",
+    id: "6",
     title: "Cybersecurity, Privacy & Digital Trust",
     description:
       "Cybersecurity, Privacy & Digital Trust is a paper presentation event that focuses on safeguarding digital systems, data, and user trust in an increasingly connected world. Participants present research papers or innovative ideas related to network security, cryptography, data privacy, secure systems, cyber threat intelligence, blockchain security, and trust management frameworks.",
@@ -283,7 +283,7 @@ export const events: Event[] = [
 
   },
   {
-    id: "15",
+    id: "7",
     title: "Artificial Intelligence & Machine Learning Systems",
     description:
       "Artificial Intelligence & Machine Learning Systems is a paper presentation event that focuses on the design, development, and application of intelligent systems powered by AI and ML technologies. Participants present research papers or innovative models related to machine learning algorithms, deep learning, natural language processing, computer vision, reinforcement learning, and AI-driven decision systems.",
@@ -315,7 +315,7 @@ export const events: Event[] = [
 
   },
   {
-    id: "16",
+    id: "8",
     title: "Data Analytics & Scalable Data Engineering",
     description:
       "Data Analytics & Scalable Data Engineering is a paper presentation event that focuses on extracting insights from large-scale data and designing robust, scalable data systems. Participants present research papers or innovative ideas related to big data analytics, data pipelines, distributed systems, data warehousing, real-time processing, cloud-based data platforms, and AI-driven analytics.",
@@ -348,7 +348,7 @@ export const events: Event[] = [
 
   },
 {
-    id: "17",
+    id: "9",
     title: "Cloud Computing & Secure Digital Infrastructure",
     description:
       "Cloud Computing & Secure Digital Infrastructure is a paper presentation event that focuses on modern cloud technologies and secure digital frameworks for efficient, scalable, and reliable computing. Participants present research papers or innovative solutions related to cloud architecture, virtualization, serverless computing, hybrid and multi-cloud strategies, cybersecurity, data protection, and secure network infrastructure..",
@@ -381,7 +381,7 @@ export const events: Event[] = [
 
   },
 {
-    id: "18",
+    id: "10",
     title: "Digital Transformation & Business Innovation",
     description:
       "Digital Transformation & Business Innovation is a paper presentation event that focuses on leveraging digital technologies to transform business processes, models, and strategies. Participants present research papers or innovative solutions related to emerging technologies such as AI, IoT, cloud computing, data analytics, and automation to drive efficiency, competitiveness, and value creation in organizations.",
@@ -413,7 +413,7 @@ export const events: Event[] = [
 }
   },
 {
-    id: "19",
+    id: "11",
     title: "Advanced Software Applications with AI & Cloud",
     description:
       "Advanced Software Applications with AI & Cloud is a paper presentation event that focuses on developing innovative software solutions leveraging Artificial Intelligence and cloud technologies. Participants present research papers or projects related to cloud-native applications, AI-integrated software, microservices, serverless architectures, intelligent automation, and scalable distributed systems.",
@@ -447,7 +447,7 @@ export const events: Event[] = [
 
 
   {
-    id: "1",
+    id: "12",
     title: "Pick and Talk",
     description:
       "A technical speaking challenge that tests spontaneity, clarity of thought, and technical awareness.",
@@ -479,7 +479,7 @@ export const events: Event[] = [
 }
   },
   {
-    id: "2",
+    id: "13",
     title: "3D CAD Model Design",
     description:
       "A hands-on technical event focused on 3D design creativity and CAD tool expertise.",
@@ -510,7 +510,7 @@ export const events: Event[] = [
 }
   },
   {
-    id: "3",
+    id: "14",
     title: "Algorithm Treasure Hunt",
     description:
       "A fun technical event combining algorithms, coding, and logical reasoning.",
@@ -541,7 +541,7 @@ export const events: Event[] = [
 }
   },
   {
-    id: "4",
+    id: "15",
     title: "Agent Building",
     description:
       "Design intelligent agents using AI or rule-based approaches.",
@@ -572,7 +572,7 @@ export const events: Event[] = [
 }
   },
   {
-    id: "5",
+    id: "16",
     title: "AdZap",
     description:
       "A creative event blending marketing strategy and technical presentation.",
@@ -602,7 +602,7 @@ export const events: Event[] = [
 }
   },
   {
-    id: "6",
+    id: "17",
     title: "Mobile App + IoT Integration",
     description:
       "Build smart systems by integrating mobile apps with IoT devices.",
@@ -632,7 +632,7 @@ export const events: Event[] = [
 }
   },
   {
-    id: "7",
+    id: "18",
     title: "Bridge Building",
     description:
       "Design and construct a model bridge tested for strength and stability.",
@@ -662,7 +662,7 @@ export const events: Event[] = [
 }
   },
   {
-    id: "8",
+    id: "19",
     title: "Logic Gate Master",
     description:
       "Test your understanding of logic gates and digital electronics.",
@@ -955,7 +955,36 @@ export const events: Event[] = [
 }
   },
   {
-    id: "29",
+  id: "29",
+  title: "Youth Parliament",
+  description:
+    "A dynamic platform where young minds engage in debating national, social, and policy-level issues following parliamentary procedures.",
+  date: "7th March 2026",
+  dateTag: "7 Mar",
+  time: "10:00 - 04:30",
+  venue: "Department Venues",
+  categories: ["Spotlight Events"],
+  department: "",
+  image: "/ALL POSTERS/YOUTH PARLIMENT.jpg",
+  registrationOpen: true,
+  teamSize: "",
+  rules: [
+    "Participants must follow parliamentary decorum",
+    "Speeches must align with assigned topics or bills",
+    "Strict adherence to time limits is mandatory",
+    "No inappropriate or offensive language",
+    "Decisions of the Speaker/Moderators are final"
+  ],
+  coordinators: {
+    event: [
+      { name: "Rahul Sharma", phone: "9012345678" },
+      { name: "Priya Verma", phone: "9345678123" }
+    ],
+    faculty: [{ name: "Dr. Ramesh Kumar", phone: "9988776655" }]
+  }
+},
+  {
+    id: "30",
     title: "Echoes of Sound",
     description:
       "A music-focused event celebrating melody, rhythm, and creative sound performances.",
@@ -980,7 +1009,7 @@ export const events: Event[] = [
 }
   },
   {
-    id: "30",
+    id: "31",
     title: "Battle of Beats",
     description:
       "An energetic dance and rhythm competition highlighting coordination, performance, and stage presence.",
@@ -1005,7 +1034,7 @@ export const events: Event[] = [
 }
   },
   {
-    id: "31",
+    id: "32",
     title: "Tech Short",
     description:
       "A fast-paced technical speaking event where participants explain a technical concept within a short duration.",
@@ -1036,7 +1065,7 @@ export const events: Event[] = [
 }
   },
   {
-    id: "32",
+    id: "33",
     title: "Logic Lock",
     description:
       "A brain-teasing technical event that challenges logical and analytical thinking through puzzles.",
@@ -1067,7 +1096,7 @@ export const events: Event[] = [
 }
   },
   {
-    id: "33",
+    id: "34",
     title: "Code Crime Scene",
     description:
       "An investigative coding event where participants debug and analyze faulty code.",
@@ -1098,7 +1127,7 @@ export const events: Event[] = [
 }
   },
   {
-    id: "34",
+    id: "35",
     title: "SQL Query Challenge",
     description:
       "A database-focused technical event testing SQL query logic, optimization, and accuracy.",
@@ -1129,7 +1158,7 @@ export const events: Event[] = [
 }
   },
   {
-    id: "35",
+    id: "36",
     title: "Pic Prompt",
     description:
       "A creative technical event where participants build a technical idea inspired by an image prompt.",
@@ -1160,7 +1189,7 @@ export const events: Event[] = [
 }
   },
   {
-    id: "36",
+    id: "37",
     title: "Memory Meltdown",
     description:
       "A fun technical event designed to test memory power, concentration, and observation skills.",
@@ -1192,7 +1221,7 @@ export const events: Event[] = [
   },
 
   {
-    id: "37",
+    id: "38",
     title: "Tech Dumb Charades",
     description:
       "A technical twist to the classic dumb charades where participants act out technical terms without speaking.",
@@ -1223,7 +1252,7 @@ export const events: Event[] = [
 }
   },
   {
-    id: "38",
+    id: "39",
     title: "UI / UX Design Sprint",
     description:
       "A creative technical event focused on user interface and user experience design.",
@@ -1254,7 +1283,7 @@ export const events: Event[] = [
 }
   },
   {
-    id: "39",
+    id: "40",
     title: "Cube Solving",
     description:
       "A skill-based event challenging speed, logic, and problem-solving using Rubik’s cubes.",
@@ -1285,7 +1314,7 @@ export const events: Event[] = [
 }
   },
   {
-    id: "40",
+    id: "41",
     title: "Agentix",
     description:
       "A hackathon focused on building intelligent agents and automated systems.",
@@ -1316,7 +1345,7 @@ export const events: Event[] = [
 }
   },
   {
-    id: "41",
+    id: "42",
     title: "Webverse",
     description:
       "A hackathon centered on building innovative web-based solutions using modern technologies.",
@@ -1347,7 +1376,7 @@ export const events: Event[] = [
 }
   },
   {
-    id: "42",
+    id: "43",
     title: "Sensecraft",
     description:
       "A hackathon emphasizing smart systems using sensors, data, and intelligent processing.",
@@ -1377,7 +1406,7 @@ export const events: Event[] = [
 }
   },
   {
-    id: "43",
+    id: "44",
     title: "Designathon",
     description:
       "A creativity-driven event focused on mechanical engineering design and innovation.",
@@ -1408,7 +1437,7 @@ export const events: Event[] = [
 }
   },
   {
-    id: "44",
+    id: "45",
     title: "Techorbit",
     description:
       "A project expo showcasing innovative technology-based projects and prototypes.",
@@ -1438,7 +1467,7 @@ export const events: Event[] = [
 }
   },
   {
-    id: "45",
+    id: "46",
     title: "SignalSphere",
     description:
       "A project expo focusing on electronics, communication, and signal processing systems.",
@@ -1468,7 +1497,7 @@ export const events: Event[] = [
 }
   },
   {
-    id: "46",
+    id: "47",
     title: "Energex",
     description:
       "A project expo centered on electrical systems and energy-based solutions.",
@@ -1498,7 +1527,7 @@ export const events: Event[] = [
 }
   },
   {
-    id: "47",
+    id: "48",
     title: "Infrasys",
     description:
       "A project expo focused on civil engineering and infrastructure systems.",
@@ -1534,7 +1563,7 @@ export const events: Event[] = [
 
 
   {
-    id: "48",
+    id: "49",
     title: "Cricket Men",
     description: "",
     date: "From: 16th Feb To: 25th Feb",
@@ -1564,7 +1593,7 @@ export const events: Event[] = [
 }
   },
   {
-    id: "49",
+    id: "50",
     title: "Kabaddi Men",
     description: "",
     date: "From: 24th Feb To: 27th Feb",
@@ -1593,7 +1622,7 @@ export const events: Event[] = [
 }
   },
   {
-    id: "50",
+    id: "51",
     title: "Volleyball Men",
     description: "",
     date: "From: 24th Feb To: 27th Feb",
@@ -1623,7 +1652,7 @@ export const events: Event[] = [
 }
   },
   {
-    id: "51",
+    id: "52",
     title: "Chess Men",
     description: "",
     date: "From: 24th Feb To: 27th Feb",
@@ -1653,7 +1682,7 @@ export const events: Event[] = [
 }
   },
   {
-    id: "52",
+    id: "53",
     title: "Carroms Men",
     description: "",
     date: "From: 24th Feb To: 27th Feb",
@@ -1683,7 +1712,7 @@ export const events: Event[] = [
 }
   },
   {
-    id: "53",
+    id: "54",
     title: "Table Tennis Men",
     description: "",
     date: "From: 16th Feb To: 25th Feb",
@@ -1713,7 +1742,7 @@ export const events: Event[] = [
 }
   },
   {
-    id: "54",
+    id: "55",
     title: "Throwball Women",
     description: "",
     date: "From: 24th Feb To: 27th Feb",
@@ -1743,7 +1772,7 @@ export const events: Event[] = [
 }
   },
   {
-    id: "55",
+    id: "56",
     title: "Tennikoit(Women)",
     description: "",
     date: "From: 24th Feb To: 27th Feb",
@@ -1773,7 +1802,7 @@ export const events: Event[] = [
 }
   },
   {
-    id: "56",
+    id: "57",
     title: "Kabaddi Women",
     description: "",
     date: "From: 24th Feb To: 27th Feb",
@@ -1802,7 +1831,7 @@ export const events: Event[] = [
 }
   },
   {
-    id: "57",
+    id: "58",
     title: "Volleyball Women",
     description: "",
     date: "From: 24th Feb To: 27th Feb",
@@ -1832,7 +1861,7 @@ export const events: Event[] = [
 }
   },
   {
-    id: "58",
+    id: "59",
     title: "Chess Women",
     description: "",
     date: "",
@@ -1860,7 +1889,7 @@ export const events: Event[] = [
 }
   },
   {
-    id: "59",
+    id: "60",
     title: "Carroms Women",
     description: "",
     date: "From: 24th Feb To: 27th Feb",
@@ -1890,7 +1919,7 @@ export const events: Event[] = [
 }
   },
   {
-    id: "60",
+    id: "61",
     title: "Table tennis Women",
     description: "",
     date: "From: 24th Feb To: 27th Feb",
