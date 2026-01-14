@@ -209,7 +209,7 @@ const Footer = () => {
                 <div>
                   <h3 className="font-orbitron font-bold">Call Us</h3>
                   <p className="text-muted-foreground text-sm">+91 9390 223 609</p>
-                  <p className="text-muted-foreground text-sm">+91 8886 644 977</p>
+                  <p className="text-muted-foreground text-sm">+91 9059 995 885</p>
                 </div>
               </div>
             </div>
@@ -308,8 +308,8 @@ const Footer = () => {
           <div>
             <h3 className="font-orbitron font-bold text-primary mb-4">Contact</h3>
             <p className="text-sm text-muted-foreground">Student Coordinators</p>
-            <p className="text-sm">Kiran – 9390 223 609</p>
-            <p className="text-sm">Abdul – 8886 644 977</p>
+            <p className="text-sm">C Kiran – 9390 223 609</p>
+            <p className="text-sm">S Jaideep – 9059 995 885</p>
           </div>
 
           {/* Subscribe */}

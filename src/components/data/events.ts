@@ -1,7 +1,6 @@
 export type EventCategory =
   | "All Events"
   | "Cultural Events"
-  | "Technical Events"
   | "Sports"
   | "Arts"
   | "Dance"
@@ -11,7 +10,8 @@ export type EventCategory =
   | "Stand up Comedy"
   | "Paper Presentation"
   | "Project Expo"
-  | "Spotlight Events";
+  | "Spotlight Events"
+  | "TechExplore";
 
 export type DateTag = "6 Mar" | "7 Mar";
 
@@ -31,7 +31,6 @@ export type Department =
 export const categories: EventCategory[] = [
   "All Events",
   "Cultural Events",
-  "Technical Events",
   "Sports",
   "Arts",
   "Dance",
@@ -42,6 +41,7 @@ export const categories: EventCategory[] = [
   "Paper Presentation",
   "Project Expo",
   "Spotlight Events",
+  "TechExplore",
 ];
 
 export const dateTags: DateTag[] = ["6 Mar", "7 Mar"];
@@ -91,7 +91,7 @@ export interface Event {
 
 export const events: Event[] = [
 
-{
+  {
     id: "1",
     title: " smart and sustainable cities ",
     description:
@@ -100,7 +100,7 @@ export const events: Event[] = [
     dateTag: "6 Mar",
     time: "10:30 - 04:00",
     venue: "Seminar Hall / Dept. Venues",
-    categories: ["Technical Events", "Paper Presentation"],
+    categories: ["Paper Presentation"],
     department: "CIVIL",
     image: "/ALL POSTERS/CIVIL.jpg",
     registrationOpen: true,
@@ -113,15 +113,15 @@ export const events: Event[] = [
       "Report 15 minutes early"
     ],
     coordinators: {
-  event: [
-    { name: "Jagan Mohan Reddy", phone: "6302589041" },
-    
-  ],
-  faculty: [
-    { name: "Dr. P. Sudheekar Reddy", phone: "8297960423" }
-  ]
-}
-},
+      event: [
+        { name: "Jagan Mohan Reddy", phone: "6302589041" },
+
+      ],
+      faculty: [
+        { name: "Dr. P. Sudheekar Reddy", phone: "8297960423" }
+      ]
+    }
+  },
   {
     id: "2",
     title: "Intelligent Manufacturing & Sustainable Mechanical Systems",
@@ -131,7 +131,7 @@ export const events: Event[] = [
     dateTag: "6 Mar",
     time: "10:30 - 04:00",
     venue: "Seminar Hall / Dept. Venues",
-    categories: ["Technical Events", "Paper Presentation"],
+    categories: ["Paper Presentation"],
     department: "MECH",
     image: "/ALL POSTERS/ME.jpg",
     registrationOpen: true,
@@ -142,16 +142,16 @@ export const events: Event[] = [
       "Time limit strictly followed",
       "PPT/PPTX format only"
     ],
-     coordinators: {
-  event: [
-    { name: "Kasa Srihari", phone: "8985388335" },
-    
-  ],
-  faculty: [
-    { name: "Dr. K. Jagath Narayana", phone: "9891598684" },
-    {name:"Dr. M. Vamsi Krishna", phone:"8978407734"}
-  ]
-}
+    coordinators: {
+      event: [
+        { name: "Kasa Srihari", phone: "8985388335" },
+
+      ],
+      faculty: [
+        { name: "Dr. K. Jagath Narayana", phone: "9891598684" },
+        { name: "Dr. M. Vamsi Krishna", phone: "8978407734" }
+      ]
+    }
 
   },
   {
@@ -163,7 +163,7 @@ export const events: Event[] = [
     dateTag: "6 Mar",
     time: "10:30 - 04:00",
     venue: "Seminar Hall / Dept. Venues",
-    categories: ["Technical Events", "Paper Presentation"],
+    categories: ["Paper Presentation"],
     department: "EEE",
     image: "/ALL POSTERS/EEE.jpg",
     registrationOpen: true,
@@ -174,15 +174,15 @@ export const events: Event[] = [
       "PPT/PPTX format only",
       "Report 15 minutes early"
     ],
-     coordinators: {
-  event: [
-    { name: "D. Harsha Vardhan Kumar", phone: "8019320140" },
-   
-  ],
-  faculty: [
-    { name: "D. Praveen Kumar", phone: "9908753983" }
-  ]
-}
+    coordinators: {
+      event: [
+        { name: "D. Harsha Vardhan Kumar", phone: "8019320140" },
+
+      ],
+      faculty: [
+        { name: "D. Praveen Kumar", phone: "9908753983" }
+      ]
+    }
 
   },
   {
@@ -194,7 +194,7 @@ export const events: Event[] = [
     dateTag: "6 Mar",
     time: "10:30 - 04:00",
     venue: "Seminar Hall / Dept. Venues",
-    categories: ["Technical Events", "Paper Presentation"],
+    categories: ["Paper Presentation"],
     department: "ECE",
     image: "/ALL POSTERS/ECE.jpg",
     registrationOpen: true,
@@ -206,14 +206,14 @@ export const events: Event[] = [
       "Judges’ decision is final"
     ],
     coordinators: {
-  event: [
-    { name: "M. Naveen Reddy", phone: "9000935090" },
-    
-  ],
-  faculty: [
-    { name: "A. Krishna Mohan", phone: "9949983365" }
-  ]
-}
+      event: [
+        { name: "M. Naveen Reddy", phone: "9000935090" },
+
+      ],
+      faculty: [
+        { name: "A. Krishna Mohan", phone: "9949983365" }
+      ]
+    }
 
   },
 
@@ -226,7 +226,7 @@ export const events: Event[] = [
     dateTag: "6 Mar",
     time: "10:30 - 04:00",
     venue: "Seminar Hall / Dept. Venues",
-    categories: ["Technical Events", "Paper Presentation"],
+    categories: ["Paper Presentation"],
     department: "CSE",
     image: "/ALL POSTERS/CSE.jpg",
     registrationOpen: true,
@@ -239,15 +239,15 @@ export const events: Event[] = [
       "Report 15 minutes early",
       "Judges’ decision is final"
     ],
-     coordinators: {
-  event: [
-    { name: "Shaik Mohammad Shahid", phone: "7981491740" },
-   
-  ],
-  faculty: [
-    { name: "M. Chandrakala", phone: "6301667880" }
-  ]
-}
+    coordinators: {
+      event: [
+        { name: "Shaik Mohammad Shahid", phone: "7981491740" },
+
+      ],
+      faculty: [
+        { name: "M. Chandrakala", phone: "6301667880" }
+      ]
+    }
 
   },
   {
@@ -259,7 +259,7 @@ export const events: Event[] = [
     dateTag: "6 Mar",
     time: "10:30 - 04:00",
     venue: "Seminar Hall / Dept. Venues",
-    categories: ["Technical Events", "Paper Presentation"],
+    categories: ["Paper Presentation"],
     department: "CSC",
     image: "/ALL POSTERS/CSC.jpg",
     registrationOpen: true,
@@ -271,15 +271,15 @@ export const events: Event[] = [
       "PPT/PPTX format only",
       "Report 15 minutes early"
     ],
-     coordinators: {
-  event: [
-    { name: "G. Guru Vaishnavi", phone: "8985052577" },
-    
-  ],
-  faculty: [
-    { name: "J. Ramachandraiah", phone: "9000638814" }
-  ]
-}
+    coordinators: {
+      event: [
+        { name: "G. Guru Vaishnavi", phone: "8985052577" },
+
+      ],
+      faculty: [
+        { name: "J. Ramachandraiah", phone: "9000638814" }
+      ]
+    }
 
   },
   {
@@ -291,7 +291,7 @@ export const events: Event[] = [
     dateTag: "6 Mar",
     time: "10:30 - 04:00",
     venue: "Seminar Hall / Dept. Venues",
-    categories: ["Technical Events", "Paper Presentation"],
+    categories: ["Paper Presentation"],
     department: "CSM",
     image: "/ALL POSTERS/CSM.jpg",
     registrationOpen: true,
@@ -303,15 +303,15 @@ export const events: Event[] = [
       "PPT/PPTX format only",
       "Report 15 minutes early"
     ],
-     coordinators: {
-  event: [
-    { name: "K. Manogna", phone: "7993130621" },
-    
-  ],
-  faculty: [
-    { name: "Dr. Jasmine Sabeena", phone: "9490922900" }
-  ]
-}
+    coordinators: {
+      event: [
+        { name: "K. Manogna", phone: "7993130621" },
+
+      ],
+      faculty: [
+        { name: "Dr. Jasmine Sabeena", phone: "9490922900" }
+      ]
+    }
 
   },
   {
@@ -323,7 +323,7 @@ export const events: Event[] = [
     dateTag: "6 Mar",
     time: "10:30 - 04:00",
     venue: "Seminar Hall / Dept. Venues",
-    categories: ["Technical Events", "Paper Presentation"],
+    categories: ["Paper Presentation"],
     department: "CSD",
     image: "/ALL POSTERS/CSD.jpg",
     registrationOpen: true,
@@ -337,17 +337,17 @@ export const events: Event[] = [
       "Judges’ decision is final"
     ],
     coordinators: {
-  event: [
-    { name: "N. G. Durga Bhavani", phone: "6281131365" },
-    
-  ],
-  faculty: [
-    { name: "D. Lavanya", phone: "7780415483" }
-  ]
-}
+      event: [
+        { name: "N. G. Durga Bhavani", phone: "6281131365" },
+
+      ],
+      faculty: [
+        { name: "D. Lavanya", phone: "7780415483" }
+      ]
+    }
 
   },
-{
+  {
     id: "9",
     title: "Cloud Computing & Secure Digital Infrastructure",
     description:
@@ -356,7 +356,7 @@ export const events: Event[] = [
     dateTag: "6 Mar",
     time: "10:30 - 04:00",
     venue: "Seminar Hall / Dept. Venues",
-    categories: ["Technical Events", "Paper Presentation"],
+    categories: ["Paper Presentation"],
     department: "CSD",
     image: "/ALL POSTERS/MCA.jpg",
     registrationOpen: true,
@@ -370,17 +370,17 @@ export const events: Event[] = [
       "Judges’ decision is final"
     ],
     coordinators: {
-  event: [
-    { name: "M. N. Divean", phone: "6305031658" },
-    
-  ],
-  faculty: [
-    { name: "N. Sireesha", phone: "9573533688" }
-  ]
-}
+      event: [
+        { name: "M. N. Divean", phone: "6305031658" },
+
+      ],
+      faculty: [
+        { name: "N. Sireesha", phone: "9573533688" }
+      ]
+    }
 
   },
-{
+  {
     id: "10",
     title: "Digital Transformation & Business Innovation",
     description:
@@ -389,7 +389,7 @@ export const events: Event[] = [
     dateTag: "6 Mar",
     time: "10:30 - 04:00",
     venue: "Seminar Hall / Dept. Venues",
-    categories: ["Technical Events", "Paper Presentation"],
+    categories: ["Paper Presentation"],
     department: "MCA",
     image: "/ALL POSTERS/MBA.jpg",
     registrationOpen: true,
@@ -402,17 +402,17 @@ export const events: Event[] = [
       "Report 15 minutes early",
       "Judges’ decision is final"
     ],
-     coordinators: {
-  event: [
-    { name: "P. Jaswanth", phone: "7337024653" },
-    
-  ],
-  faculty: [
-    { name: "Dr. S. Gautami", phone: "9985506543" }
-  ]
-}
+    coordinators: {
+      event: [
+        { name: "P. Jaswanth", phone: "7337024653" },
+
+      ],
+      faculty: [
+        { name: "Dr. S. Gautami", phone: "9985506543" }
+      ]
+    }
   },
-{
+  {
     id: "11",
     title: "Advanced Software Applications with AI & Cloud",
     description:
@@ -421,7 +421,7 @@ export const events: Event[] = [
     dateTag: "6 Mar",
     time: "10:30 - 04:00",
     venue: "Seminar Hall / Dept. Venues",
-    categories: ["Technical Events", "Paper Presentation"],
+    categories: ["Paper Presentation"],
     department: "CS-IT",
     image: "/ALL POSTERS/IT.jpg",
     registrationOpen: true,
@@ -435,14 +435,14 @@ export const events: Event[] = [
       "Judges’ decision is final"
     ],
     coordinators: {
-  event: [
-    { name: "S. Venkatadri", phone: "7780426116" },
-    
-  ],
-  faculty: [
-    { name: "Dr. Y. Vishnu Tej", phone: "9491278564" }
-  ]
-}
+      event: [
+        { name: "S. Venkatadri", phone: "7780426116" },
+
+      ],
+      faculty: [
+        { name: "Dr. Y. Vishnu Tej", phone: "9491278564" }
+      ]
+    }
   },
 
 
@@ -455,7 +455,7 @@ export const events: Event[] = [
     dateTag: "6 Mar",
     time: "10:30 - 04:30",
     venue: "Seminar Hall / Dept. Venues",
-    categories: ["Technical Events", "Pitch and Talk"],
+    categories: ["TechExplore"],
     department: "",
     image: "/ALL POSTERS/PIC AND TALK.jpg",
     registrationOpen: true,
@@ -469,14 +469,14 @@ export const events: Event[] = [
       "Exceeding time limit leads to disqualification"
     ],
     coordinators: {
-  event: [
-    { name: "A. Sumanth", phone: "9182611319" },
-    
-  ],
-  faculty: [
-    { name: "Dr. T. Vijay Kumar", phone: "9985171776" }
-  ]
-}
+      event: [
+        { name: "A. Sumanth", phone: "9182611319" },
+
+      ],
+      faculty: [
+        { name: "Dr. T. Vijay Kumar", phone: "9985171776" }
+      ]
+    }
   },
   {
     id: "13",
@@ -487,7 +487,7 @@ export const events: Event[] = [
     dateTag: "6 Mar",
     time: "10:30 - 04:30",
     venue: "Seminar Hall / Dept. Venues",
-    categories: ["Technical Events"],
+    categories: ["TechExplore"],
     department: "MECH",
     image: "/ALL POSTERS/3D CAD MODELLING.jpg",
     registrationOpen: true,
@@ -499,15 +499,15 @@ export const events: Event[] = [
       "Time limit must be followed",
       "Judges’ decision is final"
     ],
-     coordinators: {
-  event: [
-    { name: "A. Venkata Surya", phone: "7671822801" },
-   
-  ],
-  faculty: [
-    { name: "Dr. S. Jaya Kishore", phone: "9581820468" }
-  ]
-}
+    coordinators: {
+      event: [
+        { name: "A. Venkata Surya", phone: "7671822801" },
+
+      ],
+      faculty: [
+        { name: "Dr. S. Jaya Kishore", phone: "9581820468" }
+      ]
+    }
   },
   {
     id: "14",
@@ -518,7 +518,7 @@ export const events: Event[] = [
     dateTag: "6 Mar",
     time: "10:30 - 04:30",
     venue: "Seminar Hall / Dept. Venues",
-    categories: ["Technical Events"],
+    categories: ["TechExplore"],
     department: "",
     image: "/ALL POSTERS/ALGORITHM TRESSURE HUNT.jpg",
     registrationOpen: true,
@@ -531,14 +531,14 @@ export const events: Event[] = [
       "Organizers’ decision is final"
     ],
     coordinators: {
-  event: [
-    { name: "C. Chandu", phone: "7981915198" },
-    
-  ],
-  faculty: [
-    { name: "C. Raja Sekhar", phone: "8897778957" }
-  ]
-}
+      event: [
+        { name: "C. Chandu", phone: "7981915198" },
+
+      ],
+      faculty: [
+        { name: "C. Raja Sekhar", phone: "8897778957" }
+      ]
+    }
   },
   {
     id: "15",
@@ -549,7 +549,7 @@ export const events: Event[] = [
     dateTag: "6 Mar",
     time: "10:30 - 04:30",
     venue: "Seminar Hall / Dept. Venues",
-    categories: ["Technical Events"],
+    categories: ["TechExplore"],
     department: "CSM",
     image: "/ALL POSTERS/AI AGENT BUILDING.jpg",
     registrationOpen: true,
@@ -561,15 +561,15 @@ export const events: Event[] = [
       "Original ideas are encouraged",
       "Judges’ decision is final"
     ],
-     coordinators: {
-  event: [
-    { name: "P. Sameera Bhanu", phone: "8688510901" },
-    
-  ],
-  faculty: [
-    { name: "Dr. D. Ester Rani", phone: "9542890853" }
-  ]
-}
+    coordinators: {
+      event: [
+        { name: "P. Sameera Bhanu", phone: "8688510901" },
+
+      ],
+      faculty: [
+        { name: "Dr. D. Ester Rani", phone: "9542890853" }
+      ]
+    }
   },
   {
     id: "16",
@@ -580,7 +580,7 @@ export const events: Event[] = [
     dateTag: "6 Mar",
     time: "10:30 - 04:30",
     venue: "Seminar Hall / Dept. Venues",
-    categories: ["Technical Events"],
+    categories: ["TechExplore"],
     department: "CSD",
     image: "/ALL POSTERS/ADZAP.jpg",
     registrationOpen: true,
@@ -591,15 +591,15 @@ export const events: Event[] = [
       "Offensive content is prohibited",
       "Use of multimedia is allowed"
     ],
-     coordinators: {
-  event: [
-    { name: "C. Dileep", phone: "9398154400" },
-   
-  ],
-  faculty: [
-    { name: "B. Dhanunjay", phone: "9000046368" }
-  ]
-}
+    coordinators: {
+      event: [
+        { name: "C. Dileep", phone: "9398154400" },
+
+      ],
+      faculty: [
+        { name: "B. Dhanunjay", phone: "9000046368" }
+      ]
+    }
   },
   {
     id: "17",
@@ -610,7 +610,7 @@ export const events: Event[] = [
     dateTag: "6 Mar",
     time: "10:30 - 04:30",
     venue: "Seminar Hall / Dept. Venues",
-    categories: ["Technical Events"],
+    categories: ["TechExplore"],
     department: "",
     image: "/ALL POSTERS/MOBILE APP & IPT INTEGRATION.jpg",
     registrationOpen: true,
@@ -622,14 +622,14 @@ export const events: Event[] = [
       "Plagiarism leads to disqualification"
     ],
     coordinators: {
-  event: [
-    { name: "K. Tharun", phone: "6305750924" },
-    
-  ],
-  faculty: [
-    { name: "K. Naresh", phone: "9959249971" }
-  ]
-}
+      event: [
+        { name: "K. Tharun", phone: "6305750924" },
+
+      ],
+      faculty: [
+        { name: "K. Naresh", phone: "9959249971" }
+      ]
+    }
   },
   {
     id: "18",
@@ -640,7 +640,7 @@ export const events: Event[] = [
     dateTag: "6 Mar",
     time: "10:30 - 04:30",
     venue: "Seminar Hall / Dept. Venues",
-    categories: ["Technical Events"],
+    categories: ["TechExplore"],
     department: "CIVIL",
     image: "/ALL POSTERS/BRIDGE BUILDING.jpg",
     registrationOpen: true,
@@ -651,15 +651,15 @@ export const events: Event[] = [
       "Structural testing will be conducted",
       "Judges’ decision is final"
     ],
-     coordinators: {
-  event: [
-    { name: "Suresh", phone: "9177476292" },
-    
-  ],
-  faculty: [
-    { name: "CM. Prakash", phone: "9885648658" }
-  ]
-}
+    coordinators: {
+      event: [
+        { name: "Suresh", phone: "9177476292" },
+
+      ],
+      faculty: [
+        { name: "CM. Prakash", phone: "9885648658" }
+      ]
+    }
   },
   {
     id: "19",
@@ -670,7 +670,7 @@ export const events: Event[] = [
     dateTag: "6 Mar",
     time: "10:30 - 04:30",
     venue: "Electronics Lab",
-    categories: ["Technical Events"],
+    categories: ["TechExplore"],
     department: "",
     image: "/ALL POSTERS/LOGIC GATE MASTER.jpg",
     registrationOpen: true,
@@ -682,16 +682,16 @@ export const events: Event[] = [
       "Time limit must be followed"
     ],
     coordinators: {
-  event: [
-    { name: "Y. Harshitha Reddy", phone: "" },//"Harshith reddy not updated"
-    
-  ],
-  faculty: [
-    { name: "K. Roopa Raj", phone: "9177119295" }
-  ]
-}
+      event: [
+        { name: "Y. Harshitha Reddy", phone: "" },//"Harshith reddy not updated"
+
+      ],
+      faculty: [
+        { name: "K. Roopa Raj", phone: "9177119295" }
+      ]
+    }
   },
-  
+
 
 
 
@@ -704,7 +704,7 @@ export const events: Event[] = [
     dateTag: "6 Mar",
     time: "10:00 - 10:00 (24 Hours)",
     venue: "Department Venues",
-    categories: ["Technical Events", "Hackathons"],
+    categories: ["Hackathons"],
     department: "",
     image: "/ALL POSTERS/HACK FUZZ.jpeg",
     registrationOpen: true,
@@ -715,15 +715,15 @@ export const events: Event[] = [
       "Solutions must align with given problem statements",
       "Plagiarism or pre-built solutions are not allowed"
     ],
-     coordinators: {
-  event: [
-    { name: "P. Gnanendra", phone: "7396740282" },
-    
-  ],
-  faculty: [
-    { name: "Dr. Keerthipati/Dr. R. Swathi", phone: "9985303614" }
-  ]
-}
+    coordinators: {
+      event: [
+        { name: "P. Gnanendra", phone: "7396740282" },
+
+      ],
+      faculty: [
+        { name: "Dr. Keerthipati/Dr. R. Swathi", phone: "9985303614" }
+      ]
+    }
   },
   {
     id: "21",
@@ -740,15 +740,15 @@ export const events: Event[] = [
     registrationOpen: true,
     teamSize: "4 members",
     rules: [],
-     coordinators: {
-  event: [
-    { name: "N. Pavani Yadav", phone: "7893495464" },
-   
-  ],
-  faculty: [
-    { name: "AV Rajesh", phone: "9963860807" }
-  ]
-}
+    coordinators: {
+      event: [
+        { name: "N. Pavani Yadav", phone: "7893495464" },
+
+      ],
+      faculty: [
+        { name: "AV Rajesh", phone: "9963860807" }
+      ]
+    }
   },
   {
     id: "22",
@@ -766,14 +766,14 @@ export const events: Event[] = [
     teamSize: "2–4 members",
     rules: [],
     coordinators: {
-  event: [
-    { name: "", phone: "" },//Not updated
-    
-  ],
-  faculty: [
-    { name: "A. Ganesh", phone: "9160250264" }
-  ]
-}
+      event: [
+        { name: "", phone: "" },//Not updated
+
+      ],
+      faculty: [
+        { name: "A. Ganesh", phone: "9160250264" }
+      ]
+    }
   },
   {
     id: "23",
@@ -796,14 +796,14 @@ export const events: Event[] = [
       "Artwork must be original and appropriate"
     ],
     coordinators: {
-  event: [
-    { name: "D. Kumar", phone: "8688502790" },
-    
-  ],
-  faculty: [
-    { name: "K. Sreedevi", phone: "8074682544" }
-  ]
-}
+      event: [
+        { name: "D. Kumar", phone: "8688502790" },
+
+      ],
+      faculty: [
+        { name: "K. Sreedevi", phone: "8074682544" }
+      ]
+    }
   },
   {
     id: "24",
@@ -825,15 +825,15 @@ export const events: Event[] = [
       "Time limit: 3–6 minutes",
       "Valid college ID required"
     ],
-     coordinators: {
-  event: [
-    { name: "K. Nandhini", phone: "7793944809" },
-   
-  ],
-  faculty: [
-    { name: "M. Poornima", phone: "7013558497" }
-  ]
-}
+    coordinators: {
+      event: [
+        { name: "K. Nandhini", phone: "7793944809" },
+
+      ],
+      faculty: [
+        { name: "M. Poornima", phone: "7013558497" }
+      ]
+    }
   },
   {
     id: "25",
@@ -857,16 +857,16 @@ export const events: Event[] = [
       "Valid college ID required"
     ],
     coordinators: {
-  event: [
-    { name: "G. L. Vaishnavi", phone: "6304384369" },
-    
-  ],
-  faculty: [
-    { name: "E. Mamatha", phone: "8886207679" }
-  ]
-}
+      event: [
+        { name: "G. L. Vaishnavi", phone: "6304384369" },
+
+      ],
+      faculty: [
+        { name: "E. Mamatha", phone: "8886207679" }
+      ]
+    }
   },
-//march 7
+  //march 7
   {
     id: "26",
     title: "Laugh Tales",
@@ -888,15 +888,15 @@ export const events: Event[] = [
       "Use of props must be pre-approved",
       "Judges’ decision will be final"
     ],
-     coordinators: {
-  event: [
-    { name: "B. Divya Prithi", phone: "9182628230" },
-   
-  ],
-  faculty: [
-    { name: "K. Swetha Sree", phone:"9959873980" }
-  ]
-}
+    coordinators: {
+      event: [
+        { name: "B. Divya Prithi", phone: "9182628230" },
+
+      ],
+      faculty: [
+        { name: "K. Swetha Sree", phone: "9959873980" }
+      ]
+    }
   },
   {
     id: "27",
@@ -913,15 +913,15 @@ export const events: Event[] = [
     registrationOpen: true,
     teamSize: "",
     rules: [],
-     coordinators: {
-  event: [
-    { name: "K. Dimple", phone: "9985217931" },
-    
-  ],
-  faculty: [
-    { name: "Dr. S Kalesha Masthanvali", phone: "8978686923" }
-  ]
-}
+    coordinators: {
+      event: [
+        { name: "K. Dimple", phone: "9985217931" },
+
+      ],
+      faculty: [
+        { name: "Dr. S Kalesha Masthanvali", phone: "8978686923" }
+      ]
+    }
   },
   {
     id: "28",
@@ -945,44 +945,44 @@ export const events: Event[] = [
       "Moderators’ and judges’ decisions are final"
     ],
     coordinators: {
-  event: [
-    { name: "Ruksana Banu Shaik", phone: "9100399934" },
-    
-  ],
-  faculty: [
-    { name: "T. Murari", phone: "8555924980" }
-  ]
-}
+      event: [
+        { name: "Ruksana Banu Shaik", phone: "9100399934" },
+
+      ],
+      faculty: [
+        { name: "T. Murari", phone: "8555924980" }
+      ]
+    }
   },
   {
-  id: "29",
-  title: "Youth Parliament",
-  description:
-    "A dynamic platform where young minds engage in debating national, social, and policy-level issues following parliamentary procedures.",
-  date: "6th March 2026",
-  dateTag: "6 Mar",
-  time: "10:30 - 12:30",
-  venue: "Department Venues",
-  categories: ["Spotlight Events"],
-  department: "",
-  image: "/ALL POSTERS/YOUTH PARLIMENT.jpg",
-  registrationOpen: true,
-  teamSize: "",
-  rules: [
-    "Participants must follow parliamentary decorum",
-    "Speeches must align with assigned topics or bills",
-    "Strict adherence to time limits is mandatory",
-    "No inappropriate or offensive language",
-    "Decisions of the Speaker/Moderators are final"
-  ],
-  coordinators: {
-    event: [
-      { name: "R. Harshath", phone: "9515636674" },
-     
+    id: "29",
+    title: "Youth Parliament",
+    description:
+      "A dynamic platform where young minds engage in debating national, social, and policy-level issues following parliamentary procedures.",
+    date: "6th March 2026",
+    dateTag: "6 Mar",
+    time: "10:30 - 12:30",
+    venue: "Department Venues",
+    categories: ["Spotlight Events"],
+    department: "",
+    image: "/ALL POSTERS/YOUTH PARLIMENT.jpg",
+    registrationOpen: true,
+    teamSize: "",
+    rules: [
+      "Participants must follow parliamentary decorum",
+      "Speeches must align with assigned topics or bills",
+      "Strict adherence to time limits is mandatory",
+      "No inappropriate or offensive language",
+      "Decisions of the Speaker/Moderators are final"
     ],
-    faculty: [{ name: "Eswaraiah", phone: "6302099491" }]
-  }
-},
+    coordinators: {
+      event: [
+        { name: "R. Harshath", phone: "9515636674" },
+
+      ],
+      faculty: [{ name: "Eswaraiah", phone: "6302099491" }]
+    }
+  },
   {
     id: "30",
     title: "Echoes of Sound",
@@ -998,15 +998,15 @@ export const events: Event[] = [
     registrationOpen: true,
     teamSize: "",
     rules: [],
-     coordinators: {
-  event: [
-    { name: "Rakesh", phone: "8977140478" },
-   
-  ],
-  faculty: [
-    { name: "K. B. Vamsi Krishna", phone: "" }//Not updated
-  ]
-}
+    coordinators: {
+      event: [
+        { name: "Rakesh", phone: "8977140478" },
+
+      ],
+      faculty: [
+        { name: "K. B. Vamsi Krishna", phone: "" }//Not updated
+      ]
+    }
   },
   {
     id: "31",
@@ -1024,14 +1024,14 @@ export const events: Event[] = [
     teamSize: "",
     rules: [],
     coordinators: {
-  event: [
-    { name: "K. Sai Suhitha", phone: "9347875157" },
-    
-  ],
-  faculty: [
-    { name: "P. Harshavardhan", phone: "8317688670" }
-  ]
-}
+      event: [
+        { name: "K. Sai Suhitha", phone: "9347875157" },
+
+      ],
+      faculty: [
+        { name: "P. Harshavardhan", phone: "8317688670" }
+      ]
+    }
   },
   {
     id: "32",
@@ -1042,7 +1042,7 @@ export const events: Event[] = [
     dateTag: "7 Mar",
     time: "10:00 - 04:30",
     venue: "Department Venues",
-    categories: ["Technical Events"],
+    categories: ["TechExplore"],
     department: "",
     image: "/ALL POSTERS/TECH SHORT.jpg",
     registrationOpen: true,
@@ -1055,14 +1055,14 @@ export const events: Event[] = [
       "Judges’ decision will be final"
     ],
     coordinators: {
-  event: [
-    { name: "K. Neeraj", phone: "8886239948" },
-    
-  ],
-  faculty: [
-    { name: "Dr. Y. Vishnu Tej", phone: "9491278564" }
-  ]
-}
+      event: [
+        { name: "K. Neeraj", phone: "8886239948" },
+
+      ],
+      faculty: [
+        { name: "Dr. Y. Vishnu Tej", phone: "9491278564" }
+      ]
+    }
   },
   {
     id: "33",
@@ -1073,7 +1073,7 @@ export const events: Event[] = [
     dateTag: "7 Mar",
     time: "10:00 - 04:30",
     venue: "Department Venues",
-    categories: ["Technical Events"],
+    categories: ["TechExplore"],
     department: "",
     image: "/ALL POSTERS/LOGIC LOCK.jpg",
     registrationOpen: true,
@@ -1085,15 +1085,15 @@ export const events: Event[] = [
       "Time limit applies for each round",
       "Judges’ decision will be final"
     ],
-     coordinators: {
-  event: [
-    { name: "G. Bhavana", phone: "8008098380" },
-    
-  ],
-  faculty: [
-    { name: "Mrs. Jeevana Sagari", phone: "8179750733" }
-  ]
-}
+    coordinators: {
+      event: [
+        { name: "G. Bhavana", phone: "8008098380" },
+
+      ],
+      faculty: [
+        { name: "Mrs. Jeevana Sagari", phone: "8179750733" }
+      ]
+    }
   },
   {
     id: "34",
@@ -1104,7 +1104,7 @@ export const events: Event[] = [
     dateTag: "7 Mar",
     time: "10:00 - 05:30",
     venue: "Department Venues",
-    categories: ["Technical Events"],
+    categories: ["TechExplore"],
     department: "",
     image: "/ALL POSTERS/CODE CRIME SECENE.jpg",
     registrationOpen: true,
@@ -1116,15 +1116,15 @@ export const events: Event[] = [
       "Only allowed languages may be used",
       "Judges’ decision will be final"
     ],
-     coordinators: {
-  event: [
-    { name: "K. P. Mohitha", phone: "7780134362" },
-   
-  ],
-  faculty: [
-    { name: "G. Deepthi", phone: "8247702220" }
-  ]
-}
+    coordinators: {
+      event: [
+        { name: "K. P. Mohitha", phone: "7780134362" },
+
+      ],
+      faculty: [
+        { name: "G. Deepthi", phone: "8247702220" }
+      ]
+    }
   },
   {
     id: "35",
@@ -1135,7 +1135,7 @@ export const events: Event[] = [
     dateTag: "7 Mar",
     time: "10:00 - 05:30",
     venue: "Department Venues",
-    categories: ["Technical Events"],
+    categories: ["TechExplore"],
     department: "",
     image: "/ALL POSTERS/SQL QUERY CHALLENGE.jpg",
     registrationOpen: true,
@@ -1147,15 +1147,15 @@ export const events: Event[] = [
       "Time limit must be followed",
       "Judges’ decision will be final"
     ],
-     coordinators: {
-  event: [
-    { name: "A. Sundar", phone: "9397961457" },
-    
-  ],
-  faculty: [
-    { name: "V. Sandeep Reddy", phone: "9491948526" }
-  ]
-}
+    coordinators: {
+      event: [
+        { name: "A. Sundar", phone: "9397961457" },
+
+      ],
+      faculty: [
+        { name: "V. Sandeep Reddy", phone: "9491948526" }
+      ]
+    }
   },
   {
     id: "36",
@@ -1166,7 +1166,7 @@ export const events: Event[] = [
     dateTag: "7 Mar",
     time: "10:00 - 04:30",
     venue: "Department Venues",
-    categories: ["Technical Events"],
+    categories: ["TechExplore"],
     department: "",
     image: "/ALL POSTERS/PIC PROMPT.jpg",
     registrationOpen: true,
@@ -1178,15 +1178,15 @@ export const events: Event[] = [
       "Explanation must be technical",
       "Judges’ decision will be final"
     ],
-     coordinators: {
-  event: [
-    { name: "C. Deekshitha", phone: "8919535090" },
-    
-  ],
-  faculty: [
-    { name: "B. Balakonda Reddy", phone: "9393855815" }
-  ]
-}
+    coordinators: {
+      event: [
+        { name: "C. Deekshitha", phone: "8919535090" },
+
+      ],
+      faculty: [
+        { name: "B. Balakonda Reddy", phone: "9393855815" }
+      ]
+    }
   },
   {
     id: "37",
@@ -1197,7 +1197,7 @@ export const events: Event[] = [
     dateTag: "7 Mar",
     time: "10:00 - 04:30",
     venue: "Department Venues",
-    categories: ["Technical Events"],
+    categories: ["TechExplore"],
     department: "",
     image: "/ALL POSTERS/MEMORY MELTDOWN.jpg",
     registrationOpen: true,
@@ -1209,15 +1209,15 @@ export const events: Event[] = [
       "No external help allowed",
       "Judges’ decision is final"
     ],
-     coordinators: {
-  event: [
-    { name: "", phone: "" },
-   
-  ],
-  faculty: [
-    { name: "", phone: "" }
-  ]
-}
+    coordinators: {
+      event: [
+        { name: "", phone: "" },
+
+      ],
+      faculty: [
+        { name: "", phone: "" }
+      ]
+    }
   },
 
   {
@@ -1229,7 +1229,7 @@ export const events: Event[] = [
     dateTag: "7 Mar",
     time: "10:00 - 04:30",
     venue: "Department Venues",
-    categories: ["Technical Events"],
+    categories: ["TechExplore"],
     department: "",
     image: "/ALL POSTERS/TECH DUMB SHARADS.jpg",
     registrationOpen: true,
@@ -1241,15 +1241,15 @@ export const events: Event[] = [
       "Time limit per round applies",
       "Judges’ decision is final"
     ],
-     coordinators: {
-  event: [
-    { name: "R. Sakthesh", phone: "9550048249" },
-   
-  ],
-  faculty: [
-    { name: "M. Keerthi", phone: "9989654546" }
-  ]
-}
+    coordinators: {
+      event: [
+        { name: "R. Sakthesh", phone: "9550048249" },
+
+      ],
+      faculty: [
+        { name: "M. Keerthi", phone: "9989654546" }
+      ]
+    }
   },
   {
     id: "39",
@@ -1260,7 +1260,7 @@ export const events: Event[] = [
     dateTag: "7 Mar",
     time: "10:00 - 04:30",
     venue: "Department Venues",
-    categories: ["Technical Events"],
+    categories: ["TechExplore"],
     department: "",
     image: "/ALL POSTERS/UI UX DESIGN SPRINT.jpg",
     registrationOpen: true,
@@ -1272,15 +1272,15 @@ export const events: Event[] = [
       "Design explanation is mandatory",
       "Judges’ decision is final"
     ],
-     coordinators: {
-  event: [
-    { name: "G. Naveen Kumar", phone: "6303814417" },
-    
-  ],
-  faculty: [
-    { name: "Mrs. S. Nandini", phone: "9966231169" }
-  ]
-}
+    coordinators: {
+      event: [
+        { name: "G. Naveen Kumar", phone: "6303814417" },
+
+      ],
+      faculty: [
+        { name: "Mrs. S. Nandini", phone: "9966231169" }
+      ]
+    }
   },
   {
     id: "40",
@@ -1291,7 +1291,7 @@ export const events: Event[] = [
     dateTag: "7 Mar",
     time: "10:00 - 04:30",
     venue: "Department Venues",
-    categories: ["Technical Events"],
+    categories: ["TechExplore"],
     department: "",
     image: "/ALL POSTERS/CUBE SOLVING.jpg",
     registrationOpen: true,
@@ -1303,15 +1303,15 @@ export const events: Event[] = [
       "Tampering with cube is not allowed",
       "Judges’ decision is final"
     ],
-     coordinators: {
-  event: [
-    { name: "N. Nikhil", phone: "9392302840" },
-    
-  ],
-  faculty: [
-    { name: "K. Narasimha Reddy", phone: "9010449197" }
-  ]
-}
+    coordinators: {
+      event: [
+        { name: "N. Nikhil", phone: "9392302840" },
+
+      ],
+      faculty: [
+        { name: "K. Narasimha Reddy", phone: "9010449197" }
+      ]
+    }
   },
   {
     id: "41",
@@ -1322,7 +1322,7 @@ export const events: Event[] = [
     dateTag: "7 Mar",
     time: "10:00 - 04:30",
     venue: "Department Venues",
-    categories: ["Technical Events", "Hackathons"],
+    categories: ["Hackathons"],
     department: "",
     image: "/ALL POSTERS/AGENTIX.jpg",
     registrationOpen: true,
@@ -1334,15 +1334,15 @@ export const events: Event[] = [
       "Each team must present the solution",
       "Judges’ decision will be final"
     ],
-     coordinators: {
-  event: [
-    { name: "Surineni Likith", phone: "9441694410" },
-   
-  ],
-  faculty: [
-    { name: "Dr. P. Lokesh Kumar Reddy", phone: "8008592385" }
-  ]
-}
+    coordinators: {
+      event: [
+        { name: "Surineni Likith", phone: "9441694410" },
+
+      ],
+      faculty: [
+        { name: "Dr. P. Lokesh Kumar Reddy", phone: "8008592385" }
+      ]
+    }
   },
   {
     id: "42",
@@ -1353,7 +1353,7 @@ export const events: Event[] = [
     dateTag: "7 Mar",
     time: "10:00 - 04:30",
     venue: "Department Venues",
-    categories: ["Technical Events", "Hackathons"],
+    categories: ["Hackathons"],
     department: "",
     image: "/ALL POSTERS/WEBVERSE.jpg",
     registrationOpen: true,
@@ -1366,14 +1366,14 @@ export const events: Event[] = [
       "Judges’ decision will be final"
     ],
     coordinators: {
-  event: [
-    { name: "V. Sudharshan", phone: "9908416160" },
-    
-  ],
-  faculty: [
-    { name: "S. Mrudula", phone: "9703064154" }
-  ]
-}
+      event: [
+        { name: "V. Sudharshan", phone: "9908416160" },
+
+      ],
+      faculty: [
+        { name: "S. Mrudula", phone: "9703064154" }
+      ]
+    }
   },
   {
     id: "43",
@@ -1384,7 +1384,7 @@ export const events: Event[] = [
     dateTag: "7 Mar",
     time: "10:00 - 04:30",
     venue: "Department Venues",
-    categories: ["Technical Events", "Hackathons"],
+    categories: ["Hackathons"],
     department: "",
     image: "/ALL POSTERS/SENSECRAFT.jpg",
     registrationOpen: true,
@@ -1395,15 +1395,15 @@ export const events: Event[] = [
       "Idea should solve a real-world problem",
       "Teams must explain the working clearly"
     ],
-     coordinators: {
-  event: [
-    { name: "V. Rishi Sree", phone: "8309663060" },
-   
-  ],
-  faculty: [
-    { name: "P. Mounika", phone: "9502582087" }
-  ]
-}
+    coordinators: {
+      event: [
+        { name: "V. Rishi Sree", phone: "8309663060" },
+
+      ],
+      faculty: [
+        { name: "P. Mounika", phone: "9502582087" }
+      ]
+    }
   },
   {
     id: "44",
@@ -1414,7 +1414,7 @@ export const events: Event[] = [
     dateTag: "7 Mar",
     time: "10:00 - 04:30",
     venue: "Department Venues",
-    categories: ["Technical Events", "Hackathons"],
+    categories: ["Hackathons"],
     department: "MECH",
     image: "/ALL POSTERS/DESIGNATHON.jpg",
     registrationOpen: true,
@@ -1425,16 +1425,16 @@ export const events: Event[] = [
       "Teams must submit and explain the design clearly",
       "Time limits must be strictly followed"
     ],
-     coordinators: {
-  event: [
-    { name: "K. V. Vamsidhar Reddy", phone: "7993581848" },
-   
-  ],
-  faculty: [
-    { name: "Dr. N Rajesh", phone: "9985289928" },
-    {name:"Dr. G. Guru Mahesh",phone:"9966214744"}
-  ]
-}
+    coordinators: {
+      event: [
+        { name: "K. V. Vamsidhar Reddy", phone: "7993581848" },
+
+      ],
+      faculty: [
+        { name: "Dr. N Rajesh", phone: "9985289928" },
+        { name: "Dr. G. Guru Mahesh", phone: "9966214744" }
+      ]
+    }
   },
   {
     id: "45",
@@ -1445,7 +1445,7 @@ export const events: Event[] = [
     dateTag: "7 Mar",
     time: "10:00 - 04:30",
     venue: "Department Venues",
-    categories: ["Technical Events", "Project Expo"],
+    categories: ["Project Expo"],
     department: "",
     image: "/ALL POSTERS/TECHORBIT.jpg",
     registrationOpen: true,
@@ -1456,15 +1456,15 @@ export const events: Event[] = [
       "Working models or demos are preferred",
       "Judges’ decision will be final"
     ],
-     coordinators: {
-  event: [
-    { name: "Rohith", phone: "9493841144" },
-    
-  ],
-  faculty: [
-    { name: "J. Omkar Reddy", phone: "9949366589" }
-  ]
-}
+    coordinators: {
+      event: [
+        { name: "Rohith", phone: "9493841144" },
+
+      ],
+      faculty: [
+        { name: "J. Omkar Reddy", phone: "9949366589" }
+      ]
+    }
   },
   {
     id: "46",
@@ -1475,7 +1475,7 @@ export const events: Event[] = [
     dateTag: "7 Mar",
     time: "10:00 - 04:30",
     venue: "Department Venues",
-    categories: ["Technical Events", "Project Expo"],
+    categories: ["Project Expo"],
     department: "",
     image: "/ALL POSTERS/SIGNAL SPHERE.jpg",
     registrationOpen: true,
@@ -1486,15 +1486,15 @@ export const events: Event[] = [
       "Working models or demos are preferred",
       "Judges’ decision will be final"
     ],
-     coordinators: {
-  event: [
-    { name: "K. Gayathri", phone: "8121665805" },
-    
-  ],
-  faculty: [
-    { name: "S. Salma", phone: "8885624395" }
-  ]
-}
+    coordinators: {
+      event: [
+        { name: "K. Gayathri", phone: "8121665805" },
+
+      ],
+      faculty: [
+        { name: "S. Salma", phone: "8885624395" }
+      ]
+    }
   },
   {
     id: "47",
@@ -1505,7 +1505,7 @@ export const events: Event[] = [
     dateTag: "7 Mar",
     time: "10:00 - 04:30",
     venue: "Department Venues",
-    categories: ["Technical Events", "Project Expo"],
+    categories: ["Project Expo"],
     department: "EEE",
     image: "/ALL POSTERS/ENERGEX.jpg",
     registrationOpen: true,
@@ -1516,15 +1516,15 @@ export const events: Event[] = [
       "Working models or demos are preferred",
       "Judges’ decision will be final"
     ],
-     coordinators: {
-  event: [
-    { name: "K. Pawan Kumar", phone: "8019606890" },
-   
-  ],
-  faculty: [
-    { name: "K. Prathiba", phone: "9492406096" }
-  ]
-}
+    coordinators: {
+      event: [
+        { name: "K. Pawan Kumar", phone: "8019606890" },
+
+      ],
+      faculty: [
+        { name: "K. Prathiba", phone: "9492406096" }
+      ]
+    }
   },
   {
     id: "48",
@@ -1535,7 +1535,7 @@ export const events: Event[] = [
     dateTag: "7 Mar",
     time: "10:00 - 04:30",
     venue: "Department Venues",
-    categories: ["Technical Events", "Project Expo"],
+    categories: ["Project Expo"],
     department: "CIVIL",
     image: "/ALL POSTERS/INFRASYS.jpg",
     registrationOpen: true,
@@ -1546,15 +1546,15 @@ export const events: Event[] = [
       "Working models or demos are preferred",
       "Judges’ decision will be final"
     ],
-     coordinators: {
-  event: [
-    { name: "Junaid", phone: "9866314768" },
-    
-  ],
-  faculty: [
-    { name: "A. Usha", phone: "7815867971" }
-  ]
-}
+    coordinators: {
+      event: [
+        { name: "Junaid", phone: "9866314768" },
+
+      ],
+      faculty: [
+        { name: "A. Usha", phone: "7815867971" }
+      ]
+    }
   },
 
 
@@ -1572,7 +1572,7 @@ export const events: Event[] = [
     venue: "SV grounds",
     categories: ["Sports"],
     department: "",
-    image: "/event-images/sample.png",
+    image: "/ALL POSTERS/CRICKET.jpg",
     registrationOpen: true,
     teamSize: "11 members + 4 substitutes",
     rules: [
@@ -1582,15 +1582,15 @@ export const events: Event[] = [
       " ICC rules and regulations will be followed.",
       " All players must wear colour jersey."
     ],
-     coordinators: {
-  event: [
-    { name: "", phone: "" },
-    { name: "", phone: "" }
-  ],
-  faculty: [
-    { name: "", phone: "" }
-  ]
-}
+    coordinators: {
+      event: [
+        { name: "", phone: "" },
+        { name: "", phone: "" }
+      ],
+      faculty: [
+        { name: "", phone: "" }
+      ]
+    }
   },
   {
     id: "50",
@@ -1602,7 +1602,7 @@ export const events: Event[] = [
     venue: "SV grounds",
     categories: ["Sports"],
     department: "",
-    image: "/event-images/sample.png",
+    image: "/ALL POSTERS/KABADDI MENS.jpg",
     registrationOpen: true,
     teamSize: "10 members",
     rules: [
@@ -1611,15 +1611,15 @@ export const events: Event[] = [
       "A match consists of two halves of 20 minutes each with a 5-minute break .",
       "Pro Kabaddi League rules will be followed.",
     ],
-     coordinators: {
-  event: [
-    { name: "", phone: "" },
-    { name: "", phone: "" }
-  ],
-  faculty: [
-    { name: "", phone: "" }
-  ]
-}
+    coordinators: {
+      event: [
+        { name: "", phone: "" },
+        { name: "", phone: "" }
+      ],
+      faculty: [
+        { name: "", phone: "" }
+      ]
+    }
   },
   {
     id: "51",
@@ -1631,7 +1631,7 @@ export const events: Event[] = [
     venue: "SV grounds",
     categories: ["Sports"],
     department: "",
-    image: "/event-images/sample.png",
+    image: "/ALL POSTERS/VOLLEY BALL MEN.jpg",
     registrationOpen: true,
     teamSize: " 12 members",
     rules: [
@@ -1641,15 +1641,15 @@ export const events: Event[] = [
       "All matches will follow Rally Point System with Rotation basis.",
       "VFI rules will be followed.."
     ],
-     coordinators: {
-  event: [
-    { name: "", phone: "" },
-    { name: "", phone: "" }
-  ],
-  faculty: [
-    { name: "", phone: "" }
-  ]
-}
+    coordinators: {
+      event: [
+        { name: "", phone: "" },
+        { name: "", phone: "" }
+      ],
+      faculty: [
+        { name: "", phone: "" }
+      ]
+    }
   },
   {
     id: "52",
@@ -1661,7 +1661,7 @@ export const events: Event[] = [
     venue: "SV grounds",
     categories: ["Sports"],
     department: "",
-    image: "/event-images/sample.png",
+    image: "/ALL POSTERS/CHESS MENS.jpg",
     registrationOpen: true,
     teamSize: "Individual",
     rules: [
@@ -1671,15 +1671,15 @@ export const events: Event[] = [
       " Use of electronic devices during the game is strictly prohibited.",
       " FIDE (World Chess Federation) rules will be followed."
     ],
-     coordinators: {
-  event: [
-    { name: "", phone: "" },
-    { name: "", phone: "" }
-  ],
-  faculty: [
-    { name: "", phone: "" }
-  ]
-}
+    coordinators: {
+      event: [
+        { name: "", phone: "" },
+        { name: "", phone: "" }
+      ],
+      faculty: [
+        { name: "", phone: "" }
+      ]
+    }
   },
   {
     id: "53",
@@ -1691,25 +1691,25 @@ export const events: Event[] = [
     venue: "SV grounds",
     categories: ["Sports"],
     department: "",
-    image: "/event-images/sample.png",
+    image: "/ALL POSTERS/CARROMS MENS.jpg",
     registrationOpen: true,
     teamSize: "",
     rules: [
       " League-cum-knock-out.",
       " A match consists of 3 sets, with each set being a race to 25 points.",
-       " The deciding set will be played up to 15 points.",
+      " The deciding set will be played up to 15 points.",
       " The rally point system will be applied with rotation after each game.",
       " Official Carrom Federation of India (CFI) rules will be followed."
     ],
-     coordinators: {
-  event: [
-    { name: "", phone: "" },
-    { name: "", phone: "" }
-  ],
-  faculty: [
-    { name: "", phone: "" }
-  ]
-}
+    coordinators: {
+      event: [
+        { name: "", phone: "" },
+        { name: "", phone: "" }
+      ],
+      faculty: [
+        { name: "", phone: "" }
+      ]
+    }
   },
   {
     id: "54",
@@ -1721,25 +1721,25 @@ export const events: Event[] = [
     venue: "SV grounds",
     categories: ["Sports"],
     department: "",
-    image: "/event-images/sample.png",
+    image: "/ALL POSTERS/TABLE TENNIS MENS.jpg",
     registrationOpen: true,
     teamSize: "Individual",
     rules: [
-     "Matches will be played in Singles format (Best of 5 games).",
-     "Each game is played up to 11 points, with a 2-point lead required to win.",
-     "Service alternates every 2 points, and the ball must bounce on both sides",
-     "The Rally Point Scoring System will be followed.",
-     "ITTF rules and standard table tennis equipment (40mm ball) apply."
+      "Matches will be played in Singles format (Best of 5 games).",
+      "Each game is played up to 11 points, with a 2-point lead required to win.",
+      "Service alternates every 2 points, and the ball must bounce on both sides",
+      "The Rally Point Scoring System will be followed.",
+      "ITTF rules and standard table tennis equipment (40mm ball) apply."
     ],
-     coordinators: {
-  event: [
-    { name: "", phone: "" },
-    { name: "", phone: "" }
-  ],
-  faculty: [
-    { name: "", phone: "" }
-  ]
-}
+    coordinators: {
+      event: [
+        { name: "", phone: "" },
+        { name: "", phone: "" }
+      ],
+      faculty: [
+        { name: "", phone: "" }
+      ]
+    }
   },
   {
     id: "55",
@@ -1751,25 +1751,25 @@ export const events: Event[] = [
     venue: "SV grounds",
     categories: ["Sports"],
     department: "",
-    image: "/event-images/sample.png",
+    image: "/ALL POSTERS/THROW BALL WOMEN.jpg",
     registrationOpen: true,
     teamSize: "9 on court + 3 substitutes",
     rules: [
-         "1. Knock-out tournament",
-         "2. A match consists of 3 sets of 25 points.",
-         "3. The deciding set will be 15 points.",
-         "4. All matches will follow Rally Point System with Rotation basis.",
-         "5. VFI rules will be followed."
+      "1. Knock-out tournament",
+      "2. A match consists of 3 sets of 25 points.",
+      "3. The deciding set will be 15 points.",
+      "4. All matches will follow Rally Point System with Rotation basis.",
+      "5. VFI rules will be followed."
     ],
-     coordinators: {
-  event: [
-    { name: "", phone: "" },
-    { name: "", phone: "" }
-  ],
-  faculty: [
-    { name: "", phone: "" }
-  ]
-}
+    coordinators: {
+      event: [
+        { name: "", phone: "" },
+        { name: "", phone: "" }
+      ],
+      faculty: [
+        { name: "", phone: "" }
+      ]
+    }
   },
   {
     id: "56",
@@ -1781,7 +1781,7 @@ export const events: Event[] = [
     venue: "SV grounds",
     categories: ["Sports"],
     department: "",
-    image: "/event-images/sample.png",
+    image: "/ALL POSTERS/TENNKOIT WOMEN.jpg",
     registrationOpen: true,
     teamSize: " Individual ",
     rules: [
@@ -1792,14 +1792,14 @@ export const events: Event[] = [
       "The umpire’s decision is final; misbehavior may lead to disqualification."
     ],
     coordinators: {
-  event: [
-    { name: "", phone: "" },
-    { name: "Priya Verma", phone: "9345678123" }
-  ],
-  faculty: [
-    { name: "", phone: "" }
-  ]
-}
+      event: [
+        { name: "", phone: "" },
+        { name: "Priya Verma", phone: "9345678123" }
+      ],
+      faculty: [
+        { name: "", phone: "" }
+      ]
+    }
   },
   {
     id: "57",
@@ -1811,24 +1811,24 @@ export const events: Event[] = [
     venue: "SV grounds",
     categories: ["Sports"],
     department: "",
-    image: "/event-images/sample.png",
+    image: "/ALL POSTERS/KABADDI WOMENS.jpg",
     registrationOpen: true,
     teamSize: "10 members",
     rules: [
-         " League-cum-knock-out.",
-         " Women - Max: 10 players (7 on-field, 3 substitutes), Min: 7 players.",
-         " A match consists of two halves of 15 minutes each with a 5-minute break.",
-         "Pro Kabaddi League rules will be followed."
+      " League-cum-knock-out.",
+      " Women - Max: 10 players (7 on-field, 3 substitutes), Min: 7 players.",
+      " A match consists of two halves of 15 minutes each with a 5-minute break.",
+      "Pro Kabaddi League rules will be followed."
     ],
-     coordinators: {
-  event: [
-    { name: "", phone: "" },
-    { name: "", phone: "" }
-  ],
-  faculty: [
-    { name: "", phone: "" }
-  ]
-}
+    coordinators: {
+      event: [
+        { name: "", phone: "" },
+        { name: "", phone: "" }
+      ],
+      faculty: [
+        { name: "", phone: "" }
+      ]
+    }
   },
   {
     id: "58",
@@ -1840,25 +1840,25 @@ export const events: Event[] = [
     venue: "SV grounds",
     categories: ["Sports"],
     department: "",
-    image: "/event-images/sample.png",
+    image: "/ALL POSTERS/VOLLEY BALL WOMEN.jpg",
     registrationOpen: true,
     teamSize: "12 members",
     rules: [
       "1. Knock-out tournament",
-     "2. A match consists of 3 sets of 25 points.",
-     "3. The deciding set will be 15 points.",
-     "4. All matches will follow Rally Point System with Rotation basis.",
-     "5. VFI rules will be followed.."
+      "2. A match consists of 3 sets of 25 points.",
+      "3. The deciding set will be 15 points.",
+      "4. All matches will follow Rally Point System with Rotation basis.",
+      "5. VFI rules will be followed.."
     ],
-     coordinators: {
-  event: [
-    { name: "", phone: "" },
-    { name: "", phone: "" }
-  ],
-  faculty: [
-    { name: "", phone: "" }
-  ]
-}
+    coordinators: {
+      event: [
+        { name: "", phone: "" },
+        { name: "", phone: "" }
+      ],
+      faculty: [
+        { name: "", phone: "" }
+      ]
+    }
   },
   {
     id: "59",
@@ -1870,7 +1870,7 @@ export const events: Event[] = [
     venue: "",
     categories: ["Sports"],
     department: "",
-    image: "/event-images/sample.png",
+    image: "/ALL POSTERS/CHESS WOMENS.jpg",
     registrationOpen: true,
     teamSize: "Individual",
     rules: [
@@ -1878,15 +1878,15 @@ export const events: Event[] = [
       "FIDE rules apply.",
       "No mobile use allowed."
     ],
-     coordinators: {
-  event: [
-    { name: "", phone: "" },
-    { name: "", phone: "" }
-  ],
-  faculty: [
-    { name: "", phone: "" }
-  ]
-}
+    coordinators: {
+      event: [
+        { name: "", phone: "" },
+        { name: "", phone: "" }
+      ],
+      faculty: [
+        { name: "", phone: "" }
+      ]
+    }
   },
   {
     id: "60",
@@ -1898,25 +1898,25 @@ export const events: Event[] = [
     venue: "SV grounds",
     categories: ["Sports"],
     department: "",
-    image: "/event-images/sample.png",
+    image: "/ALL POSTERS/CARROM WOMENS.jpg",
     registrationOpen: true,
     teamSize: "Individual",
     rules: [
-     "1. League-cum-knock-out.",
-     "2. Single player matches are conducted.",
-     "3. Player will have a 10-minute time control with a 5-second increment per move.",
-     "4. Use of electronic devices during the game is strictly prohibited.",
-     "5. FIDE (World Chess Federation) rules will be followed."
+      "1. League-cum-knock-out.",
+      "2. Single player matches are conducted.",
+      "3. Player will have a 10-minute time control with a 5-second increment per move.",
+      "4. Use of electronic devices during the game is strictly prohibited.",
+      "5. FIDE (World Chess Federation) rules will be followed."
     ],
-     coordinators: {
-  event: [
-    { name: "", phone: "" },
-    { name: "", phone: "" }
-  ],
-  faculty: [
-    { name: "", phone: "" }
-  ]
-}
+    coordinators: {
+      event: [
+        { name: "", phone: "" },
+        { name: "", phone: "" }
+      ],
+      faculty: [
+        { name: "", phone: "" }
+      ]
+    }
   },
   {
     id: "61",
@@ -1928,25 +1928,25 @@ export const events: Event[] = [
     venue: "SV grounds",
     categories: ["Sports"],
     department: "",
-    image: "/event-images/sample.png",
+    image: "/ALL POSTERS/TABLE TENNIS WOMENS.jpg",
     registrationOpen: true,
     teamSize: "Individual",
     rules: [
       "Matches will be played in Singles format (Best of 5 games).",
-     "Each game is played up to 11 points, with a 2-point lead required to win.",
-     "Service alternates every 2 points, and the ball must bounce on both sides",
-     "The Rally Point Scoring System will be followed.",
-     "ITTF rules and standard table tennis equipment (40mm ball) apply."
+      "Each game is played up to 11 points, with a 2-point lead required to win.",
+      "Service alternates every 2 points, and the ball must bounce on both sides",
+      "The Rally Point Scoring System will be followed.",
+      "ITTF rules and standard table tennis equipment (40mm ball) apply."
     ],
-     coordinators: {
-  event: [
-    { name: "", phone: "" },
-    { name: "", phone: "" }
-  ],
-  faculty: [
-    { name: "", phone: "" }
-  ]
-}
+    coordinators: {
+      event: [
+        { name: "", phone: "" },
+        { name: "", phone: "" }
+      ],
+      faculty: [
+        { name: "", phone: "" }
+      ]
+    }
   }
 ];
 

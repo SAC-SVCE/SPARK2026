@@ -104,8 +104,16 @@ const Navbar = () => {
   };
 
   const eventCategories = [
-    { name: "Technical Events", id: "Technical Events" },
-    { name: "Cultural Events", id: "Cultural Events" }, // Fixed: Must match category name in events.ts
+    {
+      name: "Technical Events",
+      id: "Technical Events",
+      subItems: [
+        { name: "Paper Presentation", id: "Paper Presentation" },
+        { name: "Project Expo", id: "Project Expo" },
+        { name: "TechExplore", id: "TechExplore" }, // Maps to Technical Events category logically or a specific new one
+      ]
+    },
+    { name: "Cultural Events", id: "Cultural Events" },
     { name: "Sports", id: "Sports" },
     { name: "Hackathons", id: "Hackathons" },
   ];
@@ -187,15 +195,42 @@ const Navbar = () => {
                   </Button>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent className="bg-[#0a0a0a] border-primary/20 backdrop-blur-xl mt-2 rounded-none border-l-4" sideOffset={5}>
-                  {eventCategories.map((cat) => (
-                    <DropdownMenuItem
-                      key={cat.id}
-                      onClick={() => scrollToSection(`event-cat-${cat.id}`)}
-                      className="font-orbitron text-white focus:text-primary focus:bg-white cursor-pointer rounded-none hover:pl-4 transition-all duration-300 uppercase tracking-widest text-xs"
-                    >
-                      {cat.name}
-                    </DropdownMenuItem>
-                  ))}
+                  {eventCategories.map((cat) => {
+                    if (cat.subItems) {
+                      return (
+                        <div key={cat.id}>
+                          <div
+                            className="font-orbitron font-bold text-white px-2 py-1.5 focus:bg-transparent cursor-default rounded-none uppercase tracking-widest text-xs"
+                          >
+                            {cat.name}
+                          </div>
+                          <div className="flex flex-col gap-1 border-l border-white/10 ml-2 mb-1">
+                            {cat.subItems.map((sub) => (
+                              <DropdownMenuItem
+                                key={sub.id}
+                                onClick={(e) => {
+                                  e.stopPropagation();
+                                  scrollToSection(`event-cat-${sub.id}`);
+                                }}
+                                className="font-orbitron text-white/70 focus:text-primary focus:bg-white cursor-pointer rounded-none pl-4 hover:pl-6 transition-all duration-300 uppercase tracking-widest text-[10px]"
+                              >
+                                {sub.name}
+                              </DropdownMenuItem>
+                            ))}
+                          </div>
+                        </div>
+                      );
+                    }
+                    return (
+                      <DropdownMenuItem
+                        key={cat.id}
+                        onClick={() => scrollToSection(`event-cat-${cat.id}`)}
+                        className="font-orbitron text-white focus:text-primary focus:bg-white cursor-pointer rounded-none hover:pl-4 transition-all duration-300 uppercase tracking-widest text-xs"
+                      >
+                        {cat.name}
+                      </DropdownMenuItem>
+                    );
+                  })}
                 </DropdownMenuContent>
               </DropdownMenu>
             </div>
@@ -252,14 +287,25 @@ const Navbar = () => {
               <div className="py-2 space-y-2">
                 <div className="px-4 text-xs font-bold text-zinc-500 uppercase tracking-widest">Events</div>
                 {eventCategories.map((cat) => (
-                  <Button
-                    key={cat.id}
-                    variant="ghost_glow"
-                    onClick={() => scrollToSection(`event-cat-${cat.id}`)}
-                    className="w-full justify-start font-orbitron pl-8 text-sm"
-                  >
-                    {cat.name}
-                  </Button>
+                  <div key={cat.id} className="flex flex-col">
+                    <Button
+                      variant="ghost_glow"
+                      onClick={() => scrollToSection(`event-cat-${cat.id}`)}
+                      className="w-full justify-start font-orbitron pl-8 text-sm"
+                    >
+                      {cat.name}
+                    </Button>
+                    {cat.subItems?.map((sub) => (
+                      <Button
+                        key={sub.id}
+                        variant="ghost_glow"
+                        onClick={() => scrollToSection(`event-cat-${sub.id}`)}
+                        className="w-full justify-start font-orbitron pl-12 text-xs text-muted-foreground/80 hover:text-white"
+                      >
+                        - {sub.name}
+                      </Button>
+                    ))}
+                  </div>
                 ))}
               </div>
 

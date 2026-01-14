@@ -12,7 +12,7 @@ export default function RegistrationPage() {
       id: 1,
       title: "DAY 1",
       subtitle: "PRELIMINARIES",
-      price: "₹300",
+      
       type: "STANDARD",
       image: "/event-images/sample.png", // Replace with specific texture if available
       description: "Access to all Day 1 technical events and hackathon entry.",
@@ -28,7 +28,7 @@ export default function RegistrationPage() {
       id: 2,
       title: "DAY 2",
       subtitle: "FINALS & CULTURALS",
-      price: "₹300",
+      
       type: "STANDARD",
       image: "/event-images/sample.png",
       description: "Witness the grand finals and the electrifying cultural night.",
@@ -43,7 +43,7 @@ export default function RegistrationPage() {
       id: 3,
       title: "ELITE",
       subtitle: "ALL ACCESS",
-      price: "₹500",
+    
       type: "COMBO PASS",
       image: "/event-images/sample.png",
       description: "The ultimate Spark experience. Unrestricted access to everything.",
@@ -95,10 +95,7 @@ export default function RegistrationPage() {
               <div className="absolute top-0 bottom-0 left-0 w-1.5 bg-red-600 shadow-[0_0_15px_rgba(220,38,38,0.8)] z-20" />
 
               {/* Price Badge */}
-              <div className="absolute top-0 right-0 bg-red-600 text-white font-black font-orbitron py-2 px-6 shadow-lg z-20 skew-x-[-10deg] origin-top-right translate-x-2">
-                <div className="skew-x-[10deg] text-xl tracking-wide">{pass.price}</div>
-              </div>
-
+              
               {/* Content Container */}
               <div className="relative z-10 p-8 flex flex-col h-full pl-10">
 

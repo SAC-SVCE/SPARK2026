@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Sword, Trophy, ChevronDown } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import homebackground from "@/assets/Home_bannerfinal.jpeg";
+import mobilebackground from "@/assets/mobile_view.jpg";
 import sparkLogo from "@/assets/spark-logo.png";
 import { motion } from "framer-motion";
 
@@ -44,12 +45,29 @@ const Hero = () => {
         <section
             id="home"
             ref={ref}
-            className="relative min-h-[100dvh] md:min-h-[100vh] w-full flex flex-col items-center justify-center overflow-hidden bg-[#050505] py-20"
+            className="relative w-full flex flex-col items-center justify-center overflow-hidden bg-[#050505] md:min-h-[100vh] min-h-0 md:py-20 py-0"
         >
-            {/* Static Professional Background */}
-            <div className="absolute inset-0 bg-cover md:bg-contain bg-center bg-no-repeat" style={{ backgroundImage: `url(${homebackground})` }}>
+            {/* Static Professional Background - Desktop */}
+            <div className="hidden md:block absolute inset-0">
+                <img
+                    src={homebackground}
+                    alt="Desktop Banner"
+                    className="w-full h-full object-cover"
+                />
+            </div>
+
+            {/* Static Professional Background - Mobile */}
+            <div className="block md:hidden relative w-full h-auto">
+                <img
+                    src={mobilebackground}
+                    alt="Mobile Banner"
+                    className="w-full h-auto object-contain"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#050505]/20 via-transparent to-transparent" />
             </div>
+
+            {/* Desktop Overlay Gradient - kept separate for desktop structure */}
+            <div className="hidden md:block absolute inset-0 bg-gradient-to-t from-[#050505]/20 via-transparent to-transparent z-10" />
 
             {/* Grid Overlay - Very Subtle */}
             <div className="absolute inset-0 opacity-10 pointer-events-none bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:4rem_4rem]" />
@@ -60,7 +78,7 @@ const Hero = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: false, margin: "-100px" }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
-                className="relative z-30 container mx-auto px-4 flex flex-col items-center justify-center text-center w-full h-full"
+                className="absolute inset-0 z-30 flex flex-col items-center justify-center text-center w-full h-full md:relative md:inset-auto"
             >
                 {/* Logo - Static & Centered */}
                 <motion.div
