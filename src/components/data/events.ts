@@ -683,7 +683,7 @@ export const events: Event[] = [
     ],
     coordinators: {
   event: [
-    { name: "Y. Harshitha Reddy", phone: "" },
+    { name: "Y. Harshitha Reddy", phone: "" },//"Harshith reddy not updated"
     
   ],
   faculty: [
@@ -717,7 +717,7 @@ export const events: Event[] = [
     ],
      coordinators: {
   event: [
-    { name: "", phone: "" },
+    { name: "P. Gnanendra", phone: "7396740282" },
     
   ],
   faculty: [
@@ -742,7 +742,7 @@ export const events: Event[] = [
     rules: [],
      coordinators: {
   event: [
-    { name: "", phone: "" },
+    { name: "N. Pavani Yadav", phone: "7893495464" },
    
   ],
   faculty: [
@@ -767,7 +767,7 @@ export const events: Event[] = [
     rules: [],
     coordinators: {
   event: [
-    { name: "", phone: "" },
+    { name: "", phone: "" },//Not updated
     
   ],
   faculty: [
@@ -866,7 +866,7 @@ export const events: Event[] = [
   ]
 }
   },
-
+//march 7
   {
     id: "26",
     title: "Laugh Tales",
@@ -946,7 +946,7 @@ export const events: Event[] = [
     ],
     coordinators: {
   event: [
-    { name: "Ruksana Banu Shaik", phone: "9640088880" },
+    { name: "Ruksana Banu Shaik", phone: "9100399934" },
     
   ],
   faculty: [
@@ -959,9 +959,9 @@ export const events: Event[] = [
   title: "Youth Parliament",
   description:
     "A dynamic platform where young minds engage in debating national, social, and policy-level issues following parliamentary procedures.",
-  date: "7th March 2026",
-  dateTag: "7 Mar",
-  time: "10:00 - 04:30",
+  date: "6th March 2026",
+  dateTag: "6 Mar",
+  time: "10:30 - 12:30",
   venue: "Department Venues",
   categories: ["Spotlight Events"],
   department: "",
@@ -977,10 +977,10 @@ export const events: Event[] = [
   ],
   coordinators: {
     event: [
-      { name: "Rahul Sharma", phone: "9012345678" },
-      { name: "Priya Verma", phone: "9345678123" }
+      { name: "R. Harshath", phone: "9515636674" },
+     
     ],
-    faculty: [{ name: "Dr. Ramesh Kumar", phone: "9988776655" }]
+    faculty: [{ name: "Eswaraiah", phone: "6302099491" }]
   }
 },
   {
@@ -1004,7 +1004,7 @@ export const events: Event[] = [
    
   ],
   faculty: [
-    { name: "K. B. Vamsi Krishna", phone: "" }
+    { name: "K. B. Vamsi Krishna", phone: "" }//Not updated
   ]
 }
   },
@@ -1184,13 +1184,13 @@ export const events: Event[] = [
     
   ],
   faculty: [
-    { name: "B. Balakonda Reddy", phone: "" }
+    { name: "B. Balakonda Reddy", phone: "9393855815" }
   ]
 }
   },
   {
     id: "37",
-    title: "Memory Meltdown",
+    title: "Memory Meltdown",//not updated
     description:
       "A fun technical event designed to test memory power, concentration, and observation skills.",
     date: "7th March 2026",
@@ -1371,7 +1371,7 @@ export const events: Event[] = [
     
   ],
   faculty: [
-    { name: "S Mrudula", phone: "9703064154" }
+    { name: "S. Mrudula", phone: "9703064154" }
   ]
 }
   },
