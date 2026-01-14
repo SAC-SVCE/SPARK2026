@@ -120,7 +120,7 @@
 //           <p className="text-sm text-muted-foreground font-exo flex items-center justify-center gap-2 flex-wrap">
 //             <span>© {currentYear} SPARK | Designed & Developed by <a href="#" className="text-secondary hover:underline">Shashi</a></span>
 //           </p>
-          
+
 //           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-card/50 border border-border text-xs font-exo text-muted-foreground">
 //             <Zap className="w-3 h-3 text-secondary" />
 //             <span>Powered by Innovation & Adrenaline</span>
@@ -168,164 +168,170 @@ const Footer = () => {
   };
 
   const socialLinks = [
-    { icon: Instagram, label: "Instagram", href: "#" },
-    { icon: Youtube, label: "YouTube", href: "#" },
+    { icon: Instagram, label: "Instagram", href: "https://www.instagram.com/svce_sac?igsh=MXBtdDE4aXR6M3Q5Mg==" },
+    { icon: Youtube, label: "YouTube", href: "https://www.youtube.com/@SVCE_SAC" },
+    { icon: Twitter, label: "X (Twitter)", href: "https://x.com/SacSvce68154" },
+    { icon: Facebook, label: "Facebook", href: "https://www.facebook.com/SVCETPT" },
   ];
 
 
   return (
-  <footer className="relative py-16 overflow-hidden border-t border-border">
-  {/* Animated Background */}
-  <div className="absolute inset-0 overflow-hidden pointer-events-none">
-    {[...Array(30)].map((_, i) => (
-      <div
-        key={i}
-        className="absolute w-2 h-2 bg-primary rounded-full animate-spark-trail"
-        style={{
-          left: `${Math.random() * 100}%`,
-          bottom: `${Math.random() * 100}%`,
-          animationDelay: `${Math.random() * 5}s`,
-          animationDuration: `${3 + Math.random() * 3}s`,
-        }}
-      />
-    ))}
-  </div>
+    <footer className="relative py-16 overflow-hidden border-t border-border">
+      {/* Animated Background */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        {[...Array(30)].map((_, i) => (
+          <div
+            key={i}
+            className="absolute w-2 h-2 bg-primary rounded-full animate-spark-trail"
+            style={{
+              left: `${Math.random() * 100}%`,
+              bottom: `${Math.random() * 100}%`,
+              animationDelay: `${Math.random() * 5}s`,
+              animationDuration: `${3 + Math.random() * 3}s`,
+            }}
+          />
+        ))}
+      </div>
 
-  <div className="container mx-auto px-4 relative z-10">
+      <div className="container mx-auto px-4 relative z-10">
 
-    {/* ================= CONTACT + MAP ================= */}
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-20">
+        {/* ================= CONTACT + MAP ================= */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-20">
 
-      {/* LEFT – CONTACT INFO */}
-      <div className="space-y-6">
-        {/* Call */}
-        <div className="p-6 rounded-lg bg-card/50 border border-border hover:border-primary/50 transition">
-          <div className="flex gap-4">
-            <div className="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center">
-              <Phone className="w-6 h-6 text-primary" />
-            </div>
-            <div>
-              <h3 className="font-orbitron font-bold">Call Us</h3>
-              <p className="text-muted-foreground text-sm">+91 9390 223 609</p>
-              <p className="text-muted-foreground text-sm">+91 8886 644 977</p>
-            </div>
-          </div>
-        </div>
-
-        {/* Email */}
-        <div className="p-6 rounded-lg bg-card/50 border border-border hover:border-secondary/50 transition">
-          <div className="flex gap-4">
-            <div className="w-12 h-12 rounded-lg bg-secondary/20 flex items-center justify-center">
-              <Mail className="w-6 h-6 text-secondary" />
-            </div>
-            <div>
-              <h3 className="font-orbitron font-bold">Email Us</h3>
-              <p className="text-muted-foreground text-sm">sac@svce.edu.in</p>
-            </div>
-          </div>
-        </div>
-
-        {/* Address */}
-        <div className="p-6 rounded-lg bg-card/50 border border-border hover:border-primary/50 transition">
-          <div className="flex gap-4">
-            <div className="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center">
-              <MapPin className="w-6 h-6 text-primary" />
-            </div>
-            <div>
-              <h3 className="font-orbitron font-bold">Visit Us</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                SVCE Campus<br />
-                Tirupati, Andhra Pradesh<br />
-                India – 517507
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Social */}
-        <div className="p-6 rounded-lg bg-card/50 border border-border">
-          <h3 className="font-orbitron font-bold mb-4">Follow Us</h3>
-          <div className="flex gap-3">
-            {[Instagram, Youtube].map((Icon, i) => (
-              <div
-                key={i}
-                className="w-11 h-11 rounded-lg bg-card border border-border hover:border-primary hover:bg-primary/10 flex items-center justify-center transition hover:scale-110"
-              >
-                <Icon className="w-5 h-5" />
+          {/* LEFT – CONTACT INFO */}
+          <div className="space-y-6">
+            {/* Call */}
+            <div className="p-6 rounded-lg bg-card/50 border border-border hover:border-primary/50 transition">
+              <div className="flex gap-4">
+                <div className="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center">
+                  <Phone className="w-6 h-6 text-primary" />
+                </div>
+                <div>
+                  <h3 className="font-orbitron font-bold">Call Us</h3>
+                  <p className="text-muted-foreground text-sm">+91 9390 223 609</p>
+                  <p className="text-muted-foreground text-sm">+91 8886 644 977</p>
+                </div>
               </div>
-            ))}
+            </div>
+
+            {/* Email */}
+            <div className="p-6 rounded-lg bg-card/50 border border-border hover:border-secondary/50 transition">
+              <div className="flex gap-4">
+                <div className="w-12 h-12 rounded-lg bg-secondary/20 flex items-center justify-center">
+                  <Mail className="w-6 h-6 text-secondary" />
+                </div>
+                <div>
+                  <h3 className="font-orbitron font-bold">Email Us</h3>
+                  <p className="text-muted-foreground text-sm">sac@svce.edu.in</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Address */}
+            <div className="p-6 rounded-lg bg-card/50 border border-border hover:border-primary/50 transition">
+              <div className="flex gap-4">
+                <div className="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center">
+                  <MapPin className="w-6 h-6 text-primary" />
+                </div>
+                <div>
+                  <h3 className="font-orbitron font-bold">Visit Us</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    SVCE Campus<br />
+                    Tirupati, Andhra Pradesh<br />
+                    India – 517507
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Social */}
+            <div className="p-6 rounded-lg bg-card/50 border border-border">
+              <h3 className="font-orbitron font-bold mb-4">Follow Us</h3>
+              <div className="flex gap-3">
+                {socialLinks.map((social, i) => (
+                  <a
+                    key={i}
+                    href={social.href}
+                    target="_blank" // Open in new tab
+                    rel="noopener noreferrer" // Security best practice
+                    className="w-11 h-11 rounded-lg bg-card border border-border hover:border-primary hover:bg-primary/10 flex items-center justify-center transition hover:scale-110"
+                    aria-label={social.label}
+                  >
+                    <social.icon className="w-5 h-5" />
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* RIGHT – MAP */}
+          <div className="rounded-lg overflow-hidden border border-border shadow-lg">
+            <iframe
+
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.9719813829824!2d79.48344232485414!3d13.659467636722896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4d4991206ff455%3A0x37f34fc0f435a909!2sSV%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1764354010221!5m2!1sen!2sin"
+
+              width="100%"
+              height="450"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="SV College Location"
+              className="grayscale hover:grayscale-0 transition-all duration-500"
+            />
           </div>
         </div>
+
+        {/* ================= FOOTER LINKS ================= */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+
+          {/* About */}
+          <div>
+            <h3 className="font-orbitron font-bold text-primary mb-4">About SPARK 2026</h3>
+            <p className="text-sm text-muted-foreground">
+              SPARK 2026 is the Techno Cultural Sports fest of Sri Venkateswara College of Engineering Tirupati.
+            </p>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <h3 className="font-orbitron font-bold text-primary mb-4">Quick Links</h3>
+            <ul className="space-y-2 text-sm text-muted-foreground">
+              <li className="hover:text-primary cursor-pointer">About</li>
+              <li className="hover:text-primary cursor-pointer">Events</li>
+              <li className="hover:text-primary cursor-pointer">Schedule</li>
+              <li className="hover:text-primary cursor-pointer">Gallery</li>
+            </ul>
+          </div>
+
+          {/* Contact */}
+          <div>
+            <h3 className="font-orbitron font-bold text-primary mb-4">Contact</h3>
+            <p className="text-sm text-muted-foreground">Student Coordinators</p>
+            <p className="text-sm">Kiran – 9390 223 609</p>
+            <p className="text-sm">Abdul – 8886 644 977</p>
+          </div>
+
+          {/* Subscribe */}
+          <div>
+            <h3 className="font-orbitron font-bold text-primary mb-4">Stay Updated</h3>
+            <input
+              type="email"
+              placeholder="Your email"
+              className="w-full mb-3 px-4 py-2 rounded bg-card border border-border"
+            />
+            <button className="w-full bg-primary py-2 rounded font-orbitron">
+              Subscribe
+            </button>
+          </div>
+        </div>
+
+        {/* Bottom */}
+        <div className="text-center text-sm text-muted-foreground">
+          © 2026 SPARK | Designed & Developed by <span className="text-primary">Shashi</span>
+        </div>
       </div>
-
-      {/* RIGHT – MAP */}
-      <div className="rounded-lg overflow-hidden border border-border shadow-lg">
-        <iframe
-
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.9719813829824!2d79.48344232485414!3d13.659467636722896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4d4991206ff455%3A0x37f34fc0f435a909!2sSV%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1764354010221!5m2!1sen!2sin"
-
-                width="100%"
-                height="450"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="SV College Location"
-                className="grayscale hover:grayscale-0 transition-all duration-500"
-              />
-      </div>
-    </div>
-
-    {/* ================= FOOTER LINKS ================= */}
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-
-      {/* About */}
-      <div>
-        <h3 className="font-orbitron font-bold text-primary mb-4">About SPARK 2026</h3>
-        <p className="text-sm text-muted-foreground">
-          SPARK 2026 is the Techno Cultural Sports fest of Sri Venkateswara College of Engineering Tirupati.
-        </p>
-      </div>
-
-      {/* Quick Links */}
-      <div>
-        <h3 className="font-orbitron font-bold text-primary mb-4">Quick Links</h3>
-        <ul className="space-y-2 text-sm text-muted-foreground">
-          <li className="hover:text-primary cursor-pointer">About</li>
-          <li className="hover:text-primary cursor-pointer">Events</li>
-          <li className="hover:text-primary cursor-pointer">Schedule</li>
-          <li className="hover:text-primary cursor-pointer">Gallery</li>
-        </ul>
-      </div>
-
-      {/* Contact */}
-      <div>
-        <h3 className="font-orbitron font-bold text-primary mb-4">Contact</h3>
-        <p className="text-sm text-muted-foreground">Student Coordinators</p>
-        <p className="text-sm">Kiran – 9390 223 609</p>
-        <p className="text-sm">Abdul – 8886 644 977</p>
-      </div>
-
-      {/* Subscribe */}
-      <div>
-        <h3 className="font-orbitron font-bold text-primary mb-4">Stay Updated</h3>
-        <input
-          type="email"
-          placeholder="Your email"
-          className="w-full mb-3 px-4 py-2 rounded bg-card border border-border"
-        />
-        <button className="w-full bg-primary py-2 rounded font-orbitron">
-          Subscribe
-        </button>
-      </div>
-    </div>
-
-    {/* Bottom */}
-    <div className="text-center text-sm text-muted-foreground">
-      © 2026 SPARK | Designed & Developed by <span className="text-primary">Shashi</span>
-    </div>
-  </div>
-</footer>
+    </footer>
 
   );
 };
