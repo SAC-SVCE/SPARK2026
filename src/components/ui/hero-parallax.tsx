@@ -62,7 +62,7 @@ export const Header = () => {
     <div
       className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full left-0 top-0">
       <h1 className="text-4xl md:text-5xl font-orbitron font-bold text-blue-500 leading-tight">
-        Relive the <br /> <span className="text-pink-500">Spark 2K26</span>
+        Relive the <br /> <span className="text-pink-500">Spark 2026</span>
       </h1>
       <p className="max-w-2xl text-lg md:text-2xl mt-8 font-exo text-gray-400">
       </p>

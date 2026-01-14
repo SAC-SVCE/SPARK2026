@@ -8,63 +8,85 @@ import { BeamsBackground } from "@/components/ui/beams";
 import CircularTestimonials from "@/components/ui/bts";
 import { motion } from "motion/react";
 import Footer from "@/components/Footer";
+import img1 from  "../assets/gallery_images/img1.jpg";
+import img2 from  "../assets/gallery_images/img2.jpg";
+import img3 from  "../assets/gallery_images/img3.jpg";
+import img4 from  "../assets/gallery_images/img4.jpg";
+import img5 from  "../assets/gallery_images/img5.jpg";
+import img6 from  "../assets/gallery_images/img6.jpg";
+import img7 from  "../assets/gallery_images/img7.jpg";
+import img8 from  "../assets/gallery_images/img8.jpg";
+import img9 from  "../assets/gallery_images/img9.jpg";
+import img10 from  "../assets/gallery_images/img10.jpg";
+import img11 from  "../assets/gallery_images/img11.jpg";
+import img12 from  "../assets/gallery_images/img12.jpg";
+import img13 from  "../assets/gallery_images/img13.jpg";
+import img14 from  "../assets/gallery_images/img14.jpg";
+import img15 from  "../assets/gallery_images/img15.jpg";
+import img16 from  "../assets/gallery_images/img16.jpg";
+import img17 from  "../assets/gallery_images/img17.jpg";
+import img18 from  "../assets/gallery_images/img18.jpg";
+import img19 from  "../assets/gallery_images/img19.jpg";
+import img20 from  "../assets/gallery_images/img20.jpg";
+import img21 from  "../assets/gallery_images/img21.jpg";
+import img22 from  "../assets/gallery_images/img22.jpg";
+import img23 from  "../assets/gallery_images/img23.jpg";
+import img24 from  "../assets/gallery_images/img24.jpg";
+import img25 from  "../assets/gallery_images/img25.jpg";
+import img26 from  "../assets/gallery_images/img26.jpg";
+import img27 from  "../assets/gallery_images/img27.jpg";
+import img28 from  "../assets/gallery_images/img28.jpg";
+import img29 from  "../assets/gallery_images/img29.jpg";
+import img30 from  "../assets/gallery_images/img30.jpg";
+import img31 from  "../assets/gallery_images/img31.jpg";
+import img32 from  "../assets/gallery_images/img32.jpg";
+import img33 from  "../assets/gallery_images/img33.jpg";
+import img34 from  "../assets/gallery_images/img34.jpg";
+import img35 from  "../assets/gallery_images/img35.jpg";
+import img36 from  "../assets/gallery_images/img36.jpg";
+import img37 from  "../assets/gallery_images/img37.jpg";
+import img38 from  "../assets/gallery_images/img38.jpg";
+import img39 from  "../assets/gallery_images/img39.jpg";
+import img41 from "../assets/gallery_images/img41.jpg";
+import img42 from "../assets/gallery_images/img42.jpg";
+
+
+
+
+
 
 
 import { useLocation } from "react-router-dom";
 
 const products = [
-  { title: "Main Stage", link: "#", thumbnail: "https://images.unsplash.com/photo-1540575861501-7cf05a4b125a?auto=format&fit=crop&q=80&w=800" },
-  { title: "Crowd Energy", link: "#", thumbnail: "https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&q=80&w=800" },
-  { title: "Light Show", link: "#", thumbnail: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80&w=800" },
-  { title: "Performance", link: "#", thumbnail: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=800" },
-  { title: "Grand Hall", link: "#", thumbnail: "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&q=80&w=800" },
-  { title: "Neon Vibes", link: "#", thumbnail: "https://images.unsplash.com/photo-1533174072545-e8d4aa97edf9?auto=format&fit=crop&q=80&w=800" },
-  { title: "Concert Night", link: "#", thumbnail: "https://images.unsplash.com/photo-1459749411177-0473ef71607b?auto=format&fit=crop&q=80&w=800" },
-  { title: "Artist perform", link: "#", thumbnail: "https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?auto=format&fit=crop&q=80&w=800" },
-  { title: "Laser Show", link: "#", thumbnail: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&q=80&w=800" },
-  { title: "Music Souls", link: "#", thumbnail: "https://images.unsplash.com/photo-1514525253440-b393452e23f9?auto=format&fit=crop&q=80&w=800" },
-  { title: "Crowd Cheer", link: "#", thumbnail: "https://images.unsplash.com/photo-1493225255756-d9584f8606e9?auto=format&fit=crop&q=80&w=800" },
-  { title: "Stage Light", link: "#", thumbnail: "https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&q=80&w=800" },
-  { title: "Night Life", link: "#", thumbnail: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&q=80&w=800" },
-  { title: "Rock Band", link: "#", thumbnail: "https://images.unsplash.com/photo-1498038432885-c6f3f1b912ee?auto=format&fit=crop&q=80&w=800" },
-  { title: "DJ Set", link: "#", thumbnail: "https://images.unsplash.com/photo-1571266028243-37169d722e96?auto=format&fit=crop&q=80&w=800" },
+  {  title:"", link: "#", thumbnail: img1 },
+  { title: "", link: "#", thumbnail: img19},
+  { title: "", link: "#", thumbnail:img3},
+  { title: "", link: "#", thumbnail: img4},
+  { title: "", link: "#", thumbnail:img5 },
+  { title:"" , link: "#", thumbnail:img6 },
+  { title: "", link: "#", thumbnail:img7 },
+  { title: "", link: "#", thumbnail: img8},
+  { title:"" , link: "#", thumbnail: img21},
+  { title: "", link: "#", thumbnail: img25},
+  { title: "", link: "#", thumbnail:img11},
+  { title: "", link: "#", thumbnail:img12 },
+  { title: "", link: "#", thumbnail: img13},
+  { title: "", link: "#", thumbnail:img14 },
+  { title: "", link: "#", thumbnail:img41 },
 ];
 
 const galleryItems = [
-  { image: "https://images.unsplash.com/photo-1540575861501-7cf05a4b125a?auto=format&fit=crop&q=80&w=800", text: "Main Stage" },
-  { image: "https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&q=80&w=800", text: "Crowd Energy" },
-  { image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80&w=800", text: "Light Show" },
-  { image: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=800", text: "Performance" },
-  { image: "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&q=80&w=800", text: "Grand Hall" },
+  { image: img35, text: "" },
+  { image: img29, text: "" },
+  { image: img18, text: "" },
+  { image: img2, text: "" },
+  { image: img20, text: "" },
 ];
 
-const btsTestimonials = [
-  {
-    quote: "Ensuring every light hits the perfect spot for the grand opening.",
-    name: "Stage Crew",
-    designation: "Technical Team",
-    src: "https://images.unsplash.com/photo-1511268559489-34b624fbfcf5?auto=format&fit=crop&q=80&w=800",
-  },
-  {
-    quote: "Coordinating 50+ volunteers to make the magic happen seamlessly.",
-    name: "Event Coordinator",
-    designation: "Management",
-    src: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80&w=800",
-  },
-  {
-    quote: "Capturing the raw emotions and unseen moments of the artists.",
-    name: "Lead Photographer",
-    designation: "Media Team",
-    src: "https://images.unsplash.com/photo-1511268559489-34b624fbfcf5?auto=format&fit=crop&q=80&w=800",
-  },
-  {
-    quote: "Sound checks and mic tests, the rhythm starts here.",
-    name: "Sound Engineer",
-    designation: "Audio Team",
-    src: "https://images.unsplash.com/photo-1514525253440-b393452e23f9?auto=format&fit=crop&q=80&w=800",
-  },
+const images = [
+  img25,img39,img42,img26
 ];
-
 
 import { SmoothScroll } from "@/components/ui/smooth-scroll";
 
@@ -107,7 +129,7 @@ const HighlightsPage: React.FC = () => {
             transition={{ duration: 1.5 }}
             className="fixed inset-0 z-0"
           >
-            <BeamsBackground />
+            {/* <BeamsBackground /> */}
           </motion.div>
 
           <div className="w-full">
@@ -174,16 +196,7 @@ const HighlightsPage: React.FC = () => {
               </h2>
 
               <CircularTestimonials
-                testimonials={btsTestimonials}
-                colors={{
-                  name: "#FFF",
-                  designation: "#22d3ee", // cyan-400
-                  testimony: "#e5e7eb", // gray-200
-                  arrowBackground: "rgba(255,255,255,0.05)",
-                  arrowForeground: "#FFF",
-                  arrowHoverBackground: "#db2777", // pink-600
-                }}
-              />
+                testimonials={images.map(src => ({ src }))} />
             </motion.section>
           </div>
         </motion.div>

@@ -1,6 +1,12 @@
 import { motion } from "motion/react";
 import { useState } from "react";
 import { BeamsBackground } from "./ui/beams";
+import img22 from "../assets/gallery_images/img22.jpg";
+import img34 from "../assets/gallery_images/img34.jpg";
+import img38 from "../assets/gallery_images/img38.jpg";
+import img43 from "../assets/gallery_images/img43.jpg";
+import img40 from "../assets/gallery_images/img40.jpg";
+import img44 from "../assets/gallery_images/img44.jpeg";
 
 
 
@@ -8,12 +14,7 @@ const PreviousYear = () => {
     const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
     const images = [
-        "https://images.unsplash.com/photo-1540575861501-7cf05a4b125a?q=80&w=2070&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1506157786151-b8491531f063?q=80&w=2070&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=2070&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=2070&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?q=80&w=2070&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1540575861501-7cf05a4b125a?q=80&w=2070&auto=format&fit=crop",
+        img22,img34,img38,img43,img40,img44
     ];
 
     return (
