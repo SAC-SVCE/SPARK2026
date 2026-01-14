@@ -169,8 +169,6 @@ const Footer = () => {
 
   const socialLinks = [
     { icon: Instagram, label: "Instagram", href: "#" },
-    { icon: Twitter, label: "Twitter", href: "#" },
-    { icon: Facebook, label: "Facebook", href: "#" },
     { icon: Youtube, label: "YouTube", href: "#" },
   ];
 
@@ -209,7 +207,7 @@ const Footer = () => {
             <div>
               <h3 className="font-orbitron font-bold">Call Us</h3>
               <p className="text-muted-foreground text-sm">+91 9390 223 609</p>
-              <p className="text-muted-foreground text-sm">+91 8309 746 940</p>
+              <p className="text-muted-foreground text-sm">+91 8886 644 977</p>
             </div>
           </div>
         </div>
@@ -223,7 +221,6 @@ const Footer = () => {
             <div>
               <h3 className="font-orbitron font-bold">Email Us</h3>
               <p className="text-muted-foreground text-sm">sac@svce.edu.in</p>
-              <p className="text-muted-foreground text-sm">spark2k26@svce.edu.in</p>
             </div>
           </div>
         </div>
@@ -237,9 +234,9 @@ const Footer = () => {
             <div>
               <h3 className="font-orbitron font-bold">Visit Us</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
-                SV College Campus<br />
+                SVCE Campus<br />
                 Tirupati, Andhra Pradesh<br />
-                India – 517502
+                India – 517507
               </p>
             </div>
           </div>
@@ -249,7 +246,7 @@ const Footer = () => {
         <div className="p-6 rounded-lg bg-card/50 border border-border">
           <h3 className="font-orbitron font-bold mb-4">Follow Us</h3>
           <div className="flex gap-3">
-            {[Instagram, Twitter, Facebook, Youtube].map((Icon, i) => (
+            {[Instagram, Youtube].map((Icon, i) => (
               <div
                 key={i}
                 className="w-11 h-11 rounded-lg bg-card border border-border hover:border-primary hover:bg-primary/10 flex items-center justify-center transition hover:scale-110"
@@ -286,7 +283,7 @@ const Footer = () => {
       <div>
         <h3 className="font-orbitron font-bold text-primary mb-4">About SPARK 2026</h3>
         <p className="text-sm text-muted-foreground">
-          SPARK 2026 is the annual technical and cultural fest of SVCE Tirupati.
+          SPARK 2026 is the Techno Cultural Sports fest of Sri Venkateswara College of Engineering Tirupati.
         </p>
       </div>
 
@@ -306,7 +303,7 @@ const Footer = () => {
         <h3 className="font-orbitron font-bold text-primary mb-4">Contact</h3>
         <p className="text-sm text-muted-foreground">Student Coordinators</p>
         <p className="text-sm">Kiran – 9390 223 609</p>
-        <p className="text-sm">Abdul – 8309 746 940</p>
+        <p className="text-sm">Abdul – 8886 644 977</p>
       </div>
 
       {/* Subscribe */}

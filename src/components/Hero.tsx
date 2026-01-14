@@ -47,7 +47,7 @@ const Hero = () => {
             className="relative min-h-[100dvh] md:min-h-[100vh] w-full flex flex-col items-center justify-center overflow-hidden bg-[#050505] py-20"
         >
             {/* Static Professional Background */}
-            <div className="absolute inset-0 bg-contain bg-center bg-no-repeat" style={{ backgroundImage: `url(${homebackground})` }}>
+            <div className="absolute inset-0 bg-cover md:bg-contain bg-center bg-no-repeat" style={{ backgroundImage: `url(${homebackground})` }}>
                 <div className="absolute inset-0 bg-gradient-to-t from-[#050505]/20 via-transparent to-transparent" />
             </div>
 

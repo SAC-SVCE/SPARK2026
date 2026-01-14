@@ -32,23 +32,16 @@ export function EventCard({ event }: EventCardProps) {
       className="h-full"
     >
       <Link to={`/event/${event.id}`} className="group block h-full">
-        <Card className="relative overflow-hidden border border-white/10 bg-black/40 h-full aspect-square transition-all duration-500 group-hover:border-primary/50 group-hover:shadow-[0_0_30px_var(--glow-color)]"
+        <Card className="relative overflow-hidden border border-white/10 bg-white/20 h-full aspect-square transition-all duration-500 group-hover:border-primary/50 group-hover:shadow-[0_0_30px_var(--glow-color)]"
           style={{ "--glow-color": glowColor } as React.CSSProperties}>
           {/* Image Container */}
           <div className="absolute inset-0 w-full h-full overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent z-10 opacity-60 group-hover:opacity-80 transition-opacity" />
+            <div className="absolute inset-0 bg-gradient-to-tr from-white/20 via-transparent to-black/60 z-10 opacity-70 group-hover:opacity-90 transition-opacity mix-blend-overlay" />
             <img
               src={event.image || "/placeholder.svg"}
               alt={event.title}
-              className="h-full w-full object-cover transition-transform duration-700"
+              className="h-full w-full object-cover transition-transform filter contrast-[1.15] saturate-[1.15] brightness-[1.05] group-hover:contrast-[1.2] group-hover:saturate-[1.25]"
             />
-          </div>
-
-          {/* Minimal Content - Title Only */}
-          <div className="absolute bottom-0 left-0 right-0 p-4 z-20 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-            <h3 className="text-l font-bold text-white font-orbitron text-center drop-shadow-md group-hover:text-primary transition-colors">
-              {event.title}
-            </h3>
           </div>
 
           {/* Hover Highlight */}

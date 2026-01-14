@@ -203,21 +203,18 @@ export default function EventsPage() {
 
           <div className="flex gap-8">
             {/* Desktop Filter Sidebar */}
-            
+
 
             {/* Events Grid */}
             <div className="flex-1">
               {/* Active filter indicator */}
               {activeFilter !== "All Events" && (
                 <div className="mb-4 text-sm text-zinc-400 flex items-center gap-2">
-                  Showing: <span className="text-primary font-bold px-3 py-1 bg-primary/10 rounded-full border border-primary/20">{activeFilter}</span>
+                  <span className="text-primary font-bold px-3 py-1 bg-primary/10 rounded-full border border-primary/20">{activeFilter} {filteredEvents.length} {filteredEvents.length !== 1 ? "" : ""}</span>
                 </div>
               )}
 
-              {/* Results count */}
-              <div className="mb-6 text-sm text-white font-mono">
-                // FOUND {filteredEvents.length} EVENT{filteredEvents.length !== 1 ? "S" : ""}
-              </div>
+
 
               {filteredEvents.length > 0 ? (
                 <motion.div

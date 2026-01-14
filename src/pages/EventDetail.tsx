@@ -63,9 +63,9 @@ export default function EventDetail() {
     navigator.clipboard.writeText(window.location.href);
     toast.success("Link copied to clipboard!");
   };
-const handleRegister = () => {
+  const handleRegister = () => {
     window.location.href = "https://www.theticket9.com/event/spark-2026";
-};
+  };
 
 
 
@@ -82,13 +82,20 @@ const handleRegister = () => {
           {/* Main Content */}
           <div className="lg:col-span-3 space-y-8">
             {/* Event Poster */}
-            <div className="w-full max-w-[610px] mx-auto aspect-square rounded-xl overflow-hidden bg-muted shadow-[0_0_30px_rgba(0,0,0,0.5)] border border-primary/20 relative group">
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10" />
+            {/* Event Poster */}
+            <div className="w-full max-w-[610px] mx-auto aspect-square overflow-hidden bg-zinc-900/50 shadow-[0_0_60px_rgba(0,0,0,0.7)] border border-white/20 relative group ring-1 ring-white/10">
+              {/* Glass/Gloss Shine */}
+              <div className="absolute inset-0 z-20 pointer-events-none bg-gradient-to-br from-white/20 via-transparent to-black/40 opacity-70 mix-blend-overlay" />
+
+              {/* HD Image */}
               <img
                 src={event.image}
                 alt={event.title}
-                className="w-full h-full object-cover transition-transform duration-700"
+                className="w-full h-full object-cover transition-all filter contrast-[1.15] saturate-[1.15] brightness-[1.05] group-hover:contrast-[1.2] group-hover:saturate-[1.25] group-hover:brightness-[1.1]"
               />
+
+              {/* Inner Vignette & Glow */}
+              <div className="absolute inset-0 z-10 shadow-[inset_0_0_40px_rgba(0,0,0,0.6)] pointer-events-none ring-1 ring-inset ring-white/10" />
             </div>
 
 
@@ -256,53 +263,53 @@ const handleRegister = () => {
                   )}
                 </div>
                 {/* Student Coordinators */}
-{event.coordinators?.event?.length > 0 && (
-  <div className="flex items-start gap-5">
-   <div className="p-4 rounded-xl bg-cyan-500/10 border border-cyan-500/20">
-  <FaGraduationCap className="h-7 w-7 text-cyan-400" />
-</div>
+                {event.coordinators?.event?.length > 0 && (
+                  <div className="flex items-start gap-5">
+                    <div className="p-4 rounded-xl bg-cyan-500/10 border border-cyan-500/20">
+                      <FaGraduationCap className="h-7 w-7 text-cyan-400" />
+                    </div>
 
-    <div>
-      <p className="text-base text-zinc-500">Student Coordinators</p>
-      <div className="space-y-1 mt-1">
-        {event.coordinators.event.map((coord, index) => (
-          <p key={index} className="text-white font-medium text-xl">
-            {coord.name}
-            {coord.phone && (
-              <span className="text-cyan-400 ml-2 text-xl">
-                ({coord.phone})
-              </span>
-            )}
-          </p>
-        ))}
-      </div>
-    </div>
-  </div>
-)}
-{/* Faculty Coordinators */}
-{event.coordinators?.faculty?.length > 0 && (
-  <div className="flex items-start gap-5">
-    <div className="p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/20">
-  <FaUserTie className="h-7 w-7 text-emerald-400" />
-</div>
+                    <div>
+                      <p className="text-base text-zinc-500">Student Coordinators</p>
+                      <div className="space-y-1 mt-1">
+                        {event.coordinators.event.map((coord, index) => (
+                          <p key={index} className="text-white font-medium text-xl">
+                            {coord.name}
+                            {coord.phone && (
+                              <span className="text-cyan-400 ml-2 text-xl">
+                                ({coord.phone})
+                              </span>
+                            )}
+                          </p>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                )}
+                {/* Faculty Coordinators */}
+                {event.coordinators?.faculty?.length > 0 && (
+                  <div className="flex items-start gap-5">
+                    <div className="p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/20">
+                      <FaUserTie className="h-7 w-7 text-emerald-400" />
+                    </div>
 
-    <div>
-      <p className="text-base text-zinc-500">Faculty Coordinators</p>
-      <div className="space-y-1 mt-1">
-        {event.coordinators.faculty.map((coord, index) => (
-          <p key={index} className="text-white font-medium text-xl">
-            {coord.name}
-            {coord.phone && (
-              <span className="text-emerald-400 ml-2 text-xl">
-                ({coord.phone})
-              </span>
-            )}
-          </p>
-        ))}
-      </div>
-    </div>
-  </div>
-)}
+                    <div>
+                      <p className="text-base text-zinc-500">Faculty Coordinators</p>
+                      <div className="space-y-1 mt-1">
+                        {event.coordinators.faculty.map((coord, index) => (
+                          <p key={index} className="text-white font-medium text-xl">
+                            {coord.name}
+                            {coord.phone && (
+                              <span className="text-emerald-400 ml-2 text-xl">
+                                ({coord.phone})
+                              </span>
+                            )}
+                          </p>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                )}
 
 
                 <div className="space-y-4 pt-6 border-t border-zinc-800">
