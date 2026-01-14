@@ -110,7 +110,7 @@ const Navbar = () => {
       subItems: [
         { name: "Paper Presentation", id: "Paper Presentation" },
         { name: "Project Expo", id: "Project Expo" },
-        { name: "TechExplore", id: "TechExplore" }, // Maps to Technical Events category logically or a specific new one
+        { name: "TechXplore", id: "TechExplore" }, // Maps to Technical Events category logically or a specific new one
       ]
     },
     { name: "Cultural Events", id: "Cultural Events" },
