@@ -8,29 +8,34 @@ const Gallery = () => {
   // Placeholder gallery items - in production, these would be actual event photos
   const galleryItems = [
     {
-      title: "Gaming Championship 2024",
-      description: "Intense BGMI finals with 500+ participants",
+      title: "Sports Championship",
+      description: "Intense games with 500+ participants",
       color: "from-primary/20 to-background",
+      image: "/event-images/gg8.png",
     },
     {
       title: "Tech Hackathon",
-      description: "48-hour coding marathon with innovative solutions",
+      description: "24-hour coding marathon with innovative solutions",
       color: "from-secondary/20 to-background",
+      image: "/event-images/gg4.png",
     },
     {
       title: "Cultural Night",
       description: "Dance performances that lit up the stage",
       color: "from-primary/20 to-background",
+      image: "/event-images/gg7.png",
     },
     {
       title: "Opening Ceremony",
       description: "Grand launch of SPARK 2024",
       color: "from-secondary/20 to-background",
+      image: "/event-images/gg1.png",
     },
     {
       title: "Prize Distribution",
       description: "Celebrating winners across all categories",
       color: "from-primary/20 to-background",
+      image: "/event-images/gg6.png",
     },
   ];
 
@@ -70,17 +75,23 @@ const Gallery = () => {
         {/* Carousel */}
         <div className="relative max-w-5xl mx-auto">
           {/* Main Display */}
-          <div className="relative aspect-video rounded-2xl overflow-hidden border border-border shadow-2xl">
+          <div className="relative aspect-video rounded-2xl overflow-hidden border border-border shadow-2xl group">
+            {/* Image */}
+            <img
+              src={galleryItems[currentIndex].image}
+              alt={galleryItems[currentIndex].title}
+              className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+            />
+
             <div
-              className={`absolute inset-0 bg-gradient-to-br ${galleryItems[currentIndex].color} flex items-center justify-center`}
+              className={`absolute inset-0 bg-gradient-to-t from-background/90 via-background/40 to-transparent flex items-end justify-center`}
             >
-              {/* Placeholder Content */}
-              <div className="text-center p-12">
-                <ImageIcon className="w-24 h-24 mx-auto mb-6 text-foreground/20" />
-                <h3 className="text-3xl font-orbitron font-bold mb-4 text-foreground">
+              {/* Content Overlay */}
+              <div className="text-center p-8 md:p-12 transform transition-transform duration-500 translate-y-2 group-hover:translate-y-0">
+                <h3 className="text-3xl md:text-4xl font-orbitron font-bold mb-4 text-foreground text-glow-cyan">
                   {galleryItems[currentIndex].title}
                 </h3>
-                <p className="text-lg text-muted-foreground font-exo">
+                <p className="text-lg text-muted-foreground font-exo max-w-2xl mx-auto">
                   {galleryItems[currentIndex].description}
                 </p>
               </div>
@@ -94,7 +105,7 @@ const Gallery = () => {
           <Button
             variant="battle"
             size="icon"
-            className="absolute left-4 top-1/2 -translate-y-1/2"
+            className="absolute left-4 top-1/2 -translate-y-1/2 z-20"
             onClick={prevSlide}
           >
             <ChevronLeft className="w-6 h-6" />
@@ -102,7 +113,7 @@ const Gallery = () => {
           <Button
             variant="battle"
             size="icon"
-            className="absolute right-4 top-1/2 -translate-y-1/2"
+            className="absolute right-4 top-1/2 -translate-y-1/2 z-20"
             onClick={nextSlide}
           >
             <ChevronRight className="w-6 h-6" />
@@ -128,16 +139,19 @@ const Gallery = () => {
               <button
                 key={index}
                 onClick={() => setCurrentIndex(index)}
-                className={`aspect-video rounded-lg overflow-hidden transition-all duration-300 border-2 ${index === currentIndex
+                className={`relative aspect-video rounded-lg overflow-hidden transition-all duration-300 border-2 ${index === currentIndex
                   ? "border-primary scale-105 shadow-[0_0_20px_hsl(var(--fire-orange)/0.5)]"
                   : "border-border hover:border-primary/50 opacity-60 hover:opacity-100"
                   }`}
               >
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
                 <div
-                  className={`w-full h-full bg-gradient-to-br ${item.color} flex items-center justify-center`}
-                >
-                  <ImageIcon className="w-8 h-8 text-foreground/30" />
-                </div>
+                  className={`absolute inset-0 bg-black/40 ${index === currentIndex ? 'bg-black/0' : ''}`}
+                />
               </button>
             ))}
           </div>

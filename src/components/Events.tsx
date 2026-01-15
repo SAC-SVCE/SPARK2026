@@ -11,7 +11,7 @@ const Events = () => {
       subtitle: "ZONE",
       description: "Code, Compile, Conquer. The arena for digital gladiators.",
       icon: Code,
-      image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2670&auto=format&fit=crop",
+      image: "event-images/T1.jpg",
       color: "from-cyan-500 to-blue-600",
       events: ["RoboWars", "CodeSprint", "Circuitrix"],
       link: "/events?category=Technical%20Events"
@@ -22,7 +22,7 @@ const Events = () => {
       subtitle: "STAGE",
       description: "Unleash your creativity. Dance, Music, and Drama.",
       icon: Music,
-      image: "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?q=80&w=2670&auto=format&fit=crop",
+      image: "event-images/C1.jpg",
       color: "from-purple-500 to-indigo-600",
       events: ["Battle of Bands", "Step Up", "Fashion"],
       link: "/events?category=Cultural%20Events"
@@ -33,7 +33,7 @@ const Events = () => {
       subtitle: "ARENA",
       description: "Sweat, Grit, and Glory. Dominate the field.",
       icon: Trophy,
-      image: "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=2670&auto=format&fit=crop",
+      image: "event-images/S1.jpg",
       color: "from-red-500 to-rose-700",
       events: ["Cricket", "Football", "Volleyball"],
       link: "/events?category=Sports"
@@ -44,7 +44,7 @@ const Events = () => {
       subtitle: "BUILD",
       description: "24 Hours. Infinite Possibilities. Build the future.",
       icon: Cpu, // Using Cpu for hackathon to distinguish from general 'technical'
-      image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=2670&auto=format&fit=crop",
+      image: "event-images/H1.jpg",
       color: "from-emerald-500 to-green-700",
       events: ["Spark Hack", "Hardware Hack", "Ideathon"],
       link: "/events?category=Hackathons"
@@ -55,7 +55,7 @@ const Events = () => {
       subtitle: "EVENTS",
       description: "The main attractions. Star nights and special appearances.",
       icon: Lightbulb,
-      image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2670&auto=format&fit=crop",
+      image: "event-images/SP1.jpg",
       color: "from-amber-400 to-orange-600",
       events: ["Proshows", "Guest Talks", "Auto Expo"],
       link: "/events?category=Spotlight%20Events"
@@ -79,9 +79,7 @@ const Events = () => {
             <h2 className="text-4xl md:text-6xl font-black font-orbitron text-white mb-2">
               OUR <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">EVENTS</span>
             </h2>
-            <p className="text-zinc-400 font-exo tracking-wide">
-              Explore the battlegrounds of Spark 2K25
-            </p>
+          
           </div>
         </div>
       </div>

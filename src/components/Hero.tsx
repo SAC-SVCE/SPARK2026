@@ -52,7 +52,7 @@ const Hero = () => {
                 <img
                     src={homebackground}
                     alt="Desktop Banner"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover contrast-125 saturate-[1.2] brightness-110"
                 />
             </div>
 
@@ -61,7 +61,7 @@ const Hero = () => {
                 <img
                     src={mobilebackground}
                     alt="Mobile Banner"
-                    className="w-full h-auto object-contain"
+                    className="w-full h-auto object-contain contrast-125 saturate-[1.2] brightness-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#050505]/20 via-transparent to-transparent" />
             </div>
