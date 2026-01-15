@@ -14,7 +14,7 @@ const Events = () => {
       image: "event-images/T1.jpg",
       color: "from-cyan-500 to-blue-600",
       events: ["RoboWars", "CodeSprint", "Circuitrix"],
-      link: "/events?category=Technical%20Events"
+      link: "/events?category=TechExplore"
     },
     {
       id: "cultural",
