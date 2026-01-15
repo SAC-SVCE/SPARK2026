@@ -8,45 +8,45 @@ import { BeamsBackground } from "@/components/ui/beams";
 import CircularTestimonials from "@/components/ui/bts";
 import { motion } from "motion/react";
 import Footer from "@/components/Footer";
-import img1 from  "../assets/gallery_images/img1.jpg";
-import img2 from  "../assets/gallery_images/img2.jpg";
-import img3 from  "../assets/gallery_images/img3.jpg";
-import img4 from  "../assets/gallery_images/img4.jpg";
-import img5 from  "../assets/gallery_images/img5.jpg";
-import img6 from  "../assets/gallery_images/img6.jpg";
-import img7 from  "../assets/gallery_images/img7.jpg";
-import img8 from  "../assets/gallery_images/img8.jpg";
-import img9 from  "../assets/gallery_images/img9.jpg";
-import img10 from  "../assets/gallery_images/img10.jpg";
-import img11 from  "../assets/gallery_images/img11.jpg";
-import img12 from  "../assets/gallery_images/img12.jpg";
-import img13 from  "../assets/gallery_images/img13.jpg";
-import img14 from  "../assets/gallery_images/img14.jpg";
-import img15 from  "../assets/gallery_images/img15.jpg";
-import img16 from  "../assets/gallery_images/img16.jpg";
-import img17 from  "../assets/gallery_images/img17.jpg";
-import img18 from  "../assets/gallery_images/img18.jpg";
-import img19 from  "../assets/gallery_images/img19.jpg";
-import img20 from  "../assets/gallery_images/img20.jpg";
-import img21 from  "../assets/gallery_images/img21.jpg";
-import img22 from  "../assets/gallery_images/img22.jpg";
-import img23 from  "../assets/gallery_images/img23.jpg";
-import img24 from  "../assets/gallery_images/img24.jpg";
-import img25 from  "../assets/gallery_images/img25.jpg";
-import img26 from  "../assets/gallery_images/img26.jpg";
-import img27 from  "../assets/gallery_images/img27.jpg";
-import img28 from  "../assets/gallery_images/img28.jpg";
-import img29 from  "../assets/gallery_images/img29.jpg";
-import img30 from  "../assets/gallery_images/img30.jpg";
-import img31 from  "../assets/gallery_images/img31.jpg";
-import img32 from  "../assets/gallery_images/img32.jpg";
-import img33 from  "../assets/gallery_images/img33.jpg";
-import img34 from  "../assets/gallery_images/img34.jpg";
-import img35 from  "../assets/gallery_images/img35.jpg";
-import img36 from  "../assets/gallery_images/img36.jpg";
-import img37 from  "../assets/gallery_images/img37.jpg";
-import img38 from  "../assets/gallery_images/img38.jpg";
-import img39 from  "../assets/gallery_images/img39.jpg";
+import img1 from "../assets/gallery_images/img1.jpg";
+import img2 from "../assets/gallery_images/img2.jpg";
+import img3 from "../assets/gallery_images/img3.jpg";
+import img4 from "../assets/gallery_images/img4.jpg";
+import img5 from "../assets/gallery_images/img5.jpg";
+import img6 from "../assets/gallery_images/img6.jpg";
+import img7 from "../assets/gallery_images/img7.jpg";
+import img8 from "../assets/gallery_images/img8.jpg";
+import img9 from "../assets/gallery_images/img9.jpg";
+import img10 from "../assets/gallery_images/img10.jpg";
+import img11 from "../assets/gallery_images/img11.jpg";
+import img12 from "../assets/gallery_images/img12.jpg";
+import img13 from "../assets/gallery_images/img13.jpg";
+import img14 from "../assets/gallery_images/img14.jpg";
+import img15 from "../assets/gallery_images/img15.jpg";
+import img16 from "../assets/gallery_images/img16.jpg";
+import img17 from "../assets/gallery_images/img17.jpg";
+import img18 from "../assets/gallery_images/img18.jpg";
+import img19 from "../assets/gallery_images/img19.jpg";
+import img20 from "../assets/gallery_images/img20.jpg";
+import img21 from "../assets/gallery_images/img21.jpg";
+import img22 from "../assets/gallery_images/img22.jpg";
+import img23 from "../assets/gallery_images/img23.jpg";
+import img24 from "../assets/gallery_images/img24.jpg";
+import img25 from "../assets/gallery_images/img25.jpg";
+import img26 from "../assets/gallery_images/img26.jpg";
+import img27 from "../assets/gallery_images/img27.jpg";
+import img28 from "../assets/gallery_images/img28.jpg";
+import img29 from "../assets/gallery_images/img29.jpg";
+import img30 from "../assets/gallery_images/img30.jpg";
+import img31 from "../assets/gallery_images/img31.jpg";
+import img32 from "../assets/gallery_images/img32.jpg";
+import img33 from "../assets/gallery_images/img33.jpg";
+import img34 from "../assets/gallery_images/img34.jpg";
+import img35 from "../assets/gallery_images/img35.jpg";
+import img36 from "../assets/gallery_images/img36.jpg";
+import img37 from "../assets/gallery_images/img37.jpg";
+import img38 from "../assets/gallery_images/img38.jpg";
+import img39 from "../assets/gallery_images/img39.jpg";
 import img41 from "../assets/gallery_images/img41.jpg";
 import img42 from "../assets/gallery_images/img42.jpg";
 
@@ -59,21 +59,21 @@ import img42 from "../assets/gallery_images/img42.jpg";
 import { useLocation } from "react-router-dom";
 
 const products = [
-  {  title:"", link: "#", thumbnail: img1 },
-  { title: "", link: "#", thumbnail: img19},
-  { title: "", link: "#", thumbnail:img3},
-  { title: "", link: "#", thumbnail: img4},
-  { title: "", link: "#", thumbnail:img5 },
-  { title:"" , link: "#", thumbnail:img6 },
-  { title: "", link: "#", thumbnail:img7 },
-  { title: "", link: "#", thumbnail: img8},
-  { title:"" , link: "#", thumbnail: img21},
-  { title: "", link: "#", thumbnail: img25},
-  { title: "", link: "#", thumbnail:img11},
-  { title: "", link: "#", thumbnail:img12 },
-  { title: "", link: "#", thumbnail: img13},
-  { title: "", link: "#", thumbnail:img14 },
-  { title: "", link: "#", thumbnail:img41 },
+  { title: "", link: "#", thumbnail: img1 },
+  { title: "", link: "#", thumbnail: img19 },
+  { title: "", link: "#", thumbnail: img3 },
+  { title: "", link: "#", thumbnail: img4 },
+  { title: "", link: "#", thumbnail: img5 },
+  { title: "", link: "#", thumbnail: img6 },
+  { title: "", link: "#", thumbnail: img7 },
+  { title: "", link: "#", thumbnail: img8 },
+  { title: "", link: "#", thumbnail: img21 },
+  { title: "", link: "#", thumbnail: img25 },
+  { title: "", link: "#", thumbnail: img11 },
+  { title: "", link: "#", thumbnail: img12 },
+  { title: "", link: "#", thumbnail: img13 },
+  { title: "", link: "#", thumbnail: img14 },
+  { title: "", link: "#", thumbnail: img41 },
 ];
 
 const galleryItems = [
@@ -85,7 +85,7 @@ const galleryItems = [
 ];
 
 const images = [
-  img25,img39,img42,img26
+  img25, img39, img42, img26
 ];
 
 import { SmoothScroll } from "@/components/ui/smooth-scroll";
@@ -94,7 +94,6 @@ const HighlightsPage: React.FC = () => {
   const location = useLocation();
   return (
     <>
-    <SmoothScroll>
       <>
         <div className="fixed top-0 left-0 right-0 z-[1000]">
           <PillNav
@@ -200,14 +199,12 @@ const HighlightsPage: React.FC = () => {
             </motion.section>
           </div>
         </motion.div>
-        
+
 
       </>
-      
-    </SmoothScroll>
-    <Footer />
+      <Footer />
 
-</>
+    </>
 
 
 

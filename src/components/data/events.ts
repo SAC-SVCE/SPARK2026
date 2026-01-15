@@ -86,6 +86,7 @@ export interface Event {
   prizes?: string[];
   rules?: string[];
   coordinators?: EventCoordinators;
+  registrationLink?: string;
 
 }
 
@@ -1574,6 +1575,7 @@ export const events: Event[] = [
     department: "",
     image: "/ALL POSTERS/CRICKET.jpg",
     registrationOpen: true,
+    registrationLink: "https://forms.gle/DSimu8qmfRLP7CYH9",
     teamSize: "11 members + 4 substitutes",
     rules: [
       " Knock-out tournament",
@@ -1604,6 +1606,7 @@ export const events: Event[] = [
     department: "",
     image: "/ALL POSTERS/KABADDI MENS.jpg",
     registrationOpen: true,
+    registrationLink: "https://forms.gle/DSimu8qmfRLP7CYH9",
     teamSize: "10 members",
     rules: [
       "League-cum-knock-out.",
@@ -1633,6 +1636,7 @@ export const events: Event[] = [
     department: "",
     image: "/ALL POSTERS/VOLLEY BALL MEN.jpg",
     registrationOpen: true,
+    registrationLink: "https://forms.gle/DSimu8qmfRLP7CYH9",
     teamSize: " 12 members",
     rules: [
       "Knock-out tournament",
@@ -1663,6 +1667,7 @@ export const events: Event[] = [
     department: "",
     image: "/ALL POSTERS/CHESS MENS.jpg",
     registrationOpen: true,
+    registrationLink: "https://forms.gle/DSimu8qmfRLP7CYH9",
     teamSize: "Individual",
     rules: [
       " League-cum-knock-out.",
@@ -1693,6 +1698,7 @@ export const events: Event[] = [
     department: "",
     image: "/ALL POSTERS/CARROMS MENS.jpg",
     registrationOpen: true,
+    registrationLink: "https://forms.gle/DSimu8qmfRLP7CYH9",
     teamSize: "",
     rules: [
       " League-cum-knock-out.",
@@ -1723,6 +1729,7 @@ export const events: Event[] = [
     department: "",
     image: "/ALL POSTERS/TABLE TENNIS MENS.jpg",
     registrationOpen: true,
+    registrationLink: "https://forms.gle/DSimu8qmfRLP7CYH9",
     teamSize: "Individual",
     rules: [
       "Matches will be played in Singles format (Best of 5 games).",
@@ -1753,6 +1760,7 @@ export const events: Event[] = [
     department: "",
     image: "/ALL POSTERS/THROW BALL WOMEN.jpg",
     registrationOpen: true,
+    registrationLink: "https://forms.gle/DSimu8qmfRLP7CYH9",
     teamSize: "9 on court + 3 substitutes",
     rules: [
       "1. Knock-out tournament",
@@ -1783,6 +1791,7 @@ export const events: Event[] = [
     department: "",
     image: "/ALL POSTERS/TENNKOIT WOMEN.jpg",
     registrationOpen: true,
+    registrationLink: "https://forms.gle/DSimu8qmfRLP7CYH9",
     teamSize: " Individual ",
     rules: [
       "Matches will be played in Singles format (1 vs 1) on a standard Tennikoit court.",
@@ -1813,6 +1822,7 @@ export const events: Event[] = [
     department: "",
     image: "/ALL POSTERS/KABADDI WOMENS.jpg",
     registrationOpen: true,
+    registrationLink: "https://forms.gle/DSimu8qmfRLP7CYH9",
     teamSize: "10 members",
     rules: [
       " League-cum-knock-out.",
@@ -1842,6 +1852,7 @@ export const events: Event[] = [
     department: "",
     image: "/ALL POSTERS/VOLLEY BALL WOMEN.jpg",
     registrationOpen: true,
+    registrationLink: "https://forms.gle/DSimu8qmfRLP7CYH9",
     teamSize: "12 members",
     rules: [
       "1. Knock-out tournament",
@@ -1872,6 +1883,7 @@ export const events: Event[] = [
     department: "",
     image: "/ALL POSTERS/CHESS WOMENS.jpg",
     registrationOpen: true,
+    registrationLink: "https://forms.gle/DSimu8qmfRLP7CYH9",
     teamSize: "Individual",
     rules: [
       "15 minutes per player.",
@@ -1900,6 +1912,7 @@ export const events: Event[] = [
     department: "",
     image: "/ALL POSTERS/CARROM WOMENS.jpg",
     registrationOpen: true,
+    registrationLink: "https://forms.gle/DSimu8qmfRLP7CYH9",
     teamSize: "Individual",
     rules: [
       "1. League-cum-knock-out.",
@@ -1930,6 +1943,7 @@ export const events: Event[] = [
     department: "",
     image: "/ALL POSTERS/TABLE TENNIS WOMENS.jpg",
     registrationOpen: true,
+    registrationLink: "https://forms.gle/DSimu8qmfRLP7CYH9",
     teamSize: "Individual",
     rules: [
       "Matches will be played in Singles format (Best of 5 games).",

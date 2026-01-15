@@ -64,7 +64,11 @@ export default function EventDetail() {
     toast.success("Link copied to clipboard!");
   };
   const handleRegister = () => {
-    window.location.href = "https://www.theticket9.com/event/spark-2026";
+    if (event.registrationLink) {
+      window.location.href = event.registrationLink;
+    } else {
+      window.location.href = "https://www.theticket9.com/event/spark-2026";
+    }
   };
 
 
