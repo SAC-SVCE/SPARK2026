@@ -26,7 +26,7 @@ const About = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
           {[
             { value: "10000+", label: "Participants", color: "from-primary to-rose-600" },
-            { value: "120+", label: "Events", color: "from-secondary to-cyan-400" },
+            { value: "90+", label: "Events", color: "from-secondary to-cyan-400" },
             { value: "₹10L+", label: "Prize Pool", color: "from-amber-500 to-orange-500" },
             { value: "2", label: "Days of Action", color: "from-purple-500 to-indigo-500" },
           ].map((stat, index) => (

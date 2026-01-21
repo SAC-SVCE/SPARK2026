@@ -14,7 +14,7 @@ const Events = () => {
       image: "event-images/T1.jpg",
       color: "from-cyan-500 to-blue-600",
       events: ["RoboWars", "CodeSprint", "Circuitrix"],
-      link: "/events?category=TechExplore"
+      link: "/events?category=TechXplore"
     },
     {
       id: "cultural",
@@ -79,7 +79,7 @@ const Events = () => {
             <h2 className="text-4xl md:text-6xl font-black font-orbitron text-white mb-2">
               OUR <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">EVENTS</span>
             </h2>
-          
+
           </div>
         </div>
       </div>
@@ -132,10 +132,6 @@ const Events = () => {
               {/* Content */}
               <div className="absolute inset-0 p-8 flex flex-col justify-end">
                 <div className="mb-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                  <cat.icon className="w-10 h-10 text-white mb-4 opacity-80" />
-
-                  <h3 className="text-3xl font-black font-orbitron text-white mb-2">{cat.title}</h3>
-
 
                   {/* Event Pills */}
 
