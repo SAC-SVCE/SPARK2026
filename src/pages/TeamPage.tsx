@@ -3,25 +3,13 @@ import PillNav from "../components/ui/pillNav";
 import Footer from "@/components/Footer";
 import TeamGallery from "../components/ui/TeamGallery";
 import { motion } from "motion/react";
+import SparkNavbar from "../components/SparkNavbar";
 
 const Team: React.FC = () => {
   return (
     <>
     <div className="flex justify-center pt-10">
-            <PillNav
-              items={[
-                { label: "Gallery", href: "/highlights" },
-                { label: "Proshow", href: "/proshow" },
-                { label: "Team", href: "/team" },
-                { label: "Register", href: "/register" },
-              ]}
-              className="custom-nav"
-          ease="power2.easeOut"
-          baseColor='#01102bff'
-          pillColor="linear-gradient(130deg, #b510ebff, #f81184ff)"
-          hoveredPillTextColor="#fbfbfbff"
-          pillTextColor="#faf3f3ff"
-            />
+            <SparkNavbar />
           </div>
     
       <div className="relative min-h-screen overflow-x-hidden font-montserrat text-white bg-[#0a0e1a]">
@@ -173,7 +161,16 @@ const Team: React.FC = () => {
           <TeamGallery />
         </motion.section>
       </div>
-
+<section>
+  <div className="fixed inset-0 z-[999] bg-black flex items-center justify-center">
+          <div className="text-center animate-pulse">
+            <h1 className="text-5xl md:text-7xl font-extrabold text-pink-500 drop-shadow-[0_0_30px_#ec4899]">
+              COMING SOON
+            </h1>
+            
+          </div>
+        </div>
+</section>
       {/* FOOTER */}
       <Footer />
     </>

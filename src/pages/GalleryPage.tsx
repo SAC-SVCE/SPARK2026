@@ -5,7 +5,6 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FireParticles from "@/components/FireParticles";
 import { Button } from "@/components/ui/button";
-import DemoOne from "@/components/sphere-demo";
 import sparkLogo from "@/assets/spark-logo.png";
 import { StickyScroll } from "@/components/ui/StickyScroll";
 
@@ -219,9 +218,7 @@ const GalleryPage = () => {
         </h2>
 
         {/* Change h-[400px] to h-[500px] to see the full sphere */}
-        <div className="h-[700px] w-full flex items-center justify-center overflow-hidden relative z-10 -my-10">
-          <DemoOne />
-        </div>
+        
 
       </section>
 

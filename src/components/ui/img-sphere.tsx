@@ -146,8 +146,12 @@ const SphereImageGrid: React.FC<SphereImageGridProps> = ({
   // ==========================================
 
   const [isMounted, setIsMounted] = useState<boolean>(false);
+  // Ref-based state for animation loop to avoid dependency thrashing
+  const rotationRef = useRef<RotationState>({ x: 15, y: 15, z: 0 });
+  const velocityRef = useRef<VelocityState>({ x: 0, y: 0 });
+
+  // Keep React state for rendering
   const [rotation, setRotation] = useState<RotationState>({ x: 15, y: 15, z: 0 });
-  const [velocity, setVelocity] = useState<VelocityState>({ x: 0, y: 0 });
   const [isDragging, setIsDragging] = useState<boolean>(false);
   const [selectedImage, setSelectedImage] = useState<ImageData | null>(null);
   const [imagePositions, setImagePositions] = useState<SphericalPosition[]>([]);
@@ -156,6 +160,11 @@ const SphereImageGrid: React.FC<SphereImageGridProps> = ({
   const containerRef = useRef<HTMLDivElement>(null);
   const lastMousePos = useRef<MousePosition>({ x: 0, y: 0 });
   const animationFrame = useRef<number | null>(null);
+
+  // Sync refs with state on mount/changes if needed (mostly for initial)
+  useEffect(() => {
+    rotationRef.current = rotation;
+  }, []);
 
   // ==========================================
   // COMPUTED VALUES
@@ -325,45 +334,104 @@ const SphereImageGrid: React.FC<SphereImageGridProps> = ({
     return Math.max(-maxRotationSpeed, Math.min(maxRotationSpeed, speed));
   }, [maxRotationSpeed]);
 
-  // ==========================================
-  // PHYSICS & MOMENTUM
-  // ==========================================
-
   const updateMomentum = useCallback(() => {
     if (isDragging) return;
 
-    setVelocity(prev => {
-      const newVelocity = {
-        x: prev.x * momentumDecay,
-        y: prev.y * momentumDecay
-      };
+    const currentVelocity = velocityRef.current;
 
-      // Stop animation if velocity is too low and auto-rotate is off
-      if (!autoRotate && Math.abs(newVelocity.x) < 0.01 && Math.abs(newVelocity.y) < 0.01) {
-        return { x: 0, y: 0 };
+    // Apply Decay
+    const newVelocity = {
+      x: currentVelocity.x * momentumDecay,
+      y: currentVelocity.y * momentumDecay
+    };
+
+    velocityRef.current = newVelocity;
+
+    // Stop animation if velocity is too low and auto-rotate is off
+    if (!autoRotate && Math.abs(newVelocity.x) < 0.01 && Math.abs(newVelocity.y) < 0.01) {
+      return;
+    }
+
+    // Calculate new rotation
+    const currentRotation = rotationRef.current;
+    let newY = currentRotation.y;
+
+    // Add auto-rotation
+    if (autoRotate) {
+      newY += autoRotateSpeed;
+    }
+
+    // Add momentum
+    newY += clampRotationSpeed(newVelocity.y);
+
+    const newRotation = {
+      x: SPHERE_MATH.normalizeAngle(currentRotation.x + clampRotationSpeed(newVelocity.x)),
+      y: SPHERE_MATH.normalizeAngle(newY),
+      z: currentRotation.z
+    };
+
+    rotationRef.current = newRotation;
+
+    // Trigger render
+    setRotation(newRotation);
+  }, [isDragging, momentumDecay, clampRotationSpeed, autoRotate, autoRotateSpeed]);
+
+  useEffect(() => {
+    let animationFrameId: number;
+
+    const animate = () => {
+      // We moved the logic to updateMomentum but we need to ensure updateMomentum
+      // itself isn't causing re-subscription. 
+      // Actually, simplest is to put logic here or use a ref for the callback.
+
+      if (!isDragging) {
+        const currentVelocity = velocityRef.current;
+
+        const newVelocity = {
+          x: currentVelocity.x * momentumDecay,
+          y: currentVelocity.y * momentumDecay
+        };
+        velocityRef.current = newVelocity;
+
+        const currentRotation = rotationRef.current;
+        let newY = currentRotation.y;
+
+        if (autoRotate) {
+          newY += autoRotateSpeed;
+        }
+
+        newY += clampRotationSpeed(newVelocity.y);
+
+        const newRotation = {
+          x: SPHERE_MATH.normalizeAngle(currentRotation.x + clampRotationSpeed(newVelocity.x)),
+          y: SPHERE_MATH.normalizeAngle(newY),
+          z: currentRotation.z
+        };
+
+        rotationRef.current = newRotation;
+        setRotation(newRotation);
       }
 
-      return newVelocity;
-    });
+      animationFrameId = requestAnimationFrame(animate);
+    };
 
-    setRotation(prev => {
-      let newY = prev.y;
+    if (isMounted) {
+      animationFrameId = requestAnimationFrame(animate);
+    }
 
-      // Add auto-rotation to Y axis (horizontal rotation)
-      if (autoRotate) {
-        newY += autoRotateSpeed;
-      }
+    return () => {
+      cancelAnimationFrame(animationFrameId);
+    };
+  }, [isMounted, isDragging, momentumDecay, clampRotationSpeed, autoRotate, autoRotateSpeed]);
 
-      // Add momentum-based rotation
-      newY += clampRotationSpeed(velocity.y);
-
-      return {
-        x: SPHERE_MATH.normalizeAngle(prev.x + clampRotationSpeed(velocity.x)),
-        y: SPHERE_MATH.normalizeAngle(newY),
-        z: prev.z
-      };
-    });
-  }, [isDragging, momentumDecay, velocity, clampRotationSpeed, autoRotate, autoRotateSpeed]);
+  // Handle manual interaction updates to refs
+  useEffect(() => {
+    // When dragging, we update rotation via setRotation in event handlers
+    // We must sync the ref to avoid jumping when drag ends
+    if (isDragging) {
+      rotationRef.current = rotation;
+    }
+  }, [rotation, isDragging]);
 
   // ==========================================
   // EVENT HANDLERS
@@ -372,7 +440,8 @@ const SphereImageGrid: React.FC<SphereImageGridProps> = ({
   const handleMouseDown = useCallback((e: React.MouseEvent) => {
     e.preventDefault();
     setIsDragging(true);
-    setVelocity({ x: 0, y: 0 });
+    // Reset velocity ref on grab
+    velocityRef.current = { x: 0, y: 0 };
     lastMousePos.current = { x: e.clientX, y: e.clientY };
   }, []);
 
@@ -387,20 +456,27 @@ const SphereImageGrid: React.FC<SphereImageGridProps> = ({
       y: deltaX * dragSensitivity
     };
 
-    setRotation(prev => ({
-      x: SPHERE_MATH.normalizeAngle(prev.x + clampRotationSpeed(rotationDelta.x)),
-      y: SPHERE_MATH.normalizeAngle(prev.y + clampRotationSpeed(rotationDelta.y)),
-      z: prev.z
-    }));
+    const currentRotation = rotationRef.current;
 
-    // Update velocity for momentum
-    setVelocity({
+    const newRotation = {
+      x: SPHERE_MATH.normalizeAngle(currentRotation.x + clampRotationSpeed(rotationDelta.x)),
+      y: SPHERE_MATH.normalizeAngle(currentRotation.y + clampRotationSpeed(rotationDelta.y)),
+      z: currentRotation.z
+    };
+
+    // Update ref immediately
+    rotationRef.current = newRotation;
+    // Update state for render
+    setRotation(newRotation);
+
+    // Update velocity ref for momentum
+    velocityRef.current = {
       x: clampRotationSpeed(rotationDelta.x),
       y: clampRotationSpeed(rotationDelta.y)
-    });
+    };
 
     lastMousePos.current = { x: e.clientX, y: e.clientY };
-  }, [isDragging, dragSensitivity, clampRotationSpeed]);
+  }, [isDragging, dragSensitivity, clampRotationSpeed]); // Removed rotation dependency
 
   const handleMouseUp = useCallback(() => {
     setIsDragging(false);
@@ -410,7 +486,7 @@ const SphereImageGrid: React.FC<SphereImageGridProps> = ({
     e.preventDefault();
     const touch = e.touches[0];
     setIsDragging(true);
-    setVelocity({ x: 0, y: 0 });
+    velocityRef.current = { x: 0, y: 0 };
     lastMousePos.current = { x: touch.clientX, y: touch.clientY };
   }, []);
 
@@ -427,23 +503,45 @@ const SphereImageGrid: React.FC<SphereImageGridProps> = ({
       y: deltaX * dragSensitivity
     };
 
-    setRotation(prev => ({
-      x: SPHERE_MATH.normalizeAngle(prev.x + clampRotationSpeed(rotationDelta.x)),
-      y: SPHERE_MATH.normalizeAngle(prev.y + clampRotationSpeed(rotationDelta.y)),
-      z: prev.z
-    }));
+    const currentRotation = rotationRef.current;
 
-    setVelocity({
+    const newRotation = {
+      x: SPHERE_MATH.normalizeAngle(currentRotation.x + clampRotationSpeed(rotationDelta.x)),
+      y: SPHERE_MATH.normalizeAngle(currentRotation.y + clampRotationSpeed(rotationDelta.y)),
+      z: currentRotation.z
+    };
+
+    rotationRef.current = newRotation;
+    setRotation(newRotation);
+
+    velocityRef.current = {
       x: clampRotationSpeed(rotationDelta.x),
       y: clampRotationSpeed(rotationDelta.y)
-    });
+    };
 
     lastMousePos.current = { x: touch.clientX, y: touch.clientY };
-  }, [isDragging, dragSensitivity, clampRotationSpeed]);
+  }, [isDragging, dragSensitivity, clampRotationSpeed]); // Removed rotation dependency
 
   const handleTouchEnd = useCallback(() => {
     setIsDragging(false);
   }, []);
+
+  // Add global event listeners for drag
+  useEffect(() => {
+    if (isDragging) {
+      window.addEventListener('mousemove', handleMouseMove);
+      window.addEventListener('mouseup', handleMouseUp);
+      window.addEventListener('touchmove', handleTouchMove, { passive: false });
+      window.addEventListener('touchend', handleTouchEnd);
+    }
+
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener('mouseup', handleMouseUp);
+      window.removeEventListener('touchmove', handleTouchMove);
+      window.removeEventListener('touchend', handleTouchEnd);
+    };
+  }, [isDragging, handleMouseMove, handleMouseUp, handleTouchMove, handleTouchEnd]);
 
   // ==========================================
   // EFFECTS & LIFECYCLE
@@ -456,45 +554,6 @@ const SphereImageGrid: React.FC<SphereImageGridProps> = ({
   useEffect(() => {
     setImagePositions(generateSpherePositions());
   }, [generateSpherePositions]);
-
-  useEffect(() => {
-    const animate = () => {
-      updateMomentum();
-      animationFrame.current = requestAnimationFrame(animate);
-    };
-
-    if (isMounted) {
-      animationFrame.current = requestAnimationFrame(animate);
-    }
-
-    return () => {
-      if (animationFrame.current) {
-        cancelAnimationFrame(animationFrame.current);
-      }
-    };
-  }, [isMounted, updateMomentum]);
-
-  useEffect(() => {
-    if (!isMounted) return;
-
-    const container = containerRef.current;
-    if (!container) return;
-
-    // Mouse events
-    document.addEventListener('mousemove', handleMouseMove);
-    document.addEventListener('mouseup', handleMouseUp);
-
-    // Touch events
-    document.addEventListener('touchmove', handleTouchMove, { passive: false });
-    document.addEventListener('touchend', handleTouchEnd);
-
-    return () => {
-      document.removeEventListener('mousemove', handleMouseMove);
-      document.removeEventListener('mouseup', handleMouseUp);
-      document.removeEventListener('touchmove', handleTouchMove);
-      document.removeEventListener('touchend', handleTouchEnd);
-    };
-  }, [isMounted, handleMouseMove, handleMouseUp, handleTouchMove, handleTouchEnd]);
 
   // ==========================================
   // RENDER HELPERS
@@ -515,12 +574,12 @@ const SphereImageGrid: React.FC<SphereImageGridProps> = ({
     return (
       <div
         key={image.id}
-        className="absolute cursor-pointer select-none transition-transform duration-200 ease-out"
+        className="absolute cursor-pointer select-none"
         style={{
           width: `${imageSize}px`,
           height: `${imageSize}px`,
-          left: `${containerSize/2 + position.x}px`,
-          top: `${containerSize/2 + position.y}px`,
+          left: `${containerSize / 2 + position.x}px`,
+          top: `${containerSize / 2 + position.y}px`,
           opacity: position.fadeOpacity,
           transform: `translate(-50%, -50%) scale(${finalScale})`,
           zIndex: position.zIndex

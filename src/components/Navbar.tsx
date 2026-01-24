@@ -123,7 +123,7 @@ const Navbar = () => {
     { name: "About", id: "about-page" },
     // Events is handled separately
     { name: "Spotlight Events", id: "spotlight-events" },
-    { name: "Highlights", id: "comingsoon" },
+    { name: "Highlights", id: "highlights-page" },
     { name: "Sponsors", id: "comingsoon" },
 
   ];

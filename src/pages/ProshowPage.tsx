@@ -1,11 +1,11 @@
 import React from "react";
-import PillNav from "../components/ui/pillNav";
+import SparkNavbar from "../components/SparkNavbar";
 import bgVideo from "../assets/bg-video.mp4";
 import ProshowCard from "../components/ui/ProshowCard";
 import ProshowCard2 from "../components/ui/ProshowCard2";
 import LightRays from "@/components/ui/proshowrays";
 import Footer from "@/components/Footer";
-import Logo from "../assets/spark-logo.png";
+
 import bgImage from "../assets/bgImage.avif";
 import ScrollAnimate from "@/components/ui/proshowcardAnimation";
 import { cn } from "@/lib/utils";
@@ -29,24 +29,7 @@ const Proshow: React.FC = () => {
         />
 
         {/* <div className="relative z-10 flex justify-center items-center h-full "> */}
-        <PillNav
-          logo={Logo}
-          logoAlt="spark Logo"
-          items={[
-            { label: "Gallery", href: "/highlights" },
-            { label: "Proshow", href: "/proshow" },
-            { label: "Team", href: "/team" },
-            { label: "Register", href: "/register" },
-          ]}
-          activeHref="/"
-          className="custom-nav"
-          ease="power2.easeOut"
-          baseColor='#01102bff'
-          pillColor="linear-gradient(130deg, #b510ebff, #f81184ff)"
-          hoveredPillTextColor="#fbfbfbff"
-          pillTextColor="#faf3f3ff"
-
-        />
+        <SparkNavbar />
         <div className="absolute inset-0 bg-black/50 z-10" />
 
         {/* ✨ Text Content */}
@@ -104,6 +87,17 @@ const Proshow: React.FC = () => {
 
         </div>
 
+      </section>
+
+      <section>
+        <div className="fixed inset-0 z-[999] bg-black flex items-center justify-center">
+          <div className="text-center animate-pulse">
+            <h1 className="text-5xl md:text-7xl font-extrabold text-pink-500 drop-shadow-[0_0_30px_#ec4899]">
+              COMING SOON
+            </h1>
+  
+          </div>
+        </div>
       </section>
 
       <Footer />
