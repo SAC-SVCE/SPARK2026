@@ -6,6 +6,7 @@ import Gallery from "@/components/Gallery";
 import Footer from "@/components/Footer";
 import SparkEffect from "@/components/SparkEffect";
 import { motion } from "framer-motion";
+import RulesRegulations from "@/components/RulesRegulations";
 
 const Index = () => {
 
@@ -33,6 +34,10 @@ const Index = () => {
 
         <motion.div {...fadeInUp}>
           <Gallery />
+        </motion.div>
+
+        <motion.div {...fadeInUp}>
+          <RulesRegulations />
         </motion.div>
       </main>
       <Footer />

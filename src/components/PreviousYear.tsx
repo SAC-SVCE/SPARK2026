@@ -1,12 +1,12 @@
 import { motion } from "motion/react";
 import { useState } from "react";
 import { BeamsBackground } from "./ui/beams";
-import img22 from "/public/gallery_images/img22.jpg";
-import img34 from "/public/gallery_images/img34.jpg";
-import img38 from "/public/gallery_images/img38.jpg";
-import img43 from "/public/gallery_images/img43.jpg";
-import img40 from "/public/gallery_images/img40.jpg";
-import img44 from "/public/gallery_images/img44.jpeg";
+const img22 = "/gallery_images/img22.jpg";
+const img34 = "/gallery_images/img34.jpg";
+const img38 = "/gallery_images/img38.jpg";
+const img43 = "/gallery_images/img43.jpg";
+const img40 = "/gallery_images/img40.jpg";
+const img44 = "/gallery_images/img44.jpeg";
 
 
 
@@ -14,7 +14,7 @@ const PreviousYear = () => {
     const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
     const images = [
-        img22,img34,img38,img43,img40,img44
+        img22, img34, img38, img43, img40, img44
     ];
 
     return (
