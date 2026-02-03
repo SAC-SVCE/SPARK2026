@@ -339,7 +339,7 @@ export const events: Event[] = [
     ],
     coordinators: {
       event: [
-        { name: "N. G. Durga Bhavani", phone: "6281131365" },
+        { name: "Niranjan", phone: "7013275006" },
 
       ],
       faculty: [
@@ -718,11 +718,12 @@ export const events: Event[] = [
     ],
     coordinators: {
       event: [
-        { name: "G. Naveen Kumar", phone: "6303814417" },
+        { name: "P.Gnanendra", phone: "7396740282" },
 
       ],
       faculty: [
-        { name: "Mrs. S. Nandini", phone: "9966231169" }
+        { name: "Dr.Keerthipati", phone: "8008448742" },
+        { name: "Dr.R swathi", phone: "9985303614" }
       ]
     }
   },
@@ -799,6 +800,8 @@ export const events: Event[] = [
     coordinators: {
       event: [
         { name: "D. Kumar", phone: "8688502790" },
+        { name: "Y.Jahnavi", phone: "8106647463" },
+
 
       ],
       faculty: [
