@@ -9,7 +9,7 @@ const RulesRegulations = () => {
     };
 
     const rules = [
-        "Only UG-B.TECH,BBA PG-MCA,MBA students are allowed to participate in the event.and d",
+        "Only UG-B.TECH,BBA PG-MCA,MBA students are allowed to participate in the event.",
         "ID Card is mandatory for all students.",
         "On Event Day, students can enter the campus from 9.00 AM to 11.00 AM. No Entry will be allowed thereafter.",
         "Once inside the campus, students must remain until the program concludes.",
