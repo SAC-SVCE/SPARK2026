@@ -1192,37 +1192,7 @@ export const events: Event[] = [
       ]
     }
   },
-  {
-    id: "37",
-    title: "Memory Meltdown",//not updated
-    description:
-      "A fun technical event designed to test memory power, concentration, and observation skills.",
-    date: "7th March 2026",
-    dateTag: "7 Mar",
-    time: "10:00 - 04:30",
-    venue: "SV College of Engineering",
-    categories: ["TechXplore"],
-    department: "",
-    image: "/all-posters/MEMORY MELTDOWN.jpg",
-    registrationOpen: true,
-    teamSize: "Individual",
-    rules: [
-      "Individual participation only",
-      "No writing during observation time",
-      "Recall must be done within time limit",
-      "No external help allowed",
-      "Judges’ decision is final"
-    ],
-    coordinators: {
-      event: [
-        { name: "", phone: "" },
 
-      ],
-      faculty: [
-        { name: "", phone: "" }
-      ]
-    }
-  },
 
   {
     id: "38",
@@ -1278,7 +1248,7 @@ export const events: Event[] = [
     ],
     coordinators: {
       event: [
-        { name: "P. Gnanendra", phone:"7396740282"},
+        { name: "P. Gnanendra", phone: "7396740282" },
 
       ],
       faculty: [

@@ -1,0 +1,40 @@
+[1mdiff --git a/src/pages/RegistrationPage.tsx b/src/pages/RegistrationPage.tsx[m
+[1mindex 4e2d65e..6c69f69 100644[m
+[1m--- a/src/pages/RegistrationPage.tsx[m
+[1m+++ b/src/pages/RegistrationPage.tsx[m
+[36m@@ -12,7 +12,7 @@[m [mexport default function RegistrationPage() {[m
+       id: 1,[m
+       title: "DAY 1",[m
+       subtitle: "PRELIMINARIES",[m
+[31m-      [m
+[32m+[m
+       type: "STANDARD",[m
+       image: "/event-images/sample.png", // Replace with specific texture if available[m
+       description: "Access to all Day 1 technical events and hackathon entry.",[m
+[36m@@ -28,7 +28,7 @@[m [mexport default function RegistrationPage() {[m
+       id: 2,[m
+       title: "DAY 2",[m
+       subtitle: "FINALS & CULTURALS",[m
+[31m-      [m
+[32m+[m
+       type: "STANDARD",[m
+       image: "/event-images/sample.png",[m
+       description: "Witness the grand finals and the electrifying cultural night.",[m
+[36m@@ -43,7 +43,7 @@[m [mexport default function RegistrationPage() {[m
+       id: 3,[m
+       title: "ELITE",[m
+       subtitle: "ALL ACCESS",[m
+[31m-    [m
+[32m+[m
+       type: "COMBO PASS",[m
+       image: "/event-images/sample.png",[m
+       description: "The ultimate Spark experience. Unrestricted access to everything.",[m
+[36m@@ -95,7 +95,7 @@[m [mexport default function RegistrationPage() {[m
+               <div className="absolute top-0 bottom-0 left-0 w-1.5 bg-red-600 shadow-[0_0_15px_rgba(220,38,38,0.8)] z-20" />[m
+ [m
+               {/* Price Badge */}[m
+[31m-              [m
+[32m+[m
+               {/* Content Container */}[m
+               <div className="relative z-10 p-8 flex flex-col h-full pl-10">[m
+ [m
