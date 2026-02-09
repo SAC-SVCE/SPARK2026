@@ -1,5 +1,4 @@
 import React, { Suspense, useEffect } from "react";
-
 import PreviousYear from "@/components/PreviousYear";
 import CircularGallery from "@/components/ui/circulargallary";
 import { ParallaxScrollDemo } from "@/components/ui/ParallelScrolldemo"; // NEW IMPORT
@@ -8,7 +7,7 @@ import Footer from "@/components/Footer";
 import { useLocation } from "react-router-dom";
 import SparkNavbar from "../components/SparkNavbar";
 import DemoOne from "@/components/DemoOne";
-
+import NewTeam from "@/components/ui/NewTeam"; // CHANGED IMPORT
 
 // YOUR EXACT ORIGINAL IMAGES - UNCHANGED
 const img1 = "/gallery_images/img1.jpg";
@@ -57,8 +56,8 @@ const HighlightsPage: React.FC = () => {
       {/* NAVBAR */}
 
       <div className="flex justify-center pt-10">
-            <SparkNavbar />
-          </div>
+        <SparkNavbar />
+      </div>
 
 
       <motion.div
@@ -128,6 +127,23 @@ const HighlightsPage: React.FC = () => {
 
             </section>
 
+          </motion.section>
+
+          {/* TEAM SECTION */}
+          <motion.section
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="py-12 md:py-16 min-h-[65vh] flex flex-col justify-center relative mb-2"
+          >
+            <div className="absolute right-0 top-1/2 -translate-y-1/2 w-1 h-32 bg-gradient-to-b from-transparent via-pink-500 to-transparent opacity-50" />
+            <h2 className="text-4xl md:text-6xl font-orbitron font-black text-center mb-8 tracking-widest bg-gradient-to-r from-cyan-400 to-pink-600 bg-clip-text text-transparent drop-shadow-[0_0_15px_rgba(6,182,212,0.3)]">
+              THE TEAMS
+            </h2>
+            <Suspense fallback={<div className="h-full flex items-center justify-center text-gray-500 text-lg">Loading team...</div>}>
+              <NewTeam />
+            </Suspense>
           </motion.section>
         </div>
 
