@@ -109,30 +109,34 @@ interface SphereConfig {
 export default function DemoOne() {
   const [container, setContainer] = React.useState(400);
   const [radius, setRadius] = React.useState(200);
+  const [rotateSpeed, setRotateSpeed] = React.useState(0.4);
 
   React.useEffect(() => {
-    if (window.innerWidth < 640) {
-      // MOBILE
-      setContainer(400);
-      setRadius(200);
-    } else {
-      // LAPTOP
-      setContainer(950);
-      setRadius(250);
-    }
-  }, []);
+  if (window.innerWidth < 640) {
+    // 📱 MOBILE
+    setContainer(320);   // smaller container
+    setRadius(120);      // smaller sphere
+    setRotateSpeed(1.6); // smoother on mobile
+  } else {
+    // 💻 DESKTOP
+    setContainer(950);
+    setRadius(250);
+    setRotateSpeed(1.2);
+  }
+}, []);
+
 
   const CONFIG: SphereConfig = {
     containerSize: container,
     sphereRadius: radius,
     dragSensitivity: 0.8,
     momentumDecay: 0.96,
-    maxRotationSpeed: 6,
+    maxRotationSpeed: 7,
     baseImageScale: 0.15,
     hoverScale: 1.3,
     perspective: 1000,
     autoRotate: true,
-    autoRotateSpeed: 0.2,
+    autoRotateSpeed: rotateSpeed,
   };
 
   return (

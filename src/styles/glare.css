@@ -1,10 +1,10 @@
 /* Animation */
 @keyframes glareMove {
   0% {
-    transform: translateX(-100%) skewX(-12deg);
+    transform: translateX(-100%) ;
   }
   100% {
-    transform: translateX(100%) skewX(-12deg);
+    transform: translateX(100%) ;
   }
 }
 

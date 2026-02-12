@@ -89,7 +89,7 @@ const Proshow: React.FC = () => {
 
       </section>
 
-      <section>
+      {/* <section>
         <div className="fixed inset-0 z-[999] bg-black flex items-center justify-center">
           <div className="text-center animate-pulse">
             <h1 className="text-5xl md:text-7xl font-extrabold text-pink-500 drop-shadow-[0_0_30px_#ec4899]">
@@ -98,7 +98,7 @@ const Proshow: React.FC = () => {
   
           </div>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
 

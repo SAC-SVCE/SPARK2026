@@ -1,4 +1,4 @@
-import day1image from "../../assets/day1image.avif";
+import day1image from "../../assets/day1image.jpeg";
 import React from "react";
 import CardGlare from "./cardGlare";
 import ScrollAnimate from "./proshowcardAnimation";
@@ -8,7 +8,7 @@ import {
   CCardImage,
 } from "@coreui/react";
 
-const ProshowCard = () => {
+const ProshowCard1 = () => {
   return (
     <section
       className="
@@ -26,11 +26,12 @@ const ProshowCard = () => {
       <div className="grid grid-cols-1 md:grid-cols-12 gap-5 items-stretch">
         
         {/* IMAGE COLUMN */}
-        <div className="md:col-span-5 flex items-center">
-          <ScrollAnimate direction="left">
+        <div className="md:col-span-5 flex justify-center md:justify-start items-center py-4
+                md:ml-6 lg:ml-10">
+ <ScrollAnimate direction="left">
             <CCard
               className="
-                h-[420px] md:h-[480px]
+                h-[364px] md:h-[484px]
                 w-full
                 overflow-hidden rounded-2xl
                 bg-gradient-to-r from-cyan-500 via-purple-500 to-cyan-400
@@ -39,14 +40,38 @@ const ProshowCard = () => {
                 hover:shadow-[0_0_20px_rgba(217,70,239,1)]
               "
             >
-              <div className="h-full w-full rounded-2xl overflow-hidden bg-black">
-                <CardGlare />
-                <CCardImage
-                  src={day1image}
-                  alt="Day 1 Proshow"
-                  className="h-full w-full object-cover"
-                />
-              </div>
+    <div
+  className="
+    relative
+    mx-auto                /* center on mobile */
+    md:mx-0                /* normal layout from md+ */
+    w-[280px] h-[360px]
+    sm:w-[320px] sm:h-[400px]
+    md:w-[380px] md:h-[460px]
+    lg:w-[420px] lg:h-[480px]
+    rounded-2xl
+    overflow-hidden
+    bg-black
+  "
+>
+ 
+  <CCardImage
+    src={day1image}
+    alt="Day 2 Proshow"
+    className=" relative w-[280px] h-[360px]
+    sm:w-[320px] sm:h-[500px]
+    md:w-[380px] md:h-[460px]
+    lg:w-[420px] lg:h-[480px]
+    rounded-2xl
+    overflow-hidden
+    bg-black"
+  
+  />
+   <CardGlare />
+</div>
+
+
+
             </CCard>
           </ScrollAnimate>
         </div>
@@ -61,21 +86,25 @@ const ProshowCard = () => {
                 className="py-0 px-8"
                 style={{ animation: "mini-bounce 3s ease-in-out infinite" }}
               >
-                <h2 className="
-                  text-center
-                  text-xl md:text-4xl
-                  font-extrabold
-                  text-white
-                  drop-shadow-[0_0_10px_#ec4899]
-                ">
-                  DAY 1 - DJ NIGHT
-                </h2>
+                <h2
+  className="
+    text-center
+    text-lg sm:text-xl md:text-4xl
+    font-extrabold
+    text-white
+    whitespace-nowrap        /* forces single line on mobile */
+    drop-shadow-[0_0_10px_#ec4899]
+  "
+>
+  DAY 1 - DJ NIGHT
+</h2>
+
               </CCardBody>
             </CCard>
           </ScrollAnimate>
 
           {/* FEATURE GRID */}
-          <div className="grid grid-cols-1 md:grid-cols-1 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
   
   <ScrollAnimate direction="right">
     {/* <div className="transform"> */}
@@ -88,7 +117,7 @@ const ProshowCard = () => {
         hover:scale-105 transition-all duration-300
       "
     >
-      <CCardBody className="py-2 md:py-10 text-center">
+      <CCardBody className="py-2 md:py-6 text-center">
         <span className="
           inline-block skew-x-12
           text-sm md:text-lg lg:text-xl
@@ -96,8 +125,10 @@ const ProshowCard = () => {
           leading-snug md:leading-normal
         ">
           🎧 Live DJ Sets
+
           <br />
           Emphasizes the live DJ performance
+
         </span>
       </CCardBody>
     </CCard>
@@ -114,7 +145,7 @@ const ProshowCard = () => {
         hover:scale-105 transition-all duration-300
       "
     >
-      <CCardBody className="py-6 md:py-9 px-3 text-center">
+      <CCardBody className="py-2 md:py-6 px-3 text-center">
         <span className="
           inline-block skew-x-12
           text-sm md:text-lg lg:text-xl
@@ -122,6 +153,7 @@ const ProshowCard = () => {
           leading-snug md:leading-normal
         ">
           🔊 High-Energy Bass
+
           <br />
           Highlights the music intensity
         </span>
@@ -138,8 +170,7 @@ const ProshowCard = () => {
     <CCardBody className="py-8 px-10 min-h-[50px] md:min-h-[50px]">
       <span className="text-white/90 text-base md:text-lg lg:text-xl leading-relaxed">
         An unforgettable night of music, lights, and electrifying energy
-        that keeps you dancing till dawn.
-      </span>
+        that keeps you dancing till dawn. </span>
     </CCardBody>
   </CCard>
 </ScrollAnimate>
@@ -150,4 +181,12 @@ const ProshowCard = () => {
   );
 };
 
-export default ProshowCard;
+export default ProshowCard1;
+ 
+ 
+ 
+
+
+
+ 
+

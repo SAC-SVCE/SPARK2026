@@ -1,4 +1,5 @@
 import React from "react";
+import "../../styles/glare.css"
 
 const CardGlare: React.FC = () => {
   return (
