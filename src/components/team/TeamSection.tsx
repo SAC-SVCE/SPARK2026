@@ -5,16 +5,16 @@ import SectionHeading from "./SectionHeading";
 interface Props {
     title: string;
     members: TeamMember[];
-    columns?: 3 | 4 | 5|6;
+    columns?: 3 | 4 | 5 | 6;
     variant?: "default" | "highlight" | "dark";
     className?: string;
 }
 
 const colsMap = {
-    3: "grid-cols-4 sm:grid-cols-6 lg:grid-cols-5",
-    4: "grid-cols-4 sm:grid-cols-4 lg:grid-cols-5",
-    5: "grid-cols-4 sm:grid-cols-4 lg:grid-cols-5",
-    6: "grid-cols-4 sm:grid-cols-6 lg:grid-cols-6",
+    3: "grid-cols-3 sm:grid-cols-6 lg:grid-cols-5",
+    4: "grid-cols-3 sm:grid-cols-4 lg:grid-cols-5",
+    5: "grid-cols-3 sm:grid-cols-4 lg:grid-cols-5",
+    6: "grid-cols-3 sm:grid-cols-6 lg:grid-cols-6",
 };
 
 const TeamSection = ({ title, members, columns = 4, variant = "default", className = "" }: Props) => (

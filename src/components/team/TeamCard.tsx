@@ -21,18 +21,18 @@ const TeamCard = ({ member, index, variant = "default" }: TeamCardProps) => (
         transition={{ duration: 0.5, delay: index * 0.08 }}
         className={`group rounded-2xl overflow-hidden ${variants[variant]} transition-all duration-300`}
     >
-        <div className="relative overflow-hidden aspect-[4/5]">
+        <div className="relative overflow-hidden aspect-[3/4]">
             <img
                 src={member.image}
                 alt={member.name}
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110"
                 loading="lazy"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent" />
         </div>
         <div className="p-4 text-center">
-            <h3 className="font-display font-semibold text-lg text-foreground">{member.name}</h3>
-            <p className="text-sm text-primary mt-1">{member.role}</p>
+            <h3 className="font-display font-semibold text-lg text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-500">{member.name}</h3>
+            <p className="text-sm text-primary mt-1">{ }</p>
         </div>
     </motion.div>
 );

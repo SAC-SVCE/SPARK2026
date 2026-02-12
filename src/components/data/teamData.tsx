@@ -1,58 +1,61 @@
-// Using existing gallery images as placeholders
-const img1 = "/gallery_images/img1.jpg";
-const img2 = "/gallery_images/img2.jpg";
-const img3 = "/gallery_images/img3.jpg";
-const img4 = "/gallery_images/img4.jpg";
-const img5 = "/gallery_images/img5.jpg";
-const img6 = "/gallery_images/img6.jpg";
-
 export interface TeamMember {
     name: string;
-    role: string;
     image: string;
 }
 
-const images = [img1, img2, img3, img4, img5, img6];
-const img = (i: number) => images[i % images.length];
-
 export const organizationTeam: TeamMember[] = [
-    { name: "Arjun Mehta", role: "President", image: img(0) },
-    { name: "Priya Sharma", role: "Vice President", image: img(1) },
-    { name: "Rohan Das", role: "Secretary", image: img(2) },
-    { name: "Sneha Iyer", role: "Treasurer", image: img(3) },
-    { name: "Karan Patel", role: "Coordinator", image: img(4) },
+    { name: "Abdul", image: "/team-images/abdul1.jpg" },
+    { name: "Kiran", image: "/team-images/kiran1.jpg" },
+    { name: "Jaindeep", image: "/team-images/jaideep31 (1).JPG" },
+    { name: "Nivashini", image: "/team-images/nivashini21.JPG" },
+    { name: "Abhiram", image: "/team-images/abhiram1.jpg" },
 ];
 
 export const promotionTeam: TeamMember[] = [
-    { name: "Ananya Reddy", role: "PR Lead", image: img(1) },
-    { name: "Vikram Singh", role: "Marketing Head", image: img(0) },
-    { name: "Meera Joshi", role: "Content Creator", image: img(3) },
-    { name: "Aditya Kumar", role: "Social Media Manager", image: img(2) },
-    { name: "Kavya Nair", role: "Outreach Coordinator", image: img(5) },
-    { name: "Rahul Verma", role: "Brand Strategist", image: img(4) },
+    { name: "Mohith", image: "/team-images/mohith41.JPG" },
+    { name: "Surya", image: "/team-images/surya3 (1).JPG" },
+    { name: "Kavyanjali", image: "/team-images/kavyanjali (1).JPG" },
+    { name: "Anusha", image: "/team-images/anusha21 (1).JPG" },
+    { name: "Lithish", image: "/team-images/lithish (1).JPG" },
 ];
 
 export const websiteTeam: TeamMember[] = [
-    { name: "Dev Rajput", role: "Lead Developer", image: img(2) },
-    { name: "Ishita Gupta", role: "UI/UX Designer", image: img(3) },
-    { name: "Nikhil Rao", role: "Full Stack Dev", image: img(0) },
+    { name: "Shashi", image: "/team-images/shashikumar.jpeg" },
+    { name: "Amrutha", image: "/team-images/ammu (1).jpeg" },
+    { name: "Hema", image: "/team-images/hematech (1).jpeg" },
 ];
 
 export const smdcTeam: TeamMember[] = [
-    { name: "Tanvi Shah", role: "SMDC Lead", image: img(5) },
-    { name: "Aman Thakur", role: "Video Editor", image: img(4) },
-    { name: "Riya Kapoor", role: "Graphic Designer", image: img(1) },
-    { name: "Siddharth Menon", role: "Photographer", image: img(0) },
-    { name: "Neha Kulkarni", role: "Content Writer", image: img(3) },
-    { name: "Harsh Agarwal", role: "Reel Creator", image: img(2) },
-    { name: "Pooja Desai", role: "Social Media Exec", image: img(5) },
-    { name: "Manish Tiwari", role: "Motion Designer", image: img(4) },
+    { name: "Harsha", image: "/team-images/harshasmdc (1).JPG" },
+    { name: "Vaishnavi", image: "/team-images/vyshnavi31.JPG" },
+    { name: "Sai ganesh", image: "/team-images/saiganesh2 (1).JPG" },
+    { name: "Lahari", image: "/team-images/lehari2 (1).JPG" },
+    { name: "Premchand", image: "/team-images/premchand2 (1).JPG" },
+    { name: "Sujan", image: "/team-images/sujan2 (1).JPG" },
+    { name: "Sailesh", image: "/team-images/sailesh21.JPG" },
 ];
 
 export const technicalTeam: TeamMember[] = [
-    { name: "Akash Banerjee", role: "Tech Lead", image: img(2) },
-    { name: "Swati Mishra", role: "Backend Developer", image: img(1) },
-    { name: "Pranav Saxena", role: "Frontend Developer", image: img(0) },
-    { name: "Divya Chatterjee", role: "UI Designer", image: img(5) },
-    { name: "Kunal Jain", role: "DevOps Engineer", image: img(4) },
+    { name: "Praveen", image: "/team-images/praveentechnical (1).JPG" },
+    { name: "Kishore", image: "/team-images/kishore (1).JPG" },
+    { name: "Moksha", image: "/team-images/moksha (1).JPG" },
+    { name: "Mohitha", image: "/team-images/mohitha2 (1).JPG" },
+    { name: "Mahesh", image: "/team-images/mahesh (1).JPG" },
+];
+
+export const sportsTeam: TeamMember[] = [
+    { name: "Asif", image: "/team-images/asif4th (1).JPG" },
+    { name: "Siva ", image: "/team-images/siva4th (1).JPG" },
+    { name: "Kiran", image: "/team-images/kiransports (1).JPG" },
+    { name: "Shamitha", image: "/team-images/shamitha (1).JPG" },
+    { name: "Tejaswini", image: "/team-images/tejaswini4th.JPG" },
+    { name: "Narasimhulu", image: "/team-images/narasimhulu (1).JPG" },
+];
+
+export const culturalTeam: TeamMember[] = [
+    { name: "Hemanth", image: "/team-images/hemanth2 (1).JPG" },
+    { name: "Sravanth", image: "/team-images/sravanth3rd.JPG" },
+    { name: "Rishitha", image: "/team-images/rishitha3rd (1).JPG" },
+    { name: "Lahari", image: "/team-images/lahari3rd (1).jpg" },
+    { name: "Prasadh", image: "/team-images/prasadh (1).JPG" },
 ];

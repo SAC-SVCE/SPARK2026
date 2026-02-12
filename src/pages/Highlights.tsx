@@ -4,8 +4,6 @@ import React, { Suspense, useEffect, lazy } from "react";
 import { motion } from "motion/react";
 import { useLocation } from "react-router-dom";
 
-import NewTeam from "@/components/ui/NewTeam";
-
 /* =========================
    LAZY LOADED COMPONENTS
    ========================= */
