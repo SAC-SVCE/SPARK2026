@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 import React, { Suspense, lazy } from "react";
+=======
+import React, { Suspense, useEffect } from "react";
+import PreviousYear from "@/components/PreviousYear";
+import CircularGallery from "@/components/ui/circulargallary";
+import { ParallaxScrollDemo } from "@/components/ui/ParallelScrolldemo"; // NEW IMPORT
+>>>>>>> c7c61fd83c513273aa26763778e5184034efa68b
 import { motion } from "motion/react";
 import { useLocation } from "react-router-dom";
+<<<<<<< HEAD
 
 /* =========================
    LAZY LOADED COMPONENTS
@@ -15,6 +23,11 @@ const CircularGallery = lazy(() => import("@/components/ui/circulargallary"));
 const PreviousYear = lazy(() => import("@/components/PreviousYear"));
 const DemoOne = lazy(() => import("@/components/DemoOne"));
 const Footer = lazy(() => import("@/components/Footer"));
+=======
+import SparkNavbar from "../components/SparkNavbar";
+import DemoOne from "@/components/DemoOne";
+import NewTeam from "@/components/ui/NewTeam"; // CHANGED IMPORT
+>>>>>>> c7c61fd83c513273aa26763778e5184034efa68b
 
 /* =========================
    IMAGES (UNCHANGED)
@@ -58,10 +71,16 @@ const HighlightsPage: React.FC = () => {
     <>
       {/* NAVBAR */}
       <div className="flex justify-center pt-10">
+<<<<<<< HEAD
         <Suspense fallback={null}>
           <SparkNavbar />
         </Suspense>
       </div>
+=======
+        <SparkNavbar />
+      </div>
+
+>>>>>>> c7c61fd83c513273aa26763778e5184034efa68b
 
       <motion.div
         initial={{ opacity: 0 }}
@@ -140,6 +159,23 @@ const HighlightsPage: React.FC = () => {
                 <DemoOne />
               </Suspense>
             </div>
+          </motion.section>
+
+          {/* TEAM SECTION */}
+          <motion.section
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="py-12 md:py-16 min-h-[65vh] flex flex-col justify-center relative mb-2"
+          >
+            <div className="absolute right-0 top-1/2 -translate-y-1/2 w-1 h-32 bg-gradient-to-b from-transparent via-pink-500 to-transparent opacity-50" />
+            <h2 className="text-4xl md:text-6xl font-orbitron font-black text-center mb-8 tracking-widest bg-gradient-to-r from-cyan-400 to-pink-600 bg-clip-text text-transparent drop-shadow-[0_0_15px_rgba(6,182,212,0.3)]">
+              THE TEAMS
+            </h2>
+            <Suspense fallback={<div className="h-full flex items-center justify-center text-gray-500 text-lg">Loading team...</div>}>
+              <NewTeam />
+            </Suspense>
           </motion.section>
         </div>
       </motion.div>
