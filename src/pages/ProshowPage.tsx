@@ -3,10 +3,7 @@ import SparkNavbar from "../components/SparkNavbar";
 import bgVideo from "../assets/bg-video.mp4";
 import ProshowCard from "../components/ui/ProshowCard";
 import ProshowCard2 from "../components/ui/ProshowCard2";
-import LightRays from "@/components/ui/proshowrays";
 import Footer from "@/components/Footer";
-
-import bgImage from "../assets/bgImage.avif";
 import ScrollAnimate from "@/components/ui/proshowcardAnimation";
 import { cn } from "@/lib/utils";
 import { AnimatedGridPattern } from "../components/ui/gridAnimation";

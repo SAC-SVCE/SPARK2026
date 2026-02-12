@@ -1,11 +1,8 @@
 import { Target, Users, Rocket, Zap, Trophy, Calendar, MapPin, Heart, ArrowRight, Globe } from "lucide-react";
-import RulesRegulations from "@/components/RulesRegulations";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FireParticles from "@/components/FireParticles";
 import Shinky from "@/components/ui/ShinyText";
-import sparkLogo from "@/assets/spark-logo.png";
-import { TimelineDemo } from "@/components/ui/TimelineDemo";
 import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
 

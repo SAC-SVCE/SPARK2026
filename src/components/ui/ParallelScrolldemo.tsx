@@ -1,5 +1,4 @@
 "use client";
-import { ParallaxScroll } from "./parallax-scroll";
 import bgvideo from "../../assets/Highlights_bgVedio.mp4";
 
 export function ParallaxScrollDemo() {
