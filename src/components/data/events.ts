@@ -145,7 +145,7 @@ export const events: Event[] = [
     ],
     coordinators: {
       event: [
-        { name: "Kasa Srihari", phone: "8985388335" },
+        { name: "S.Aneesh ahmed", phone: "8297084438" },
 
       ],
       faculty: [
@@ -178,6 +178,7 @@ export const events: Event[] = [
     coordinators: {
       event: [
         { name: "D. Harsha Vardhan Kumar", phone: "8019320140" },
+        { name: "V.Pawan kalyan", phone: "7780718394" },
 
       ],
       faculty: [
@@ -502,7 +503,7 @@ export const events: Event[] = [
     ],
     coordinators: {
       event: [
-        { name: "A. Venkata Surya", phone: "7671822801" },
+        { name: "K.Poojitha", phone: "7569511453" },
 
       ],
       faculty: [
@@ -1401,7 +1402,7 @@ export const events: Event[] = [
     ],
     coordinators: {
       event: [
-        { name: "K. V. Vamsidhar Reddy", phone: "7993581848" },
+        { name: "D.Bhavana sai", phone: "7993581848" },
 
       ],
       faculty: [

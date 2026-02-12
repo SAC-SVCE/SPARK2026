@@ -2,6 +2,7 @@
 import HeroSection from "@/components/team/HeroSection";
 import TeamSection from "@/components/team/TeamSection";
 import FooterCTA from "@/components/team/FooterCTA";
+import Footer from "@/components/Footer";
 import {
   organizationTeam,
   promotionTeam,
@@ -13,7 +14,6 @@ import {
 } from "@/components/data/teamData";
 
 import SparkNavbar from "../components/SparkNavbar";
-import Footer from "@/components/Footer";
 
 const Index = () => (
   <main className="bg-background min-h-screen relative">
@@ -30,7 +30,9 @@ const Index = () => (
     <TeamSection title="Sports Team" members={sportsTeam} columns={6} />
     <TeamSection title="Cultural Team" members={culturalTeam} columns={5} />
     <FooterCTA />
+    <Footer/>
   </main>
+
 );
 
 export default Index;
