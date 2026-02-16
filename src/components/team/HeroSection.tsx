@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 const HeroSection = () => (
-  <section className="relative min-h-[70vh] flex items-center justify-center bg-gradient-hero overflow-hidden">
+  <section className="relative min-h-[50vh] flex items-center justify-center bg-gradient-hero overflow-hidden">
     {/* Floating orbs */}
     <div className="absolute top-20 left-10 w-72 h-72 rounded-full bg-primary/10 blur-3xl animate-pulse-glow" />
     <div className="absolute bottom-10 right-20 w-96 h-96 rounded-full bg-accent/10 blur-3xl animate-pulse-glow" style={{ animationDelay: "1.5s" }} />

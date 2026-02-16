@@ -7,7 +7,7 @@ import {
   organizationTeam,
   promotionTeam,
   websiteTeam,
-  smdcTeam,
+  smdcTeam, 
   technicalTeam,
   sportsTeam,
   culturalTeam,
@@ -22,15 +22,15 @@ const Index = () => (
     </div>
     <HeroSection />
 
-    <TeamSection title="Organization Team" members={organizationTeam} columns={5} />
+    <TeamSection title="Organizing Team" members={organizationTeam} columns={6} className="!pt-0" />
     <TeamSection title="Promotion Team" members={promotionTeam} columns={5} />
-    <TeamSection title="Spark Website Team" members={websiteTeam} columns={3} />
-    <TeamSection title="SMDC Team" members={smdcTeam} columns={4} />
+    <TeamSection title="Spark Website Team" members={websiteTeam} columns={5} />
+    <TeamSection title="SMDC Team" members={smdcTeam} columns={5} />
     <TeamSection title="Technical Team" members={technicalTeam} columns={5} />
     <TeamSection title="Sports Team" members={sportsTeam} columns={6} />
     <TeamSection title="Cultural Team" members={culturalTeam} columns={5} />
     <FooterCTA />
-    <Footer/>
+    <Footer />
   </main>
 
 );
