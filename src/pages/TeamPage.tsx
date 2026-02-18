@@ -11,6 +11,8 @@ import {
   technicalTeam,
   sportsTeam,
   culturalTeam,
+  stallTeam,
+  logisticsTeam,
 } from "@/components/data/teamData";
 
 import SparkNavbar from "../components/SparkNavbar";
@@ -29,6 +31,8 @@ const Index = () => (
     <TeamSection title="Technical Team" members={technicalTeam} columns={5} />
     <TeamSection title="Sports Team" members={sportsTeam} columns={6} />
     <TeamSection title="Cultural Team" members={culturalTeam} columns={5} />
+    <TeamSection title="Stall Team" members={stallTeam} columns={3} />
+    <TeamSection title="Logistics Team" members={logisticsTeam} columns={3} />
     <FooterCTA />
     <Footer />
   </main>

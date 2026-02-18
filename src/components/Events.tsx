@@ -73,13 +73,14 @@ const Events = () => {
         <div className="absolute top-1/2 right-1/4 w-96 h-96 bg-secondary/20 rounded-full blur-[100px] -translate-y-1/2" />
       </div>
 
+      {/*align the our events to center*/}
+
       <div className="container mx-auto px-4 relative z-10 mb-12">
-        <div className="flex justify-between items-end">
+        <div className="flex justify-center items-center">
           <div>
-            <h2 className="text-4xl md:text-6xl font-black font-orbitron text-white mb-2">
+            <h2 className="text-4xl md:text-6xl font-black font-orbitron text-white mb-2 text-center">
               OUR <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">EVENTS</span>
             </h2>
-
           </div>
         </div>
       </div>

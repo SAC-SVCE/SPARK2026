@@ -22,7 +22,7 @@ export const promotionTeam: TeamMember[] = [
 ];
 
 export const websiteTeam: TeamMember[] = [
-    { name: "K Shashi Kumar", image: "/team-images/shashikumar.jpeg" },
+    { name: "K Shashi Kumar", image: "/team-images/shashikumar1.JPG" },
     { name: "P Amrutha", image: "/team-images/ammu (1).jpeg" },
     { name: "S Hema Chandrika", image: "/team-images/hematech (1).jpeg" },
 ];
@@ -30,11 +30,12 @@ export const websiteTeam: TeamMember[] = [
 export const smdcTeam: TeamMember[] = [
     { name: "N Mohith", image: "/team-images/mohith41.JPG" },
     { name: "A P Vaishnavi", image: "/team-images/vyshnavi31.JPG" },
-    { name: "Sai ganesh", image: "/team-images/saiganesh2 (1).JPG" },
     { name: "N Lahari", image: "/team-images/lehari2 (1).JPG" },
+    { name: "DV Sai Praharsha", image: "/team-images/harshasmdc (1).JPG" },
     { name: "Sailesh", image: "/team-images/sailesh21.JPG" },
     { name: "Sujan", image: "/team-images/sujan2 (1).JPG" },
-    { name: "DV Sai Praharsha", image: "/team-images/harshasmdc (1).JPG" },
+    { name: "Sai ganesh", image: "/team-images/saiganesh2 (1).JPG" },
+    
     
 ];
 
@@ -63,3 +64,15 @@ export const culturalTeam: TeamMember[] = [
     { name: "K Lakshmi Lahari", image: "/team-images/lahari3rd (1).jpg" },
     
 ];
+
+export const stallTeam: TeamMember[] = [
+    { name: "G MUNI VIGNESH", image: "/team-images/muni.JPG" },
+    { name: "J RISHI", image: "/team-images/rishi.JPG" },
+    { name: "B SRAVAN", image: "/team-images/sravan.JPG" },
+];
+
+export const logisticsTeam: TeamMember[] = [
+    { name: "P GUNA SAGAR", image: "/team-images/guna.JPG" },
+    { name: "Sumanth", image: "/team-images/sumanth.jpeg" },
+];
+

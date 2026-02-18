@@ -328,7 +328,7 @@ const Footer = () => {
 
         {/* Bottom */}
         <div className="text-center text-sm text-muted-foreground">
-          © 2026 SPARK | Designed & Developed by <span className="text-primary">Shashi</span>
+          © SPARK 2026 | Designed & Developed by <span className="text-primary">Karupothula Shashi Kumar</span>
         </div>
       </div>
     </footer>

@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 const AboutPage = () => {
   const stats = [
     { icon: Users, value: "10K+", label: "Participants", color: "text-primary" },
-    { icon: Trophy, value: "120+", label: "Events", color: "text-secondary" },
+    { icon: Trophy, value: "90+", label: "Events", color: "text-secondary" },
     { icon: Zap, value: "₹10L+", label: "Prize Pool", color: "text-primary" },
     { icon: Calendar, value: "2", label: "Days of Fury", color: "text-secondary" },
   ];
@@ -221,12 +221,12 @@ const AboutPage = () => {
                     <div className="pt-6 mt-2">
                       <p className="text-sm text-zinc-500 mb-4 font-mono">OFFERING COURSES IN</p>
                       <div className="flex flex-wrap gap-2">
-                        {["CSE", "ECE", "EEE", "IT", "ME", "CSM", "CSD", "CE"].map((course) => (
+                        {["CSE", "ECE", "EEE", "IT", "ME", "CSM", "CSD","CSC", "CE"].map((course) => (
                           <span key={course} className="text-[10px] font-bold px-2 py-1 bg-white/5 text-zinc-300 border border-white/5 rounded hover:bg-white/10 transition-colors">
                             {course}
                           </span>
                         ))}
-                        <span className="text-[10px] font-bold px-2 py-1 bg-primary/20 text-primary border border-primary/20 rounded">
+                        <span className="text-[8px] font-bold px-2 py-1 bg-primary/20 text-primary border border-primary/20 rounded">
                           + PG COURSES
                         </span>
                       </div>

@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import SparkEffect from "@/components/SparkEffect";
 import { motion } from "framer-motion";
 import RulesRegulations from "@/components/RulesRegulations";
+import ProshowsSection from "@/components/ProshowsSection";
 
 const Index = () => {
 
@@ -30,6 +31,11 @@ const Index = () => {
 
         <motion.div {...fadeInUp}>
           <Events />
+        </motion.div>
+
+
+        <motion.div {...fadeInUp}>
+          <ProshowsSection />
         </motion.div>
 
         <motion.div {...fadeInUp}>
