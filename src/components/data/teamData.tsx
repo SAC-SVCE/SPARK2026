@@ -17,13 +17,13 @@ export const promotionTeam: TeamMember[] = [
     { name: "Surya", image: "/team-images/surya3 (1).JPG" },
     { name: "A Kavyanjali", image: "/team-images/kavyanjali (1).JPG" },
     { name: "Anusha", image: "/team-images/anusha21 (1).JPG" },
-    { name: "Lithish", image: "/team-images/lithish (1).JPG" },
+    { name: "Lithesh", image: "/team-images/lithish (1).JPG" },
     { name: "Premchand", image: "/team-images/premchand2 (1).JPG" },
 ];
 
 export const websiteTeam: TeamMember[] = [
     { name: "K Shashi Kumar", image: "/team-images/shashikumar1.JPG" },
-    { name: "P Amrutha", image: "/team-images/ammu (1).jpeg" },
+    { name: "P Amrutha", image: "/team-images/amrutha (1).jpeg" },
     { name: "S Hema Chandrika", image: "/team-images/hematech (1).jpeg" },
 ];
 
@@ -66,7 +66,7 @@ export const culturalTeam: TeamMember[] = [
 ];
 
 export const stallTeam: TeamMember[] = [
-    { name: "G MUNI VIGNESH", image: "/team-images/muni.JPG" },
+    { name: "G MUNI VIGNESH", image: "/team-images/muni2.jpg" },
     { name: "J RISHI", image: "/team-images/rishi.JPG" },
     { name: "B SRAVAN", image: "/team-images/sravan.JPG" },
 ];

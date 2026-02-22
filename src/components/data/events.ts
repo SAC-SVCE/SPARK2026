@@ -243,7 +243,7 @@ export const events: Event[] = [
     ],
     coordinators: {
       event: [
-        { name: "Shaik Mohammad Shahid", phone: "7981491740" },
+        { name: "A Sumanth", phone: "9182611319" },
 
       ],
       faculty: [
@@ -472,7 +472,7 @@ export const events: Event[] = [
     ],
     coordinators: {
       event: [
-        { name: "A. Sumanth", phone: "9182611319" },
+        { name: "krupa kumara swamy", phone: "9398155210" },
 
       ],
       faculty: [
@@ -569,7 +569,7 @@ export const events: Event[] = [
 
       ],
       faculty: [
-        { name: "Dr. D. Ester Rani", phone: "9542890853" }
+        { name: "N Phani kumar", phone: "9885641420" }
       ]
     }
   },
@@ -1061,7 +1061,7 @@ export const events: Event[] = [
     ],
     coordinators: {
       event: [
-        { name: "K. Neeraj", phone: "8886239948" },
+        { name: "Divya", phone: "8019331084" },
 
       ],
       faculty: [
@@ -1092,7 +1092,7 @@ export const events: Event[] = [
     ],
     coordinators: {
       event: [
-        { name: "G. Bhavana", phone: "8008098380" },
+        { name: "C.v chaithanya", phone: "9989812075" },
 
       ],
       faculty: [
@@ -1123,7 +1123,7 @@ export const events: Event[] = [
     ],
     coordinators: {
       event: [
-        { name: "K. P. Mohitha", phone: "7780134362" },
+        { name: "K. Lasya sree", phone: "7569728910" },
 
       ],
       faculty: [
@@ -1249,11 +1249,11 @@ export const events: Event[] = [
     ],
     coordinators: {
       event: [
-        { name: "P. Gnanendra", phone: "7396740282" },
+        { name: "CH.Kishore kumar", phone: "83410764426" },
 
       ],
       faculty: [
-        { name: "Dr. Keerthipati/Dr. R. Swathi", phone: "9985303614" }
+        { name: "Ms.K.Keerthi", phone: "9182292971" }
       ]
     }
   },
@@ -1402,7 +1402,7 @@ export const events: Event[] = [
     ],
     coordinators: {
       event: [
-        { name: "D.Bhavana sai", phone: "7993581848" },
+        { name: "D.Bhavana sai", phone: "9030406028" },
 
       ],
       faculty: [
