@@ -48,7 +48,7 @@ const Navbar = () => {
     }
 
     if (id === "sponsors-page") {
-      navigate("/sponsors");
+      navigate("/comingsoon");
       setIsOpen(false);
       return;
     }
@@ -124,7 +124,7 @@ const Navbar = () => {
     // Events is handled separately
     { name: "Spotlight Events", id: "spotlight-events" },
     { name: "Highlights", id: "highlights-page" },
-    { name: "Sponsors", id: "comingsoon" },
+    { name: "Sponsors", id: "sponsors-page" },
 
   ];
 
