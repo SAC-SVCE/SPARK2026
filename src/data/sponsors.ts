@@ -1,10 +1,10 @@
 export type SponsorCategory =
     | "Title Sponsors"
     | "Platinum Sponsors"
-    | "Gold Sponsors"
+    | "Sponsors"
     | "Silver Sponsors"
     | "Community Partners"
-    | "Media Partners"
+    | "Social Media Partners"
     | "Technology Partners";
 
 export interface Sponsor {
@@ -15,80 +15,49 @@ export interface Sponsor {
     websiteUrl: string;
 }
 
+
 export const sponsorsData: Sponsor[] = [
     {
         id: "title-1",
-        name: "TechNova Corp",
-        logoUrl: "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=300&h=300&fit=crop", // placeholder logo
+        name: "Student tribe",
+        logoUrl:"/sponsors-images/student_tribe.jpeg", // placeholder logo
         category: "Title Sponsors",
-        websiteUrl: "#",
-    },
-    
-
-    {
-        id: "gold-1",
-        name: "Synapse Networks",
-        logoUrl: "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=300&h=300&fit=crop",
-        category: "Gold Sponsors",
-        websiteUrl: "#",
-    },
-    {
-        id: "gold-2",
-        name: "Nexus Electronics",
-        logoUrl: "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=300&h=300&fit=crop",
-        category: "Gold Sponsors",
-        websiteUrl: "#",
-    },
-    {
-        id: "gold-3",
-        name: "Vertex AI",
-        logoUrl: "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=300&h=300&fit=crop",
-        category: "Gold Sponsors",
-        websiteUrl: "#",
-    },
-    {
-        id: "silver-1",
-        name: "Apex Gaming",
-        logoUrl: "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=300&h=300&fit=crop",
-        category: "Silver Sponsors",
-        websiteUrl: "#",
-    },
-    {
-        id: "silver-2",
-        name: "Lumina Designs",
-        logoUrl: "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=300&h=300&fit=crop",
-        category: "Silver Sponsors",
-        websiteUrl: "#",
-    },
-    {
-        id: "community-1",
-        name: "Global Devs",
-        logoUrl: "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=300&h=300&fit=crop",
-        category: "Community Partners",
         websiteUrl: "#",
     },
     {
         id: "media-1",
-        name: "Tech Digest",
-        logoUrl: "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=300&h=300&fit=crop",
-        category: "Media Partners",
+        name: "Beautiful Tirupati",
+        logoUrl: "/sponsors-images/beautiful_tirupati.jpg",
+        category: "Social Media Partners",
+        websiteUrl: "#",
+    },
+      
+    {
+        id: "gold-2",
+        name: "Aryan",
+        logoUrl: "/sponsors-images/aryan.jpg",
+        category: "Sponsors",
         websiteUrl: "#",
     },
     {
-        id: "tech-1",
-        name: "CloudFrontier",
-        logoUrl: "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=300&h=300&fit=crop",
-        category: "Technology Partners",
+        id: "gold-3",
+        name: "Leap Geebee Education",
+        logoUrl: "/sponsors-images/geebee.jpg",
+        category: "Sponsors",
         websiteUrl: "#",
-    }
+    },
+   
+   
+    
 ];
 
 export const CATEGORY_ORDER: SponsorCategory[] = [
-    "Title Sponsors",
+    
     "Platinum Sponsors",
-    "Gold Sponsors",
+    "Social Media Partners",
+
+    "Sponsors",
     "Silver Sponsors",
     "Technology Partners",
-    "Media Partners",
     "Community Partners"
 ];

@@ -48,7 +48,7 @@ const Navbar = () => {
     }
 
     if (id === "sponsors-page") {
-      navigate("/comingsoon");
+      navigate("/sponsors");
       setIsOpen(false);
       return;
     }
