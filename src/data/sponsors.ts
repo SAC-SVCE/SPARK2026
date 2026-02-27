@@ -32,13 +32,7 @@ export const sponsorsData: Sponsor[] = [
         websiteUrl: "#",
     },
       
-    {
-        id: "gold-2",
-        name: "Aryan",
-        logoUrl: "/sponsors-images/aryan.jpg",
-        category: "Sponsors",
-        websiteUrl: "#",
-    },
+    
     {
         id: "gold-3",
         name: "Leap Geebee Education",
