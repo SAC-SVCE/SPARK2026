@@ -5,7 +5,8 @@ export type SponsorCategory =
     | "Silver Sponsors"
     | "Community Partners"
     | "Social Media Partners"
-    | "Technology Partners";
+    | "Technology Partners"
+    | "Industry partners";
 
 export interface Sponsor {
     id: string;
@@ -40,6 +41,27 @@ export const sponsorsData: Sponsor[] = [
         category: "Sponsors",
         websiteUrl: "#",
     },
+    {
+        id: "industry-1",
+        name: "Young Indians",
+        logoUrl: "/sponsors-images/young indians.jpeg",
+        category: "Industry partners",
+        websiteUrl: "#",
+    },
+    {
+        id: "industry-2",
+        name: "Data Quotes",
+        logoUrl: "/sponsors-images/dataquates.jpeg",
+        category: "Industry partners",
+        websiteUrl: "#",
+    },
+    {
+        id: "industry-3",
+        name: "Algonex IT Solutions",
+        logoUrl: "/sponsors-images/3rd.jpeg",
+        category: "Industry partners",
+        websiteUrl: "#",
+    },
    
    
     
@@ -49,8 +71,8 @@ export const CATEGORY_ORDER: SponsorCategory[] = [
     
     "Platinum Sponsors",
     "Social Media Partners",
-
     "Sponsors",
+    "Industry partners",
     "Silver Sponsors",
     "Technology Partners",
     "Community Partners"
