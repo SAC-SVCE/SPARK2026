@@ -48,7 +48,7 @@ const SponsorCard = ({ sponsor }: { sponsor: Sponsor }) => {
 
 // 2. Left-aligned section heading with gradient line to the right
 const SectionHeading = ({ title }: { title: string }) => (
-  <div className="mb-8 flex items-center gap-4">
+  <div className="mb-8 flex items-center gap-6">
     {/* Accent bar */}
     <div className="w-1 h-7 rounded-full bg-gradient-to-b from-violet-400 to-fuchsia-500 flex-shrink-0" />
     <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-white uppercase tracking-widest font-serif italic leading-tight">

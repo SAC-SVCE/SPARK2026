@@ -928,37 +928,38 @@ export const events: Event[] = [
       ]
     }
   },
+  
   {
-    id: "28",
-    title: "Youth Summit",
-    description:
-      "A thought-provoking event that brings young minds together to discuss social, technological, and national issues.",
-    date: "7th March 2026",
-    dateTag: "7 Mar",
-    time: "10:00 - 04:30",
-    venue: "SV College of Engineering",
-    categories: ["Spotlight Events"],
-    department: "",
-    image: "/all-posters/YOUTH SUMMIT.jpg",
-    registrationOpen: true,
-    teamSize: "",
-    rules: [
-      "Participants must respect differing opinions",
-      "Topics must align with the summit theme",
-      "Time limits must be strictly followed",
-      "Inappropriate language or behavior is not allowed",
-      "Moderators’ and judges’ decisions are final"
+  id: "28",
+  title: "Youth Summit",
+  description:
+    "A thought-provoking event that brings young minds together to discuss social, technological, and national issues.",
+  date: "7th March 2026",
+  dateTag: "7 Mar",
+  time: "10:00 - 04:30",
+  venue: "SV College of Engineering",
+  categories: ["Spotlight Events"],
+  department: "",
+  image: "/all-posters/youth1.png",
+  registrationOpen: true,
+  teamSize: "",
+  rules: [
+    "Participants must respect differing opinions",
+    "Topics must align with the summit theme",
+    "Time limits must be strictly followed",
+    "Inappropriate language or behavior is not allowed",
+    "Moderators’ and judges’ decisions are final"
+  ],
+  coordinators: {
+    event: [
+      { name: "Ruksana Banu Shaik", phone: "9100399934" }
     ],
-    coordinators: {
-      event: [
-        { name: "Ruksana Banu Shaik", phone: "9100399934" },
+    faculty: [
+      { name: "T. Murari", phone: "8555924980" }
+    ]
+  }
+},
 
-      ],
-      faculty: [
-        { name: "T. Murari", phone: "8555924980" }
-      ]
-    }
-  },
   {
     id: "29",
     title: "Youth Parliament",

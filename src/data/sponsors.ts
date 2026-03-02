@@ -32,7 +32,13 @@ export const sponsorsData: Sponsor[] = [
         category: "Social Media Partners",
         websiteUrl: "#",
     },
-      
+       {
+        id: "media-2",
+        name: "It's My Tirupathi",
+        logoUrl: "/sponsors-images/it's my.jpeg",
+        category: "Social Media Partners",
+        websiteUrl: "#",
+    },
     
     {
         id: "gold-3",
@@ -51,7 +57,7 @@ export const sponsorsData: Sponsor[] = [
     {
         id: "industry-2",
         name: "Data Quotes",
-        logoUrl: "/sponsors-images/dataquates.jpeg",
+        logoUrl: "/sponsors-images/dataquotas.jpeg",
         category: "Industry partners",
         websiteUrl: "#",
     },
