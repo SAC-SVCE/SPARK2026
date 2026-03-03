@@ -2,6 +2,7 @@ export type SponsorCategory =
     | "Title Sponsors"
     | "Platinum Sponsors"
     | "Sponsors"
+    | "medical partners"
     | "Silver Sponsors"
     | "Community Partners"
     | "Social Media Partners"
@@ -48,6 +49,13 @@ export const sponsorsData: Sponsor[] = [
         websiteUrl: "#",
     },
     {
+        id: "medical-1",
+        name: "Sahasra Hospital",
+        logoUrl: "/sponsors-images/sahasra hospital.jpg",
+        category: "medical partners",
+        websiteUrl: "#",
+    },
+    {
         id: "industry-1",
         name: "Young Indians",
         logoUrl: "/sponsors-images/young indians.jpeg",
@@ -69,7 +77,6 @@ export const sponsorsData: Sponsor[] = [
         websiteUrl: "#",
     },
    
-   
     
 ];
 
@@ -78,6 +85,7 @@ export const CATEGORY_ORDER: SponsorCategory[] = [
     "Platinum Sponsors",
     "Social Media Partners",
     "Sponsors",
+    "medical partners",
     "Industry partners",
     "Silver Sponsors",
     "Technology Partners",
