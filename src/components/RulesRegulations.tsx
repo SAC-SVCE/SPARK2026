@@ -9,7 +9,7 @@ const RulesRegulations = () => {
     };
 
     const rules = [
-        `After 11:59 PM (06-03-2026), spot registration will be open and the prices will be:
+        `Registration will close at 11:59 PM (05-03-2026), spot registration will be open on 06-03-2026 and the prices will be:
         ₹500 - SVCE Students (for two days)
         ₹600 - Non-SVCE Students (for two days)`,
         "! Important: Only registered students will be allowed to enter the campus and participate in SPARK 2026 events.",
