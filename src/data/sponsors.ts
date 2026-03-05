@@ -86,7 +86,7 @@ export const sponsorsData: Sponsor[] = [
     },
     {
         id: "back-2",
-        name: "KVP",
+        name: "KVB",
         logoUrl: "/sponsors-images/kvb.png",
         category: "Banking partners",
         websiteUrl: "#",

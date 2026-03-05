@@ -86,6 +86,8 @@ const CategorySection = ({ category, sponsors, index }: { category: SponsorCateg
 
 // 4. Main Page
 const SponsorsPage: React.FC = () => {
+  const kvpBankSponsor = sponsorsData.find((s) => s.id === "back-2");
+
   const featuredSponsors = sponsorsData.filter(
     (s) => s.category === "Title Sponsors" || s.category === "Platinum Sponsors"
   );
@@ -122,6 +124,25 @@ const SponsorsPage: React.FC = () => {
 
           <div className="container mx-auto px-3 sm:px-4 md:px-6 py-8 md:py-14 relative z-10">
 
+            {/* KVP BANK — featured above all other sections, larger card */}
+            {kvpBankSponsor && (
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.6 }}
+                className="mb-16"
+              >
+                <SectionHeading title="Major Sponsor" />
+                <div className="flex flex-wrap justify-center gap-4 md:gap-5">
+                  {/* Larger card for KVP Bank */}
+                  <div className="w-[calc(70%-8px)] sm:w-72 md:w-80 lg:w-96 h-52 md:h-64 flex-shrink-0">
+                    <SponsorCard sponsor={kvpBankSponsor} />
+                  </div>
+                </div>
+              </motion.div>
+            )}
+
             {/* FEATURED SPONSORS ROW */}
             {featuredSponsors.length > 0 && (
               <div className="mb-16">
@@ -134,7 +155,7 @@ const SponsorsPage: React.FC = () => {
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true, margin: "-50px" }}
                       transition={{ duration: 0.6, delay: idx * 0.15 }}
-                      className="w-[calc(50%-8px)] sm:w-52 md:w-60 lg:w-64 h-44 md:h-52 flex-shrink-0"
+                      className="w-[calc(50%-8px)] sm:w-52 md:w-80 lg:w-64 h-44 md:h-52 flex-shrink-0"
                     >
                       <SponsorCard sponsor={sponsor} />
                     </motion.div>
@@ -146,7 +167,10 @@ const SponsorsPage: React.FC = () => {
             {/* SPONSORS BY CATEGORY */}
             <div className="mx-auto max-w-8xl">
               {CATEGORY_ORDER.map((cat, idx) => {
-                const catSponsors = sponsorsData.filter((s) => s.category === cat);
+                // Exclude KVP Bank from its category since it's already featured above
+                const catSponsors = sponsorsData.filter(
+                  (s) => s.category === cat && s.id !== "back-2"
+                );
                 return (
                   <CategorySection key={cat} category={cat} sponsors={catSponsors} index={idx} />
                 );
