@@ -17,6 +17,7 @@ import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ui/ScrollToTop";
 import TeamPage from "./pages/TeamPage";
 import ComingSoon from "./pages/ComingSoon";
+import RegistrationToast from "./components/RegistrationToast";
 const queryClient = new QueryClient();
 
 const App = () => {
@@ -29,6 +30,7 @@ const App = () => {
         <Toaster />
         <Sonner />
         <ScrollToTop />
+        <RegistrationToast />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/events" element={<EventsPage />} />
