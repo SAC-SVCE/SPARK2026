@@ -54,7 +54,7 @@ const RegistrationToast: React.FC = () => {
                     animate={{ x: 0, opacity: 1 }}
                     exit={{ x: 350, opacity: 0 }}
                     transition={{ type: "spring", damping: 25, stiffness: 220 }}
-                    className="fixed top-20 right-4 z-[9999] w-[280px] cursor-pointer"
+                    className="fixed top-20 right-2 sm:right-4 z-[9999] w-[220px] sm:w-[280px] cursor-pointer"
                     id="registration-toast"
                     onClick={() => setIsMinimized(true)}
                 >
@@ -73,7 +73,7 @@ const RegistrationToast: React.FC = () => {
                             style={{ animation: "shimmer 2s linear infinite", backgroundSize: "200% 100%" }}
                         />
 
-                        <div className="px-4 py-3">
+                        <div className="px-2.5 py-2 sm:px-4 sm:py-3">
                             {/* Header row — icon + title + warning badge inline */}
                             <div className="flex items-center gap-2 mb-2">
                                 <AlertTriangle
@@ -94,7 +94,7 @@ const RegistrationToast: React.FC = () => {
                             </p>
 
                             {/* Compact Countdown */}
-                            <div className="flex items-center justify-center gap-2">
+                            <div className="flex items-center justify-center gap-1.5 sm:gap-2">
                                 {[
                                     { value: pad(timeLeft.hours), label: "Hrs" },
                                     { value: pad(timeLeft.minutes), label: "Min" },
@@ -103,7 +103,7 @@ const RegistrationToast: React.FC = () => {
                                     <React.Fragment key={item.label}>
                                         <div className="flex flex-col items-center">
                                             <div
-                                                className="w-[52px] h-[42px] flex items-center justify-center rounded-md border border-[hsl(var(--fire-orange)/0.25)] font-orbitron text-lg font-bold text-white"
+                                                className="w-[40px] h-[32px] sm:w-[52px] sm:h-[42px] flex items-center justify-center rounded-md border border-[hsl(var(--fire-orange)/0.25)] font-orbitron text-sm sm:text-lg font-bold text-white"
                                                 style={{
                                                     background: "linear-gradient(180deg, hsl(220 25% 12%) 0%, hsl(220 25% 7%) 100%)",
                                                     boxShadow:
@@ -112,7 +112,7 @@ const RegistrationToast: React.FC = () => {
                                             >
                                                 <span className="text-glow-orange">{item.value}</span>
                                             </div>
-                                            <span className="text-[8px] mt-1 text-[hsl(var(--muted-foreground))] font-exo uppercase tracking-widest">
+                                            <span className="text-[7px] sm:text-[8px] mt-0.5 sm:mt-1 text-[hsl(var(--muted-foreground))] font-exo uppercase tracking-widest">
                                                 {item.label}
                                             </span>
                                         </div>
@@ -136,7 +136,7 @@ const RegistrationToast: React.FC = () => {
                     exit={{ scale: 0, opacity: 0 }}
                     transition={{ type: "spring", damping: 20, stiffness: 300 }}
                     onClick={() => setIsMinimized(false)}
-                    className="fixed top-20 right-4 z-[9999] flex items-center gap-2 px-3 py-2 rounded-full border border-[hsl(var(--fire-orange)/0.4)] font-orbitron text-[11px] font-bold text-[hsl(var(--fire-orange))] cursor-pointer hover:scale-105 transition-transform"
+                    className="fixed top-20 right-2 sm:right-4 z-[9999] flex items-center gap-1.5 sm:gap-2 px-2.5 py-1.5 sm:px-3 sm:py-2 rounded-full border border-[hsl(var(--fire-orange)/0.4)] font-orbitron text-[9px] sm:text-[11px] font-bold text-[hsl(var(--fire-orange))] cursor-pointer hover:scale-105 transition-transform"
                     style={{
                         background: "linear-gradient(135deg, hsl(220 25% 8% / 0.95), hsl(220 20% 6% / 0.95))",
                         backdropFilter: "blur(16px)",
