@@ -82,14 +82,14 @@ const RegistrationToast: React.FC = () => {
                                     style={{ filter: "drop-shadow(0 0 4px hsl(var(--fire-orange) / 0.5))" }}
                                 />
                                 <h4
-                                    className="text-[11px] font-orbitron font-bold text-[hsl(var(--fire-orange))] tracking-wide leading-none"
+                                    className="text-[9px] sm:text-[11px] font-orbitron font-bold text-[hsl(var(--fire-orange))] tracking-wide leading-none"
                                     style={{ textShadow: "0 0 10px hsl(var(--fire-orange) / 0.35)" }}
                                 >
                                     Registration Closing Soon!
                                 </h4>
                             </div>
 
-                            <p className="text-[10px] text-[hsl(var(--muted-foreground))] mb-2.5 font-exo pl-[23px]">
+                            <p className="text-[8px] sm:text-[10px] text-[hsl(var(--muted-foreground))] mb-1.5 sm:mb-2.5 font-exo pl-[23px]">
                                 Spark registration ends in:
                             </p>
 
@@ -117,7 +117,7 @@ const RegistrationToast: React.FC = () => {
                                             </span>
                                         </div>
                                         {i < 2 && (
-                                            <span className="text-[hsl(var(--fire-orange))] text-base font-bold mb-3 animate-pulse">
+                                            <span className="text-[hsl(var(--fire-orange))] text-xs sm:text-base font-bold mb-2 sm:mb-3 animate-pulse">
                                                 :
                                             </span>
                                         )}

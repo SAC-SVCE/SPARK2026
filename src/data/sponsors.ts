@@ -23,7 +23,7 @@ export const sponsorsData: Sponsor[] = [
     {
         id: "title-1",
         name: "Student tribe",
-        logoUrl:"/sponsors-images/student_tribe.jpeg", // placeholder logo
+        logoUrl: "/sponsors-images/student_tribe.jpeg", // placeholder logo
         category: "Title Sponsors",
         websiteUrl: "#",
     },
@@ -34,14 +34,14 @@ export const sponsorsData: Sponsor[] = [
         category: "Social Media Partners",
         websiteUrl: "#",
     },
-       {
+    {
         id: "media-2",
         name: "It's My Tirupathi",
         logoUrl: "/sponsors-images/it's my.jpeg",
         category: "Social Media Partners",
         websiteUrl: "#",
     },
-    
+
     {
         id: "gold-3",
         name: "Leap Geebee Education",
@@ -79,25 +79,32 @@ export const sponsorsData: Sponsor[] = [
     },
     {
         id: "back-1",
-        name: "HDFC",
+        name: "HDFC Bank",
         logoUrl: "/sponsors-images/hdfc.png",
         category: "Banking partners",
         websiteUrl: "#",
     },
     {
         id: "back-2",
-        name: "KVB",
+        name: "Karur Vysya Bank",
         logoUrl: "/sponsors-images/kvb.png",
         category: "Banking partners",
         websiteUrl: "#",
     },
+    {
+        id: "back-3",
+        name: "IDFC First Bank",
+        logoUrl: "/sponsors-images/idfc_first_bank.jpg",
+        category: "Banking partners",
+        websiteUrl: "#",
+    },
 
-   
-    
+
+
 ];
 
 export const CATEGORY_ORDER: SponsorCategory[] = [
-    
+
     "Platinum Sponsors",
     "Social Media Partners",
     "Sponsors",
