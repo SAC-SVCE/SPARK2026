@@ -8,7 +8,8 @@ export type SponsorCategory =
     | "Banking partners"
     | "Social Media Partners"
     | "Technology Partners"
-    | "Industry partners";
+    | "Industry partners"
+      "Manufacturing Partners";
 
 export interface Sponsor {
     id: string;
@@ -46,6 +47,13 @@ export const sponsorsData: Sponsor[] = [
         id: "gold-3",
         name: "Leap Geebee Education",
         logoUrl: "/sponsors-images/geebee.jpg",
+        category: "Sponsors",
+        websiteUrl: "#",
+    },
+    {
+        id: "gold-3",
+        name: "Yodhaa",
+        logoUrl: "/sponsors-images/yodha.jpeg",
         category: "Sponsors",
         websiteUrl: "#",
     },
@@ -98,6 +106,13 @@ export const sponsorsData: Sponsor[] = [
         category: "Banking partners",
         websiteUrl: "#",
     },
+    {
+        id: "back-4",
+        name: "Sri Balaji Renewable",
+        logoUrl: "/sponsors-images/sb.jpeg",
+        category: "Manufacturing Partners",
+        websiteUrl: "#",
+    },
 
 
 
@@ -113,5 +128,6 @@ export const CATEGORY_ORDER: SponsorCategory[] = [
     "Banking partners",
     "Silver Sponsors",
     "Technology Partners",
-    "Community Partners"
+    "Community Partners",
+    "Manufacturing Partners"
 ];
