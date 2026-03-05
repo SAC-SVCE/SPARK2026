@@ -11,21 +11,22 @@ const Hero = () => {
        🔥 COUNTDOWN UNTIL TOMORROW 11:59:59 PM
     ========================== */
 
-    const getTargetTime = () => {
-        const now = new Date();
+   const getTargetTime = () => {
+    const now = new Date();
 
-        // Tomorrow at 11:59:59 PM
-        const tomorrowNight = new Date(
-            now.getFullYear(),
-            now.getMonth(),
-            now.getDate() + 1,
-            23,
-            59,
-            59
-        );
+    // Today at 11:59:59 PM
+    const todayNight = new Date(
+        now.getFullYear(),
+        now.getMonth(),
+        now.getDate(),  
+        23,
+        59,
+        59
+    );
 
-        return tomorrowNight.getTime();
-    };
+    return todayNight.getTime();
+};
+
 
     const [showPopup, setShowPopup] = useState(true);
     const [timeLeft, setTimeLeft] = useState(0);
@@ -69,7 +70,7 @@ const Hero = () => {
             {showPopup && (
                 <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/70 backdrop-blur-sm px-4">
                     <div className="bg-transparent rounded-xl shadow-2xl max-w-xl w-full p-6 text-center">
-
+                       
                         <h2 className="text-2xl md:text-3xl font-semibold text-white mb-3">
                             ⚠️ Registration Closing Soon!
                         </h2>
@@ -101,6 +102,9 @@ const Hero = () => {
                                 <div className="text-xs text-yellow-400">Seconds</div>
                             </div>
                         </div>
+                        <p className="text-red-700 text-xl md:text-2xl py-6">
+                          <span className="text-red-700 text-2xl md:text-3xl py-6"> Note!: </span><span className="text-yellow-200">For more information refer Rules and Regulations</span>
+                        </p>
 
                         <button
                             onClick={() => setShowPopup(false)}
