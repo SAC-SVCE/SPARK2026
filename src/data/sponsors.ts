@@ -5,6 +5,7 @@ export type SponsorCategory =
     | "medical partners"
     | "Silver Sponsors"
     | "Community Partners"
+    | "Banking partners"
     | "Social Media Partners"
     | "Technology Partners"
     | "Industry partners";
@@ -76,6 +77,21 @@ export const sponsorsData: Sponsor[] = [
         category: "Industry partners",
         websiteUrl: "#",
     },
+    {
+        id: "back-1",
+        name: "HDFC",
+        logoUrl: "/sponsors-images/hdfc.png",
+        category: "Banking partners",
+        websiteUrl: "#",
+    },
+    {
+        id: "back-2",
+        name: "KVP",
+        logoUrl: "/sponsors-images/kvb.png",
+        category: "Banking partners",
+        websiteUrl: "#",
+    },
+
    
     
 ];
@@ -87,6 +103,7 @@ export const CATEGORY_ORDER: SponsorCategory[] = [
     "Sponsors",
     "medical partners",
     "Industry partners",
+    "Banking partners",
     "Silver Sponsors",
     "Technology Partners",
     "Community Partners"
