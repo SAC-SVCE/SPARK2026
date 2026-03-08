@@ -51,9 +51,9 @@ const Hero = () => {
     }, []);
 
     // 🔥 Convert to Total Remaining Hours (not % 24)
-    const totalHours = Math.floor(timeLeft / (1000 * 60 * 60));
-    const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+    // const totalHours = Math.floor(timeLeft / (1000 * 60 * 60));
+    // const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+    // const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
     /* =========================
        🎨 HERO UI
@@ -67,7 +67,7 @@ const Hero = () => {
         >
 
             {/* 🔥 POPUP */}
-            {showPopup && (
+            {/* {showPopup && (
                 <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/70 backdrop-blur-sm px-4">
                     <div className="bg-transparent rounded-xl shadow-2xl max-w-xl w-full p-6 text-center">
                        
@@ -77,10 +77,10 @@ const Hero = () => {
 
                         <p className="text-zinc-100 mb-4">
                             Spark registration ends in:
-                        </p>
+                        </p> */}
 
                         {/* Live Countdown */}
-                        <div className="flex justify-center gap-6 mb-6 text-black">
+                        {/* <div className="flex justify-center gap-6 mb-6 text-black">
                             <div>
                                 <div className="text-3xl text-white font-bold">
                                     {String(totalHours).padStart(2, "0")}
@@ -93,9 +93,9 @@ const Hero = () => {
                                     {String(minutes).padStart(2, "0")}
                                 </div>
                                 <div className="text-xs text-yellow-400">Minutes</div>
-                            </div>
+                            </div> */}
 
-                            <div>
+                            {/* <div>
                                 <div className="text-3xl text-white font-bold">
                                     {String(seconds).padStart(2, "0")}
                                 </div>
@@ -115,7 +115,7 @@ const Hero = () => {
 
                     </div>
                 </div>
-            )}
+            )} */}
 
             {/* Desktop Background */}
             <div className="hidden md:block absolute inset-0">
